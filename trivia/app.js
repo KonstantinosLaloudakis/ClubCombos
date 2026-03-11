@@ -179,16 +179,17 @@ function closeModal() {
 }
 
 function handleSearch(e) {
-    const query = e.target.value.toLowerCase().trim();
+    const query = stripDiacritics(e.target.value.toLowerCase().trim());
     if(query.length < 2) {
         dom.searchResults.innerHTML = '';
         return;
     }
     
-    // Search the full dictionary
+    // Search the full dictionary (diacritic-insensitive)
     const results = [];
     for(const [pid, name] of Object.entries(TRIVIA_DATA.players)) {
-        if(name.toLowerCase().includes(query)) {
+        const normalizedName = stripDiacritics(name.toLowerCase());
+        if(normalizedName.includes(query)) {
             // Don't show already used players
             if(!state.usedPlayers.has(pid)) {
                 results.push({ id: pid, name: name });
@@ -383,6 +384,10 @@ function shuffleArray(array) {
         const j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
     }
+}
+
+function stripDiacritics(str) {
+    return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 }
 
 async function fetchPlayerImage(playerName) {
