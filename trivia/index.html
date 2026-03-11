@@ -44,6 +44,14 @@
                             <button class="btn btn-primary" data-size="3">2 x 3 Grid</button>
                             <button class="btn btn-outline" data-size="4">2 x 4 Grid</button>
                         </div>
+                        
+                        <div class="mode-toggle">
+                            <label class="switch">
+                                <input type="checkbox" id="easy-mode-toggle">
+                                <span class="slider round"></span>
+                            </label>
+                            <span class="mode-label">Easy Mode <span class="mode-desc">(Min. 2 valid players per cell)</span></span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -87,6 +95,7 @@
                 </div>
                 <div class="modal-search">
                     <input type="text" id="player-search-input" placeholder="Start typing a player name..." autocomplete="off" autofocus>
+                    <button id="btn-surrender-cell" class="btn-surrender" title="Give up on this cell and reveal answers">🏳️ Surrender</button>
                 </div>
                 <div class="modal-results" id="search-results">
                     <!-- Search results populated by JS -->

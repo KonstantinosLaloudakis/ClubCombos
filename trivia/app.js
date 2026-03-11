@@ -34,6 +34,7 @@ const dom = {
     searchInput: document.getElementById('player-search-input'),
     searchResults: document.getElementById('search-results'),
     btnCloseModal: document.getElementById('btn-close-modal'),
+    btnSurrenderCell: document.getElementById('btn-surrender-cell'),
     
     // End screen
     endTitle: document.getElementById('end-title'),
@@ -56,6 +57,7 @@ function init() {
     
     // Modal events
     dom.btnCloseModal.addEventListener('click', closeModal);
+    dom.btnSurrenderCell.addEventListener('click', handleSurrenderCell);
     dom.searchInput.addEventListener('input', handleSearch);
     
     // Close modal on escape or background click
@@ -87,10 +89,29 @@ function startGame(columns) {
     
     document.getElementById('btn-give-up').style.display = 'block';
     
-    // Randomly select n valid target teams
-    const allTargets = [...TRIVIA_DATA.valid_target_teams];
-    shuffleArray(allTargets);
-    state.columns = allTargets.slice(0, columns);
+    // Filter target teams based on Easy Mode toggle
+    const isEasyMode = document.getElementById('easy-mode-toggle').checked;
+    let availableTargets = [...TRIVIA_DATA.valid_target_teams];
+    
+    if (isEasyMode) {
+        availableTargets = availableTargets.filter(target => {
+            // Must have at least 2 players for EVERY focus team (Greek giant)
+            return state.focusTeams.every(focusTeam => {
+                const validPlayers = TRIVIA_DATA.matrix[focusTeam.id]?.[target.id];
+                return validPlayers && validPlayers.length >= 2;
+            });
+        });
+        
+        // Safety fallback in case there aren't enough 2+ player teams
+        if (availableTargets.length < columns) {
+            console.warn("Not enough Easy Mode targets found, falling back to normal mode.");
+            availableTargets = [...TRIVIA_DATA.valid_target_teams];
+        }
+    }
+    
+    // Randomly select n target teams
+    shuffleArray(availableTargets);
+    state.columns = availableTargets.slice(0, columns);
     
     renderLives();
     dom.score.textContent = state.score;
@@ -176,6 +197,41 @@ function openSearchForCell(cellId) {
 function closeModal() {
     dom.searchModal.classList.add('hidden');
     state.activeCellId = null;
+}
+
+function handleSurrenderCell() {
+    if (!state.activeCellId) return;
+    
+    state.lives--;
+    renderLives();
+    
+    const [r, c] = state.activeCellId.split('-');
+    const valid = TRIVIA_DATA.matrix[r][c];
+    const cellEl = document.querySelector(`.grid-cell[data-id="${state.activeCellId}"]`);
+    
+    state.cells[state.activeCellId] = 'failed';
+    cellEl.className = 'grid-cell failed';
+    
+    if(valid && valid.length > 0) {
+        const names = valid.map(id => TRIVIA_DATA.players[id]);
+        const displayNames = names.join('<br/>');
+        
+        cellEl.innerHTML = `
+            <div style="font-size:0.75rem;color:var(--text-muted);margin-bottom:4px;text-align:center;width:100%;">Missed:</div>
+            <div class="player-name" style="font-size:0.8rem;opacity:0.8;text-align:center;line-height:1.2;width:100%;">
+                ${displayNames}
+            </div>
+        `;
+    } else {
+        cellEl.innerHTML = `<div class="cell-icon" style="color:var(--error-color)">×</div>`;
+    }
+    
+    closeModal();
+    showToast(`You surrendered this cell.`, 'error');
+    
+    if (state.lives <= 0) {
+        gameOver();
+    }
 }
 
 function handleSearch(e) {
@@ -272,7 +328,12 @@ function makeGuess(playerId, playerName) {
             if(imgUrl) {
                 imgContainer.innerHTML = `<img src="${imgUrl}" class="player-headshot" alt="${playerName}" />`;
             } else {
-                imgContainer.innerHTML = `<div class="no-image-placeholder">No Image</div>`;
+                imgContainer.innerHTML = `
+                    <svg class="player-headshot fallback-silhouette" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                `;
             }
             cellEl.classList.remove('loading-img');
         });
