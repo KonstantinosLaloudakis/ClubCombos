@@ -8,7 +8,7 @@ An **Immaculate Grid**-style trivia game for Greek football fans. Name a player 
 
 ## 🎮 Play Now
 
-👉 **[Play on GitHub Pages](https://YOUR_USERNAME.github.io/ClubCombos/)**
+👉 **[Play on GitHub Pages](https://konstantinoslaloudakis.github.io/ClubCombos/)**
 
 ## Features
 
