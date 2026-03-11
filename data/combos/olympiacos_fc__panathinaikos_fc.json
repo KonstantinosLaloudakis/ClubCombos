@@ -1,0 +1,151 @@
+{
+  "team1": {
+    "id": "156392",
+    "name": "GRE: Olympiacos FC"
+  },
+  "team2": {
+    "id": "175909",
+    "name": "GRE: Panathinaikos FC"
+  },
+  "level": "franch",
+  "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=156392&t2=175909&t3=--&t4=--",
+  "scraped_at": "2026-03-11T12:49:45.687209",
+  "player_count": 15,
+  "players": [
+    {
+      "Player_link": "https://fbref.com/en/players/4288f249/Sotiris-Alexandropoulos",
+      "Player": "Sotiris Alexandropoulos",
+      "Yrs": "2019-2022",
+      "MP": "68",
+      "Min": "3885",
+      "Gls": "1",
+      "Ast": "2"
+    },
+    {
+      "Player_link": "https://fbref.com/en/players/a31c9811/Alexandros-Anagnostopoulos",
+      "Player": "Alexandros Anagnostopoulos",
+      "Yrs": "2014",
+      "MP": "0",
+      "Min": null,
+      "Gls": null,
+      "Ast": null
+    },
+    {
+      "Player_link": "https://fbref.com/en/players/47b9d279/Tasos-Avlonitis",
+      "Player": "Tasos Avlonitis",
+      "Yrs": "2017",
+      "MP": "6",
+      "Min": "476",
+      "Gls": "0",
+      "Ast": "0"
+    },
+    {
+      "Player_link": "https://fbref.com/en/players/f73abe54/Lazaros-Christodoulopoulos",
+      "Player": "Lazaros Christodoulopoulos",
+      "Yrs": "2008-2012",
+      "MP": "95",
+      "Min": "4952",
+      "Gls": "14",
+      "Ast": "9"
+    },
+    {
+      "Player_link": "https://fbref.com/en/players/56932414/Georgios-Georgiadis",
+      "Player": "Georgios Georgiadis",
+      "Yrs": "1995-1996",
+      "MP": "10",
+      "Min": "838",
+      "Gls": "2",
+      "Ast": null
+    },
+    {
+      "Player_link": "https://fbref.com/en/players/cc9e268a/Chris-Kalantzis",
+      "Player": "Chris Kalantzis",
+      "Yrs": "1990-1992",
+      "MP": "13",
+      "Min": "1152",
+      "Gls": "2",
+      "Ast": null
+    },
+    {
+      "Player_link": "https://fbref.com/en/players/62ba5881/Stefanos-Kapino",
+      "Player": "Stefanos Kapino",
+      "Yrs": "2011-2013",
+      "MP": "41",
+      "Min": "3686",
+      "Gls": "0",
+      "Ast": "0"
+    },
+    {
+      "Player_link": "https://fbref.com/en/players/bc8df459/Dimitris-Kolovos",
+      "Player": "Dimitris Kolovos",
+      "Yrs": "2019",
+      "MP": "21",
+      "Min": "737",
+      "Gls": "1",
+      "Ast": "0"
+    },
+    {
+      "Player_link": "https://fbref.com/en/players/856b3752/Michalis-Konstantinou",
+      "Player": "Michalis Konstantinou",
+      "Yrs": "2001-2004",
+      "MP": "129",
+      "Min": "9526",
+      "Gls": "43",
+      "Ast": "11"
+    },
+    {
+      "Player_link": "https://fbref.com/en/players/3b1716f7/Sebastian-Leto",
+      "Player": "Sebastián Leto",
+      "Yrs": "2009-2016",
+      "MP": "100",
+      "Min": "6836",
+      "Gls": "30",
+      "Ast": "22"
+    },
+    {
+      "Player_link": "https://fbref.com/en/players/59f0c185/Yuri-Lodygin",
+      "Player": "Yuri Lodygin",
+      "Yrs": "2022-2024",
+      "MP": "25",
+      "Min": "2170",
+      "Gls": "0",
+      "Ast": "0"
+    },
+    {
+      "Player_link": "https://fbref.com/en/players/0f67f4bb/Antonios-Nikopolidis",
+      "Player": "Antonios Nikopolidis",
+      "Yrs": "1992-2003",
+      "MP": "140",
+      "Min": "12505",
+      "Gls": "0",
+      "Ast": "0"
+    },
+    {
+      "Player_link": "https://fbref.com/en/players/36a6f28d/Emmanouil-Siopis",
+      "Player": "Emmanouil Siopis",
+      "Yrs": "2024-2025",
+      "MP": "37",
+      "Min": "2259",
+      "Gls": "0",
+      "Ast": "1"
+    },
+    {
+      "Player_link": "https://fbref.com/en/players/8fdc41f3/Nikos-Vergos",
+      "Player": "Nikos Vergos",
+      "Yrs": "2018-2019",
+      "MP": "4",
+      "Min": "109",
+      "Gls": "0",
+      "Ast": "0"
+    },
+    {
+      "Player_link": "https://fbref.com/en/players/eb68e86c/Panagiotis-Vlachodimos",
+      "Player": "Panagiotis Vlachodimos",
+      "Yrs": "2015-2016",
+      "MP": "19",
+      "Min": "830",
+      "Gls": "1",
+      "Ast": "3"
+    }
+  ]
+}

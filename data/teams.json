@@ -1,0 +1,4482 @@
+[
+  {
+    "id": "157576",
+    "name": "ALB: FK Partizani Tirana"
+  },
+  {
+    "id": "173892",
+    "name": "ALB: KF Skënderbeu Korçë"
+  },
+  {
+    "id": "174332",
+    "name": "ALB: KF Vllaznia Shkodër"
+  },
+  {
+    "id": "174584",
+    "name": "ARM: Alashkert FC"
+  },
+  {
+    "id": "183596",
+    "name": "ARM: FC Noah"
+  },
+  {
+    "id": "151746",
+    "name": "ARM: FC Pyunik"
+  },
+  {
+    "id": "153190",
+    "name": "AUT: ASKÖ Pasching"
+  },
+  {
+    "id": "173156",
+    "name": "AUT: FC Admira Wacker Mödling"
+  },
+  {
+    "id": "159957",
+    "name": "AUT: FC Kärnten"
+  },
+  {
+    "id": "164440",
+    "name": "AUT: FC Linz"
+  },
+  {
+    "id": "159695",
+    "name": "AUT: FC Red Bull Salzburg"
+  },
+  {
+    "id": "166270",
+    "name": "AUT: FC Tirol Innsbruck"
+  },
+  {
+    "id": "175384",
+    "name": "AUT: FK Austria Wien"
+  },
+  {
+    "id": "160279",
+    "name": "AUT: Grazer AK"
+  },
+  {
+    "id": "172582",
+    "name": "AUT: LASK Linz"
+  },
+  {
+    "id": "166127",
+    "name": "AUT: SK Rapid Wien"
+  },
+  {
+    "id": "157934",
+    "name": "AUT: SK Sturm Graz"
+  },
+  {
+    "id": "176266",
+    "name": "AUT: SKN St. Pölten"
+  },
+  {
+    "id": "174135",
+    "name": "AUT: SV Neulengbach"
+  },
+  {
+    "id": "158232",
+    "name": "AUT: Wolfsberger AC"
+  },
+  {
+    "id": "172429",
+    "name": "AZE: Neftchi PFK"
+  },
+  {
+    "id": "167787",
+    "name": "AZE: Qabala FK"
+  },
+  {
+    "id": "158470",
+    "name": "AZE: Qarabag FK"
+  },
+  {
+    "id": "NAT_AFG",
+    "name": "Afghanistan (AFG)"
+  },
+  {
+    "id": "NAT_ALB",
+    "name": "Albania (ALB)"
+  },
+  {
+    "id": "NAT_ALG",
+    "name": "Algeria (ALG)"
+  },
+  {
+    "id": "NAT_ASA",
+    "name": "American Samoa (ASA)"
+  },
+  {
+    "id": "NAT_AND",
+    "name": "Andorra (AND)"
+  },
+  {
+    "id": "NAT_ANG",
+    "name": "Angola (ANG)"
+  },
+  {
+    "id": "NAT_AIA",
+    "name": "Anguilla (AIA)"
+  },
+  {
+    "id": "NAT_ATG",
+    "name": "Antigua and Barbuda (ATG)"
+  },
+  {
+    "id": "NAT_ARG",
+    "name": "Argentina (ARG)"
+  },
+  {
+    "id": "NAT_ARM",
+    "name": "Armenia (ARM)"
+  },
+  {
+    "id": "NAT_ARU",
+    "name": "Aruba (ARU)"
+  },
+  {
+    "id": "NAT_AUS",
+    "name": "Australia (AUS)"
+  },
+  {
+    "id": "NAT_AUT",
+    "name": "Austria (AUT)"
+  },
+  {
+    "id": "NAT_AZE",
+    "name": "Azerbaijan (AZE)"
+  },
+  {
+    "id": "155821",
+    "name": "BEL: Beerschot AC"
+  },
+  {
+    "id": "174856",
+    "name": "BEL: Cercle Brugge KSV"
+  },
+  {
+    "id": "175738",
+    "name": "BEL: Club Brugge KV"
+  },
+  {
+    "id": "159777",
+    "name": "BEL: KAA Gent"
+  },
+  {
+    "id": "154588",
+    "name": "BEL: KRC Genk"
+  },
+  {
+    "id": "175311",
+    "name": "BEL: KSK Beveren"
+  },
+  {
+    "id": "168144",
+    "name": "BEL: KSV Waregem"
+  },
+  {
+    "id": "152445",
+    "name": "BEL: KV Mechelen"
+  },
+  {
+    "id": "160334",
+    "name": "BEL: KVC Westerlo"
+  },
+  {
+    "id": "167520",
+    "name": "BEL: Lierse SK"
+  },
+  {
+    "id": "155596",
+    "name": "BEL: OH Leuven"
+  },
+  {
+    "id": "153528",
+    "name": "BEL: R. Charleroi SC"
+  },
+  {
+    "id": "153235",
+    "name": "BEL: RAA Louviéroise"
+  },
+  {
+    "id": "160753",
+    "name": "BEL: RE Mouscron"
+  },
+  {
+    "id": "165356",
+    "name": "BEL: RFC Seraing"
+  },
+  {
+    "id": "152324",
+    "name": "BEL: RSC Anderlecht"
+  },
+  {
+    "id": "152422",
+    "name": "BEL: RWDM Brussels FC"
+  },
+  {
+    "id": "171083",
+    "name": "BEL: Royal Antwerp FC"
+  },
+  {
+    "id": "174069",
+    "name": "BEL: Royale Union SG"
+  },
+  {
+    "id": "175279",
+    "name": "BEL: SV Zulte Waregem"
+  },
+  {
+    "id": "170259",
+    "name": "BEL: Sporting Lokeren"
+  },
+  {
+    "id": "156805",
+    "name": "BEL: Standard Liège"
+  },
+  {
+    "id": "156818",
+    "name": "BEL: VC Dames Eendracht Alost"
+  },
+  {
+    "id": "171173",
+    "name": "BIH: FK Borac Banja Luka"
+  },
+  {
+    "id": "176620",
+    "name": "BIH: FK Sarajevo"
+  },
+  {
+    "id": "175433",
+    "name": "BIH: FK Željezničar Sarajevo"
+  },
+  {
+    "id": "155870",
+    "name": "BIH: HŠK Zrinjski Mostar"
+  },
+  {
+    "id": "160403",
+    "name": "BIH: NK Široki Brijeg"
+  },
+  {
+    "id": "170138",
+    "name": "BLR: FC BATE Borisov"
+  },
+  {
+    "id": "174203",
+    "name": "BLR: FC Dinamo Minsk"
+  },
+  {
+    "id": "155136",
+    "name": "BLR: FC Gomel"
+  },
+  {
+    "id": "158255",
+    "name": "BLR: FC Minsk"
+  },
+  {
+    "id": "167019",
+    "name": "BLR: FC Slavia-Mozyr"
+  },
+  {
+    "id": "154917",
+    "name": "BUL: FC Lokomotiv 1929 Sofia"
+  },
+  {
+    "id": "174519",
+    "name": "BUL: PFC Botev Plovdiv"
+  },
+  {
+    "id": "171938",
+    "name": "BUL: PFC CSKA Sofia"
+  },
+  {
+    "id": "176160",
+    "name": "BUL: PFC Cherno More Varna"
+  },
+  {
+    "id": "157472",
+    "name": "BUL: PFC Levski Sofia"
+  },
+  {
+    "id": "164689",
+    "name": "BUL: PFC Litex Lovech"
+  },
+  {
+    "id": "173966",
+    "name": "BUL: PFC Lokomotiv Plovdiv"
+  },
+  {
+    "id": "158835",
+    "name": "BUL: PFC Ludogorets Razgrad"
+  },
+  {
+    "id": "173556",
+    "name": "BUL: PFC Naftex Burgas"
+  },
+  {
+    "id": "NAT_BAH",
+    "name": "Bahamas (BAH)"
+  },
+  {
+    "id": "NAT_BHR",
+    "name": "Bahrain (BHR)"
+  },
+  {
+    "id": "NAT_BAN",
+    "name": "Bangladesh (BAN)"
+  },
+  {
+    "id": "NAT_BRB",
+    "name": "Barbados (BRB)"
+  },
+  {
+    "id": "NAT_BLR",
+    "name": "Belarus (BLR)"
+  },
+  {
+    "id": "NAT_BEL",
+    "name": "Belgium (BEL)"
+  },
+  {
+    "id": "NAT_BLZ",
+    "name": "Belize (BLZ)"
+  },
+  {
+    "id": "NAT_BEN",
+    "name": "Benin (BEN)"
+  },
+  {
+    "id": "NAT_BER",
+    "name": "Bermuda (BER)"
+  },
+  {
+    "id": "NAT_BHU",
+    "name": "Bhutan (BHU)"
+  },
+  {
+    "id": "NAT_BOL",
+    "name": "Bolivia (BOL)"
+  },
+  {
+    "id": "NAT_BOE",
+    "name": "Bonaire (BOE)"
+  },
+  {
+    "id": "NAT_BIH",
+    "name": "Bosnia and Herzegovina (BIH)"
+  },
+  {
+    "id": "NAT_BOT",
+    "name": "Botswana (BOT)"
+  },
+  {
+    "id": "NAT_BRA",
+    "name": "Brazil (BRA)"
+  },
+  {
+    "id": "NAT_VGB",
+    "name": "British Virgin Islands (VGB)"
+  },
+  {
+    "id": "NAT_BRU",
+    "name": "Brunei (BRU)"
+  },
+  {
+    "id": "NAT_BUL",
+    "name": "Bulgaria (BUL)"
+  },
+  {
+    "id": "NAT_BFA",
+    "name": "Burkina Faso (BFA)"
+  },
+  {
+    "id": "NAT_BDI",
+    "name": "Burundi (BDI)"
+  },
+  {
+    "id": "176772",
+    "name": "CAN: CF Montréal"
+  },
+  {
+    "id": "153415",
+    "name": "CAN: Toronto FC"
+  },
+  {
+    "id": "168707",
+    "name": "CAN: Vancouver Whitecaps FC"
+  },
+  {
+    "id": "175362",
+    "name": "CRO: GNK Dinamo Zagreb"
+  },
+  {
+    "id": "161935",
+    "name": "CRO: HNK Hajduk Split"
+  },
+  {
+    "id": "155390",
+    "name": "CRO: HNK Rijeka"
+  },
+  {
+    "id": "170375",
+    "name": "CRO: NK Kamen Ingrad"
+  },
+  {
+    "id": "160346",
+    "name": "CRO: NK Osijek"
+  },
+  {
+    "id": "163803",
+    "name": "CRO: NK Slaven Belupo"
+  },
+  {
+    "id": "173328",
+    "name": "CRO: NK Varaždin"
+  },
+  {
+    "id": "152778",
+    "name": "CRO: ŽNK Osijek"
+  },
+  {
+    "id": "153713",
+    "name": "CYP: AC Omonia"
+  },
+  {
+    "id": "151577",
+    "name": "CYP: AEK Larnaca FC"
+  },
+  {
+    "id": "161691",
+    "name": "CYP: AEL Limassol"
+  },
+  {
+    "id": "175048",
+    "name": "CYP: APOEL FC"
+  },
+  {
+    "id": "172628",
+    "name": "CYP: Anorthosis Famagusta FC"
+  },
+  {
+    "id": "165798",
+    "name": "CYP: Apollon Limassol"
+  },
+  {
+    "id": "172047",
+    "name": "CYP: Aris Limassol FC"
+  },
+  {
+    "id": "177226",
+    "name": "CYP: Barcelona FA"
+  },
+  {
+    "id": "159515",
+    "name": "CYP: Ethnikos Achna FC"
+  },
+  {
+    "id": "155500",
+    "name": "CYP: Olympiakos Nicosia"
+  },
+  {
+    "id": "171876",
+    "name": "CYP: Pafos FC"
+  },
+  {
+    "id": "157265",
+    "name": "CZE: 1. FC Slovácko"
+  },
+  {
+    "id": "176558",
+    "name": "CZE: 1. FK Příbram"
+  },
+  {
+    "id": "175273",
+    "name": "CZE: AC Sparta Prague"
+  },
+  {
+    "id": "167295",
+    "name": "CZE: FC Baník Ostrava"
+  },
+  {
+    "id": "173275",
+    "name": "CZE: FC Fastav Zlín"
+  },
+  {
+    "id": "156070",
+    "name": "CZE: FC Slovan Liberec"
+  },
+  {
+    "id": "151722",
+    "name": "CZE: FC Viktoria Plzeň"
+  },
+  {
+    "id": "171819",
+    "name": "CZE: FC ZLiN Gomel"
+  },
+  {
+    "id": "166800",
+    "name": "CZE: FK Drnovice"
+  },
+  {
+    "id": "164764",
+    "name": "CZE: FK Jablonec"
+  },
+  {
+    "id": "162832",
+    "name": "CZE: FK Mladá Boleslav"
+  },
+  {
+    "id": "152085",
+    "name": "CZE: FK Teplice"
+  },
+  {
+    "id": "156552",
+    "name": "CZE: FK Viktoria Žižkov"
+  },
+  {
+    "id": "158174",
+    "name": "CZE: SK Sigma Olomouc"
+  },
+  {
+    "id": "153217",
+    "name": "CZE: SK Slavia Prague"
+  },
+  {
+    "id": "NAT_CAM",
+    "name": "Cambodia (CAM)"
+  },
+  {
+    "id": "NAT_CMR",
+    "name": "Cameroon (CMR)"
+  },
+  {
+    "id": "NAT_CAN",
+    "name": "Canada (CAN)"
+  },
+  {
+    "id": "NAT_CPV",
+    "name": "Cape Verde (CPV)"
+  },
+  {
+    "id": "NAT_CAY",
+    "name": "Cayman Islands (CAY)"
+  },
+  {
+    "id": "NAT_CTA",
+    "name": "Central African Republic (CTA)"
+  },
+  {
+    "id": "NAT_CHA",
+    "name": "Chad (CHA)"
+  },
+  {
+    "id": "NAT_CHI",
+    "name": "Chile (CHI)"
+  },
+  {
+    "id": "NAT_CHN",
+    "name": "China PR (CHN)"
+  },
+  {
+    "id": "NAT_TPE",
+    "name": "Chinese Taipei (TPE)"
+  },
+  {
+    "id": "NAT_COL",
+    "name": "Colombia (COL)"
+  },
+  {
+    "id": "NAT_CIS",
+    "name": "Commonwealth of Independent States (CIS)"
+  },
+  {
+    "id": "NAT_COM",
+    "name": "Comoros (COM)"
+  },
+  {
+    "id": "NAT_CGO",
+    "name": "Congo (CGO)"
+  },
+  {
+    "id": "NAT_COD",
+    "name": "Congo DR (COD)"
+  },
+  {
+    "id": "NAT_COK",
+    "name": "Cook Islands (COK)"
+  },
+  {
+    "id": "NAT_CRC",
+    "name": "Costa Rica (CRC)"
+  },
+  {
+    "id": "NAT_CRO",
+    "name": "Croatia (CRO)"
+  },
+  {
+    "id": "NAT_CUB",
+    "name": "Cuba (CUB)"
+  },
+  {
+    "id": "NAT_CUW",
+    "name": "Curaçao (CUW)"
+  },
+  {
+    "id": "NAT_CYP",
+    "name": "Cyprus (CYP)"
+  },
+  {
+    "id": "NAT_CZE",
+    "name": "Czech Republic (CZE)"
+  },
+  {
+    "id": "NAT_TCH",
+    "name": "Czechoslovakia (TCH)"
+  },
+  {
+    "id": "NAT_CIV",
+    "name": "Côte d'Ivoire (CIV)"
+  },
+  {
+    "id": "167130",
+    "name": "DEN: AGF Aarhus"
+  },
+  {
+    "id": "156622",
+    "name": "DEN: Aalborg BK"
+  },
+  {
+    "id": "162414",
+    "name": "DEN: Akademisk Boldklub"
+  },
+  {
+    "id": "163110",
+    "name": "DEN: Boldklubben Frem"
+  },
+  {
+    "id": "168731",
+    "name": "DEN: Brøndby IF"
+  },
+  {
+    "id": "156587",
+    "name": "DEN: Esbjerg fB"
+  },
+  {
+    "id": "153941",
+    "name": "DEN: FC Copenhagen"
+  },
+  {
+    "id": "157637",
+    "name": "DEN: FC Midtjylland"
+  },
+  {
+    "id": "153972",
+    "name": "DEN: FC Nordsjælland"
+  },
+  {
+    "id": "157665",
+    "name": "DEN: Fortuna Hjørring"
+  },
+  {
+    "id": "182595",
+    "name": "DEN: HB Køge"
+  },
+  {
+    "id": "152193",
+    "name": "DEN: Herfølge Boldklub"
+  },
+  {
+    "id": "162873",
+    "name": "DEN: Lyngby BK"
+  },
+  {
+    "id": "157935",
+    "name": "DEN: Odense BK"
+  },
+  {
+    "id": "172395",
+    "name": "DEN: Randers FC"
+  },
+  {
+    "id": "169297",
+    "name": "DEN: Silkeborg IF"
+  },
+  {
+    "id": "171906",
+    "name": "DEN: Vejle BK"
+  },
+  {
+    "id": "175372",
+    "name": "DEN: Viborg FF"
+  },
+  {
+    "id": "NAT_DEN",
+    "name": "Denmark (DEN)"
+  },
+  {
+    "id": "NAT_DJI",
+    "name": "Djibouti (DJI)"
+  },
+  {
+    "id": "NAT_DMA",
+    "name": "Dominica (DMA)"
+  },
+  {
+    "id": "NAT_DOM",
+    "name": "Dominican Republic (DOM)"
+  },
+  {
+    "id": "159149",
+    "name": "ENG: AFC Bournemouth"
+  },
+  {
+    "id": "161274",
+    "name": "ENG: AFC Fylde"
+  },
+  {
+    "id": "160494",
+    "name": "ENG: AFC Telford United"
+  },
+  {
+    "id": "165545",
+    "name": "ENG: AFC Wimbledon"
+  },
+  {
+    "id": "166150",
+    "name": "ENG: Accrington Stanley FC"
+  },
+  {
+    "id": "168400",
+    "name": "ENG: Aldershot Town FC"
+  },
+  {
+    "id": "152957",
+    "name": "ENG: Alfreton Town FC"
+  },
+  {
+    "id": "169518",
+    "name": "ENG: Altrincham FC"
+  },
+  {
+    "id": "153995",
+    "name": "ENG: Arsenal FC"
+  },
+  {
+    "id": "164959",
+    "name": "ENG: Aston Villa FC"
+  },
+  {
+    "id": "156251",
+    "name": "ENG: Barnet FC"
+  },
+  {
+    "id": "155732",
+    "name": "ENG: Barnsley FC"
+  },
+  {
+    "id": "165905",
+    "name": "ENG: Barrow AFC"
+  },
+  {
+    "id": "176669",
+    "name": "ENG: Bath City FC"
+  },
+  {
+    "id": "175242",
+    "name": "ENG: Birmingham City FC"
+  },
+  {
+    "id": "173999",
+    "name": "ENG: Blackburn Rovers FC"
+  },
+  {
+    "id": "164034",
+    "name": "ENG: Blackpool FC"
+  },
+  {
+    "id": "158434",
+    "name": "ENG: Bolton Wanderers FC"
+  },
+  {
+    "id": "164877",
+    "name": "ENG: Boreham Wood FC"
+  },
+  {
+    "id": "163222",
+    "name": "ENG: Boston United FC"
+  },
+  {
+    "id": "158417",
+    "name": "ENG: Brackley Town FC"
+  },
+  {
+    "id": "156548",
+    "name": "ENG: Bradford City AFC"
+  },
+  {
+    "id": "162434",
+    "name": "ENG: Braintree Town FC"
+  },
+  {
+    "id": "172049",
+    "name": "ENG: Brentford FC"
+  },
+  {
+    "id": "172401",
+    "name": "ENG: Brighton & Hove Albion FC"
+  },
+  {
+    "id": "166351",
+    "name": "ENG: Bristol City FC"
+  },
+  {
+    "id": "161714",
+    "name": "ENG: Bristol Rovers FC"
+  },
+  {
+    "id": "162215",
+    "name": "ENG: Bromley FC"
+  },
+  {
+    "id": "166449",
+    "name": "ENG: Burnley FC"
+  },
+  {
+    "id": "169269",
+    "name": "ENG: Burton Albion FC"
+  },
+  {
+    "id": "171926",
+    "name": "ENG: Bury FC"
+  },
+  {
+    "id": "158181",
+    "name": "ENG: Cambridge United FC"
+  },
+  {
+    "id": "163344",
+    "name": "ENG: Cardiff City FC"
+  },
+  {
+    "id": "153322",
+    "name": "ENG: Carlisle United FC"
+  },
+  {
+    "id": "163816",
+    "name": "ENG: Charlton Athletic FC"
+  },
+  {
+    "id": "172343",
+    "name": "ENG: Chelsea FC"
+  },
+  {
+    "id": "163979",
+    "name": "ENG: Cheltenham Town FC"
+  },
+  {
+    "id": "163679",
+    "name": "ENG: Chester City FC"
+  },
+  {
+    "id": "158050",
+    "name": "ENG: Chester FC"
+  },
+  {
+    "id": "172206",
+    "name": "ENG: Chesterfield FC"
+  },
+  {
+    "id": "173679",
+    "name": "ENG: Chorley FC"
+  },
+  {
+    "id": "169366",
+    "name": "ENG: Colchester United FC"
+  },
+  {
+    "id": "176340",
+    "name": "ENG: Coventry City FC"
+  },
+  {
+    "id": "152744",
+    "name": "ENG: Crawley Town FC"
+  },
+  {
+    "id": "175680",
+    "name": "ENG: Crewe Alexandra FC"
+  },
+  {
+    "id": "158744",
+    "name": "ENG: Crystal Palace FC"
+  },
+  {
+    "id": "159358",
+    "name": "ENG: Dagenham & Redbridge FC"
+  },
+  {
+    "id": "157309",
+    "name": "ENG: Darlington FC"
+  },
+  {
+    "id": "172814",
+    "name": "ENG: Dartford FC"
+  },
+  {
+    "id": "155480",
+    "name": "ENG: Derby County FC"
+  },
+  {
+    "id": "151838",
+    "name": "ENG: Doncaster Rovers FC"
+  },
+  {
+    "id": "167119",
+    "name": "ENG: Dorking Wanderers FC"
+  },
+  {
+    "id": "170722",
+    "name": "ENG: Dover Athletic FC"
+  },
+  {
+    "id": "176916",
+    "name": "ENG: Droylsden FC"
+  },
+  {
+    "id": "156043",
+    "name": "ENG: Eastbourne Borough FC"
+  },
+  {
+    "id": "166639",
+    "name": "ENG: Eastleigh FC"
+  },
+  {
+    "id": "167564",
+    "name": "ENG: Ebbsfleet United FC"
+  },
+  {
+    "id": "172780",
+    "name": "ENG: Everton FC"
+  },
+  {
+    "id": "152026",
+    "name": "ENG: Exeter City FC"
+  },
+  {
+    "id": "157212",
+    "name": "ENG: FC Halifax Town"
+  },
+  {
+    "id": "158585",
+    "name": "ENG: Farsley Celtic AFC"
+  },
+  {
+    "id": "173025",
+    "name": "ENG: Fleetwood Town FC"
+  },
+  {
+    "id": "175741",
+    "name": "ENG: Forest Green Rovers FC"
+  },
+  {
+    "id": "176928",
+    "name": "ENG: Fulham FC"
+  },
+  {
+    "id": "155293",
+    "name": "ENG: Gateshead FC"
+  },
+  {
+    "id": "161082",
+    "name": "ENG: Gillingham FC"
+  },
+  {
+    "id": "172616",
+    "name": "ENG: Grays Athletic FC"
+  },
+  {
+    "id": "167781",
+    "name": "ENG: Grimsby Town FC"
+  },
+  {
+    "id": "158308",
+    "name": "ENG: Guiseley AFC"
+  },
+  {
+    "id": "166988",
+    "name": "ENG: Halifax Town AFC"
+  },
+  {
+    "id": "164361",
+    "name": "ENG: Harrogate Town FC"
+  },
+  {
+    "id": "155926",
+    "name": "ENG: Hartlepool United FC"
+  },
+  {
+    "id": "155422",
+    "name": "ENG: Havant & Waterlooville FC"
+  },
+  {
+    "id": "176483",
+    "name": "ENG: Hayes & Yeading United FC"
+  },
+  {
+    "id": "173218",
+    "name": "ENG: Hereford United FC"
+  },
+  {
+    "id": "172332",
+    "name": "ENG: Histon FC"
+  },
+  {
+    "id": "176108",
+    "name": "ENG: Huddersfield Town AFC"
+  },
+  {
+    "id": "170536",
+    "name": "ENG: Hull City AFC"
+  },
+  {
+    "id": "171286",
+    "name": "ENG: Hyde United FC"
+  },
+  {
+    "id": "169910",
+    "name": "ENG: Ipswich Town FC"
+  },
+  {
+    "id": "156582",
+    "name": "ENG: Kettering Town FC"
+  },
+  {
+    "id": "176582",
+    "name": "ENG: Kidderminster Harriers FC"
+  },
+  {
+    "id": "152752",
+    "name": "ENG: King's Lynn Town FC"
+  },
+  {
+    "id": "160763",
+    "name": "ENG: Leeds United FC"
+  },
+  {
+    "id": "167907",
+    "name": "ENG: Leicester City FC"
+  },
+  {
+    "id": "151581",
+    "name": "ENG: Lewes FC"
+  },
+  {
+    "id": "160481",
+    "name": "ENG: Leyton Orient FC"
+  },
+  {
+    "id": "173125",
+    "name": "ENG: Lincoln City FC"
+  },
+  {
+    "id": "164575",
+    "name": "ENG: Liverpool FC"
+  },
+  {
+    "id": "187641",
+    "name": "ENG: London City Lionesses FC"
+  },
+  {
+    "id": "174195",
+    "name": "ENG: Luton Town FC"
+  },
+  {
+    "id": "158730",
+    "name": "ENG: Macclesfield Town FC"
+  },
+  {
+    "id": "164046",
+    "name": "ENG: Maidenhead United FC"
+  },
+  {
+    "id": "160735",
+    "name": "ENG: Maidstone United FC"
+  },
+  {
+    "id": "170087",
+    "name": "ENG: Manchester City FC"
+  },
+  {
+    "id": "154064",
+    "name": "ENG: Manchester United FC"
+  },
+  {
+    "id": "153498",
+    "name": "ENG: Mansfield Town FC"
+  },
+  {
+    "id": "164278",
+    "name": "ENG: Middlesbrough FC"
+  },
+  {
+    "id": "174345",
+    "name": "ENG: Millwall FC"
+  },
+  {
+    "id": "176858",
+    "name": "ENG: Milton Keynes Dons FC"
+  },
+  {
+    "id": "162424",
+    "name": "ENG: Morecambe FC"
+  },
+  {
+    "id": "169487",
+    "name": "ENG: Newcastle United FC"
+  },
+  {
+    "id": "162363",
+    "name": "ENG: Newport County AFC"
+  },
+  {
+    "id": "171130",
+    "name": "ENG: North Ferriby United AFC"
+  },
+  {
+    "id": "166865",
+    "name": "ENG: Northampton Town FC"
+  },
+  {
+    "id": "161864",
+    "name": "ENG: Northwich Victoria FC"
+  },
+  {
+    "id": "154385",
+    "name": "ENG: Norwich City FC"
+  },
+  {
+    "id": "174440",
+    "name": "ENG: Nottingham Forest FC"
+  },
+  {
+    "id": "157530",
+    "name": "ENG: Notts County FC"
+  },
+  {
+    "id": "166632",
+    "name": "ENG: Nuneaton Town FC"
+  },
+  {
+    "id": "158982",
+    "name": "ENG: Oldham Athletic AFC"
+  },
+  {
+    "id": "155812",
+    "name": "ENG: Oxford City FC"
+  },
+  {
+    "id": "161208",
+    "name": "ENG: Oxford United FC"
+  },
+  {
+    "id": "173055",
+    "name": "ENG: Peterborough United FC"
+  },
+  {
+    "id": "156662",
+    "name": "ENG: Plymouth Argyle FC"
+  },
+  {
+    "id": "161433",
+    "name": "ENG: Port Vale FC"
+  },
+  {
+    "id": "163438",
+    "name": "ENG: Portsmouth FC"
+  },
+  {
+    "id": "155051",
+    "name": "ENG: Preston North End FC"
+  },
+  {
+    "id": "168326",
+    "name": "ENG: Queens Park Rangers FC"
+  },
+  {
+    "id": "169282",
+    "name": "ENG: Reading FC"
+  },
+  {
+    "id": "159775",
+    "name": "ENG: Rochdale AFC"
+  },
+  {
+    "id": "157146",
+    "name": "ENG: Rotherham United FC"
+  },
+  {
+    "id": "155510",
+    "name": "ENG: Rushden & Diamonds FC"
+  },
+  {
+    "id": "159277",
+    "name": "ENG: Salford City FC"
+  },
+  {
+    "id": "175011",
+    "name": "ENG: Salisbury City FC"
+  },
+  {
+    "id": "156549",
+    "name": "ENG: Scunthorpe United FC"
+  },
+  {
+    "id": "154536",
+    "name": "ENG: Sheffield United FC"
+  },
+  {
+    "id": "170360",
+    "name": "ENG: Sheffield Wednesday FC"
+  },
+  {
+    "id": "169616",
+    "name": "ENG: Shrewsbury Town FC"
+  },
+  {
+    "id": "167503",
+    "name": "ENG: Solihull Moors FC"
+  },
+  {
+    "id": "156806",
+    "name": "ENG: Southampton FC"
+  },
+  {
+    "id": "155982",
+    "name": "ENG: Southend United FC"
+  },
+  {
+    "id": "160061",
+    "name": "ENG: Southport FC"
+  },
+  {
+    "id": "173948",
+    "name": "ENG: St Albans City FC"
+  },
+  {
+    "id": "176514",
+    "name": "ENG: Stafford Rangers FC"
+  },
+  {
+    "id": "168851",
+    "name": "ENG: Stevenage FC"
+  },
+  {
+    "id": "171488",
+    "name": "ENG: Stockport County FC"
+  },
+  {
+    "id": "153896",
+    "name": "ENG: Stoke City FC"
+  },
+  {
+    "id": "165900",
+    "name": "ENG: Sunderland AFC"
+  },
+  {
+    "id": "164245",
+    "name": "ENG: Sutton United FC"
+  },
+  {
+    "id": "176655",
+    "name": "ENG: Swansea City AFC"
+  },
+  {
+    "id": "154253",
+    "name": "ENG: Swindon Town FC"
+  },
+  {
+    "id": "161901",
+    "name": "ENG: Tamworth FC"
+  },
+  {
+    "id": "151729",
+    "name": "ENG: Torquay United FC"
+  },
+  {
+    "id": "157033",
+    "name": "ENG: Tottenham Hotspur FC"
+  },
+  {
+    "id": "154972",
+    "name": "ENG: Tranmere Rovers FC"
+  },
+  {
+    "id": "161947",
+    "name": "ENG: Truro City FC"
+  },
+  {
+    "id": "173316",
+    "name": "ENG: Walsall FC"
+  },
+  {
+    "id": "155904",
+    "name": "ENG: Watford FC"
+  },
+  {
+    "id": "161735",
+    "name": "ENG: Wealdstone FC"
+  },
+  {
+    "id": "169058",
+    "name": "ENG: Welling United FC"
+  },
+  {
+    "id": "161267",
+    "name": "ENG: West Bromwich Albion FC"
+  },
+  {
+    "id": "163963",
+    "name": "ENG: West Ham United FC"
+  },
+  {
+    "id": "162524",
+    "name": "ENG: Weymouth FC"
+  },
+  {
+    "id": "174537",
+    "name": "ENG: Wigan Athletic FC"
+  },
+  {
+    "id": "157069",
+    "name": "ENG: Wimbledon FC"
+  },
+  {
+    "id": "171098",
+    "name": "ENG: Woking FC"
+  },
+  {
+    "id": "165690",
+    "name": "ENG: Wolverhampton Wanderers FC"
+  },
+  {
+    "id": "173452",
+    "name": "ENG: Wrexham FC"
+  },
+  {
+    "id": "158366",
+    "name": "ENG: Wycombe Wanderers FC"
+  },
+  {
+    "id": "170518",
+    "name": "ENG: Yeovil Town FC"
+  },
+  {
+    "id": "174180",
+    "name": "ENG: York City FC"
+  },
+  {
+    "id": "169971",
+    "name": "ESP: Albacete Balompié"
+  },
+  {
+    "id": "186969",
+    "name": "ESP: Alhama CF"
+  },
+  {
+    "id": "155946",
+    "name": "ESP: Athletic Club"
+  },
+  {
+    "id": "173488",
+    "name": "ESP: Atlético Madrid"
+  },
+  {
+    "id": "151829",
+    "name": "ESP: CA Osasuna"
+  },
+  {
+    "id": "164001",
+    "name": "ESP: CD Leganés"
+  },
+  {
+    "id": "162103",
+    "name": "ESP: CD Logroñés"
+  },
+  {
+    "id": "163424",
+    "name": "ESP: CD Numancia"
+  },
+  {
+    "id": "155586",
+    "name": "ESP: CD Tenerife"
+  },
+  {
+    "id": "170602",
+    "name": "ESP: CF Extremadura"
+  },
+  {
+    "id": "164507",
+    "name": "ESP: CP Mérida"
+  },
+  {
+    "id": "175790",
+    "name": "ESP: Celta de Vigo"
+  },
+  {
+    "id": "175421",
+    "name": "ESP: Cádiz CF"
+  },
+  {
+    "id": "161182",
+    "name": "ESP: Córdoba CF"
+  },
+  {
+    "id": "177277",
+    "name": "ESP: DUX Logroño"
+  },
+  {
+    "id": "165742",
+    "name": "ESP: Deportivo Alavés"
+  },
+  {
+    "id": "162415",
+    "name": "ESP: Elche CF"
+  },
+  {
+    "id": "154774",
+    "name": "ESP: FC Barcelona"
+  },
+  {
+    "id": "163274",
+    "name": "ESP: FC Levante Badalona"
+  },
+  {
+    "id": "163577",
+    "name": "ESP: Getafe CF"
+  },
+  {
+    "id": "172952",
+    "name": "ESP: Gimnàstic de Tarragona"
+  },
+  {
+    "id": "166023",
+    "name": "ESP: Girona FC"
+  },
+  {
+    "id": "167671",
+    "name": "ESP: Granada CF"
+  },
+  {
+    "id": "158201",
+    "name": "ESP: Hércules CF"
+  },
+  {
+    "id": "166821",
+    "name": "ESP: Levante UD"
+  },
+  {
+    "id": "177275",
+    "name": "ESP: Madrid CF Femenino"
+  },
+  {
+    "id": "154395",
+    "name": "ESP: Málaga CF"
+  },
+  {
+    "id": "155863",
+    "name": "ESP: RC Deportivo de La Coruña"
+  },
+  {
+    "id": "168419",
+    "name": "ESP: RCD Espanyol"
+  },
+  {
+    "id": "155888",
+    "name": "ESP: RCD Mallorca"
+  },
+  {
+    "id": "173853",
+    "name": "ESP: Racing de Santander"
+  },
+  {
+    "id": "166933",
+    "name": "ESP: Rayo Vallecano"
+  },
+  {
+    "id": "176802",
+    "name": "ESP: Real Betis"
+  },
+  {
+    "id": "176956",
+    "name": "ESP: Real Burgos CF"
+  },
+  {
+    "id": "159928",
+    "name": "ESP: Real Madrid CF"
+  },
+  {
+    "id": "168685",
+    "name": "ESP: Real Murcia CF"
+  },
+  {
+    "id": "168706",
+    "name": "ESP: Real Oviedo"
+  },
+  {
+    "id": "174251",
+    "name": "ESP: Real Sociedad"
+  },
+  {
+    "id": "153891",
+    "name": "ESP: Real Valladolid"
+  },
+  {
+    "id": "164341",
+    "name": "ESP: Real Zaragoza"
+  },
+  {
+    "id": "162565",
+    "name": "ESP: Recreativo de Huelva"
+  },
+  {
+    "id": "161537",
+    "name": "ESP: SD Compostela"
+  },
+  {
+    "id": "170649",
+    "name": "ESP: SD Eibar"
+  },
+  {
+    "id": "171485",
+    "name": "ESP: SD Huesca"
+  },
+  {
+    "id": "168910",
+    "name": "ESP: Sevilla FC"
+  },
+  {
+    "id": "170354",
+    "name": "ESP: Sporting de Gijón"
+  },
+  {
+    "id": "155578",
+    "name": "ESP: Sporting de Huelva"
+  },
+  {
+    "id": "163642",
+    "name": "ESP: UD Almería"
+  },
+  {
+    "id": "151480",
+    "name": "ESP: UD Las Palmas"
+  },
+  {
+    "id": "171109",
+    "name": "ESP: UD Salamanca"
+  },
+  {
+    "id": "173861",
+    "name": "ESP: UE Lleida"
+  },
+  {
+    "id": "173635",
+    "name": "ESP: Valencia CF"
+  },
+  {
+    "id": "155880",
+    "name": "ESP: Villarreal CF"
+  },
+  {
+    "id": "171434",
+    "name": "ESP: Xerez CD"
+  },
+  {
+    "id": "162900",
+    "name": "EST: FC Flora"
+  },
+  {
+    "id": "164640",
+    "name": "EST: FC Infonet"
+  },
+  {
+    "id": "159985",
+    "name": "EST: FC Norma Tallinn"
+  },
+  {
+    "id": "NAT_GDR",
+    "name": "East Germany (GDR)"
+  },
+  {
+    "id": "NAT_ECU",
+    "name": "Ecuador (ECU)"
+  },
+  {
+    "id": "NAT_EGY",
+    "name": "Egypt (EGY)"
+  },
+  {
+    "id": "NAT_SLV",
+    "name": "El Salvador (SLV)"
+  },
+  {
+    "id": "NAT_ENG",
+    "name": "England (ENG)"
+  },
+  {
+    "id": "NAT_EQG",
+    "name": "Equatorial Guinea (EQG)"
+  },
+  {
+    "id": "NAT_ERI",
+    "name": "Eritrea (ERI)"
+  },
+  {
+    "id": "NAT_EST",
+    "name": "Estonia (EST)"
+  },
+  {
+    "id": "NAT_SWZ",
+    "name": "Eswatini (SWZ)"
+  },
+  {
+    "id": "NAT_ETH",
+    "name": "Ethiopia (ETH)"
+  },
+  {
+    "id": "165145",
+    "name": "FIN: FC Haka"
+  },
+  {
+    "id": "171096",
+    "name": "FIN: FC Honka"
+  },
+  {
+    "id": "151980",
+    "name": "FIN: FC Jazz"
+  },
+  {
+    "id": "158163",
+    "name": "FIN: FC Kuusysi"
+  },
+  {
+    "id": "173103",
+    "name": "FIN: HJK Helsinki"
+  },
+  {
+    "id": "174664",
+    "name": "FIN: Kuopion PS"
+  },
+  {
+    "id": "179477",
+    "name": "FIN: Mikkelin Palloilijat"
+  },
+  {
+    "id": "155295",
+    "name": "FIN: Myllykosken Pallo −47"
+  },
+  {
+    "id": "175441",
+    "name": "FIN: PK–35 Vantaa"
+  },
+  {
+    "id": "160829",
+    "name": "FIN: Tampere United"
+  },
+  {
+    "id": "163792",
+    "name": "FRA: AC Ajaccio"
+  },
+  {
+    "id": "174910",
+    "name": "FRA: AC Arles-Avignon"
+  },
+  {
+    "id": "160660",
+    "name": "FRA: AJ Auxerre"
+  },
+  {
+    "id": "162122",
+    "name": "FRA: AS Cannes"
+  },
+  {
+    "id": "176908",
+    "name": "FRA: AS Monaco FC"
+  },
+  {
+    "id": "174828",
+    "name": "FRA: AS Nancy"
+  },
+  {
+    "id": "172634",
+    "name": "FRA: AS Saint-Étienne"
+  },
+  {
+    "id": "169717",
+    "name": "FRA: ASJ Soyaux"
+  },
+  {
+    "id": "177228",
+    "name": "FRA: ASPTT Albi"
+  },
+  {
+    "id": "155334",
+    "name": "FRA: Amiens SC"
+  },
+  {
+    "id": "162081",
+    "name": "FRA: Angers SCO"
+  },
+  {
+    "id": "174472",
+    "name": "FRA: CS Sedan Ardennes"
+  },
+  {
+    "id": "173315",
+    "name": "FRA: Clermont Foot"
+  },
+  {
+    "id": "165796",
+    "name": "FRA: Dijon FCO"
+  },
+  {
+    "id": "172794",
+    "name": "FRA: En Avant de Guingamp"
+  },
+  {
+    "id": "177225",
+    "name": "FRA: FC Fleury 91"
+  },
+  {
+    "id": "153342",
+    "name": "FRA: FC Girondins de Bordeaux"
+  },
+  {
+    "id": "160956",
+    "name": "FRA: FC Gueugnon"
+  },
+  {
+    "id": "162852",
+    "name": "FRA: FC Istres"
+  },
+  {
+    "id": "172656",
+    "name": "FRA: FC Lorient"
+  },
+  {
+    "id": "164646",
+    "name": "FRA: FC Martigues"
+  },
+  {
+    "id": "176370",
+    "name": "FRA: FC Metz"
+  },
+  {
+    "id": "173142",
+    "name": "FRA: FC Nantes"
+  },
+  {
+    "id": "170165",
+    "name": "FRA: FC Sochaux-Montbéliard"
+  },
+  {
+    "id": "183241",
+    "name": "FRA: GPSO 92 Issy"
+  },
+  {
+    "id": "163103",
+    "name": "FRA: Gazélec Ajaccio"
+  },
+  {
+    "id": "158073",
+    "name": "FRA: Grenoble Foot 38"
+  },
+  {
+    "id": "158373",
+    "name": "FRA: LB Châteauroux"
+  },
+  {
+    "id": "160785",
+    "name": "FRA: Le Havre AC"
+  },
+  {
+    "id": "172086",
+    "name": "FRA: Le Mans FC"
+  },
+  {
+    "id": "171864",
+    "name": "FRA: Lille OSC"
+  },
+  {
+    "id": "155616",
+    "name": "FRA: Montpellier HSC"
+  },
+  {
+    "id": "154412",
+    "name": "FRA: Nîmes Olympique"
+  },
+  {
+    "id": "153427",
+    "name": "FRA: OGC Nice"
+  },
+  {
+    "id": "172895",
+    "name": "FRA: Olympique Lyonnais"
+  },
+  {
+    "id": "160259",
+    "name": "FRA: Olympique de Marseille"
+  },
+  {
+    "id": "152020",
+    "name": "FRA: Paris FC"
+  },
+  {
+    "id": "174223",
+    "name": "FRA: Paris Saint-Germain FC"
+  },
+  {
+    "id": "176899",
+    "name": "FRA: RC Lens"
+  },
+  {
+    "id": "170873",
+    "name": "FRA: RC Strasbourg Alsace"
+  },
+  {
+    "id": "166129",
+    "name": "FRA: Rodez AF"
+  },
+  {
+    "id": "161444",
+    "name": "FRA: SC Bastia"
+  },
+  {
+    "id": "176649",
+    "name": "FRA: Stade Brestois 29"
+  },
+  {
+    "id": "163170",
+    "name": "FRA: Stade Malherbe Caen"
+  },
+  {
+    "id": "169514",
+    "name": "FRA: Stade Rennais FC"
+  },
+  {
+    "id": "164328",
+    "name": "FRA: Stade de Reims"
+  },
+  {
+    "id": "161528",
+    "name": "FRA: Thonon Evian Grand Geneva FC"
+  },
+  {
+    "id": "157960",
+    "name": "FRA: Toulouse FC"
+  },
+  {
+    "id": "159970",
+    "name": "FRA: Troyes AC"
+  },
+  {
+    "id": "166888",
+    "name": "FRA: US Boulogne"
+  },
+  {
+    "id": "155356",
+    "name": "FRA: Valenciennes FC"
+  },
+  {
+    "id": "164418",
+    "name": "FRO: B68 Toftir"
+  },
+  {
+    "id": "165009",
+    "name": "FRO: KÍ Klaksvík"
+  },
+  {
+    "id": "NAT_FSM",
+    "name": "FS Micronesia (FSM)"
+  },
+  {
+    "id": "NAT_FRO",
+    "name": "Faroe Islands (FRO)"
+  },
+  {
+    "id": "NAT_FIJ",
+    "name": "Fiji (FIJ)"
+  },
+  {
+    "id": "NAT_FIN",
+    "name": "Finland (FIN)"
+  },
+  {
+    "id": "NAT_FRA",
+    "name": "France (FRA)"
+  },
+  {
+    "id": "NAT_GUF",
+    "name": "French Guiana (GUF)"
+  },
+  {
+    "id": "174240",
+    "name": "GEO: FC Dinamo Tbilisi"
+  },
+  {
+    "id": "172883",
+    "name": "GEO: FC Lokomotivi Tbilisi"
+  },
+  {
+    "id": "155071",
+    "name": "GEO: FC Torpedo Kutaisi"
+  },
+  {
+    "id": "184202",
+    "name": "GEO: WFC Lanchkhuti"
+  },
+  {
+    "id": "154009",
+    "name": "GER: 1. FC Heidenheim"
+  },
+  {
+    "id": "163109",
+    "name": "GER: 1. FC Kaiserslautern"
+  },
+  {
+    "id": "170408",
+    "name": "GER: 1. FC Köln"
+  },
+  {
+    "id": "158695",
+    "name": "GER: 1. FC Lokomotive Leipzig"
+  },
+  {
+    "id": "162678",
+    "name": "GER: 1. FC Nürnberg"
+  },
+  {
+    "id": "175101",
+    "name": "GER: 1. FC Saarbrücken"
+  },
+  {
+    "id": "163777",
+    "name": "GER: 1. FC Union Berlin"
+  },
+  {
+    "id": "173802",
+    "name": "GER: 1. FFC Turbine Potsdam"
+  },
+  {
+    "id": "167836",
+    "name": "GER: 1. FSV Mainz 05"
+  },
+  {
+    "id": "157058",
+    "name": "GER: Alemannia Aachen"
+  },
+  {
+    "id": "171556",
+    "name": "GER: Bayer 04 Leverkusen"
+  },
+  {
+    "id": "168970",
+    "name": "GER: Borussia Dortmund"
+  },
+  {
+    "id": "156699",
+    "name": "GER: Borussia Mönchengladbach"
+  },
+  {
+    "id": "155219",
+    "name": "GER: DSC Arminia Bielefeld"
+  },
+  {
+    "id": "168812",
+    "name": "GER: Dynamo Dresden"
+  },
+  {
+    "id": "164435",
+    "name": "GER: Eintracht Braunschweig"
+  },
+  {
+    "id": "175632",
+    "name": "GER: Eintracht Frankfurt"
+  },
+  {
+    "id": "152747",
+    "name": "GER: FC Augsburg"
+  },
+  {
+    "id": "152008",
+    "name": "GER: FC Bayern Munich"
+  },
+  {
+    "id": "183128",
+    "name": "GER: FC Carl-Zeiss Jena"
+  },
+  {
+    "id": "163381",
+    "name": "GER: FC Energie Cottbus"
+  },
+  {
+    "id": "170404",
+    "name": "GER: FC Hansa Rostock"
+  },
+  {
+    "id": "153406",
+    "name": "GER: FC Ingolstadt"
+  },
+  {
+    "id": "171323",
+    "name": "GER: FC Schalke 04"
+  },
+  {
+    "id": "160005",
+    "name": "GER: FC St Pauli"
+  },
+  {
+    "id": "163372",
+    "name": "GER: FF USV Jena"
+  },
+  {
+    "id": "169329",
+    "name": "GER: Fortuna Düsseldorf"
+  },
+  {
+    "id": "155460",
+    "name": "GER: Hamburger SV"
+  },
+  {
+    "id": "161262",
+    "name": "GER: Hannover 96"
+  },
+  {
+    "id": "155615",
+    "name": "GER: Hertha BSC"
+  },
+  {
+    "id": "152298",
+    "name": "GER: KFC Uerdingen 05"
+  },
+  {
+    "id": "155908",
+    "name": "GER: KSV Holstein"
+  },
+  {
+    "id": "156795",
+    "name": "GER: Karlsruher SC"
+  },
+  {
+    "id": "170394",
+    "name": "GER: MSV Duisburg"
+  },
+  {
+    "id": "168861",
+    "name": "GER: RB Leipzig"
+  },
+  {
+    "id": "168079",
+    "name": "GER: SC Freiburg"
+  },
+  {
+    "id": "173375",
+    "name": "GER: SC Paderborn 07"
+  },
+  {
+    "id": "152739",
+    "name": "GER: SC Sand"
+  },
+  {
+    "id": "162720",
+    "name": "GER: SG Wattenscheid"
+  },
+  {
+    "id": "170675",
+    "name": "GER: SGS Essen"
+  },
+  {
+    "id": "155715",
+    "name": "GER: SSV Ulm 1846"
+  },
+  {
+    "id": "162204",
+    "name": "GER: SV Darmstadt 98"
+  },
+  {
+    "id": "166410",
+    "name": "GER: SV Meppen"
+  },
+  {
+    "id": "161465",
+    "name": "GER: SV Werder Bremen"
+  },
+  {
+    "id": "153328",
+    "name": "GER: SpVgg Greuther Fürth"
+  },
+  {
+    "id": "170214",
+    "name": "GER: SpVgg Unterhaching"
+  },
+  {
+    "id": "151770",
+    "name": "GER: TSG 1899 Hoffenheim"
+  },
+  {
+    "id": "156380",
+    "name": "GER: TSV 1860 München"
+  },
+  {
+    "id": "160532",
+    "name": "GER: VfB Stuttgart"
+  },
+  {
+    "id": "169610",
+    "name": "GER: VfL Bochum"
+  },
+  {
+    "id": "159458",
+    "name": "GER: VfL Wolfsburg"
+  },
+  {
+    "id": "156128",
+    "name": "GIB: Lincoln Red Imps FC"
+  },
+  {
+    "id": "166478",
+    "name": "GRE: AE Larissa FC"
+  },
+  {
+    "id": "172890",
+    "name": "GRE: AEK Athens FC"
+  },
+  {
+    "id": "175367",
+    "name": "GRE: Aris Thessaloniki FC"
+  },
+  {
+    "id": "173223",
+    "name": "GRE: Asteras Tripoli FC"
+  },
+  {
+    "id": "171698",
+    "name": "GRE: Atromitos FC"
+  },
+  {
+    "id": "167149",
+    "name": "GRE: Egaleo FC"
+  },
+  {
+    "id": "171920",
+    "name": "GRE: Ionikos FC"
+  },
+  {
+    "id": "176906",
+    "name": "GRE: Iraklis Thessaloniki FC"
+  },
+  {
+    "id": "164408",
+    "name": "GRE: OFI Crete FC"
+  },
+  {
+    "id": "156392",
+    "name": "GRE: Olympiacos FC"
+  },
+  {
+    "id": "160601",
+    "name": "GRE: PAOK FC"
+  },
+  {
+    "id": "175909",
+    "name": "GRE: Panathinaikos FC"
+  },
+  {
+    "id": "154213",
+    "name": "GRE: Panionios FC"
+  },
+  {
+    "id": "176935",
+    "name": "GRE: Xanthi FC"
+  },
+  {
+    "id": "NAT_GAB",
+    "name": "Gabon (GAB)"
+  },
+  {
+    "id": "NAT_GAM",
+    "name": "Gambia (GAM)"
+  },
+  {
+    "id": "NAT_GEO",
+    "name": "Georgia (GEO)"
+  },
+  {
+    "id": "NAT_GER",
+    "name": "Germany (GER)"
+  },
+  {
+    "id": "NAT_GHA",
+    "name": "Ghana (GHA)"
+  },
+  {
+    "id": "NAT_GIB",
+    "name": "Gibraltar (GIB)"
+  },
+  {
+    "id": "NAT_GRE",
+    "name": "Greece (GRE)"
+  },
+  {
+    "id": "NAT_GRN",
+    "name": "Grenada (GRN)"
+  },
+  {
+    "id": "NAT_GLP",
+    "name": "Guadeloupe (GLP)"
+  },
+  {
+    "id": "NAT_GUM",
+    "name": "Guam (GUM)"
+  },
+  {
+    "id": "NAT_GUA",
+    "name": "Guatemala (GUA)"
+  },
+  {
+    "id": "NAT_GUI",
+    "name": "Guinea (GUI)"
+  },
+  {
+    "id": "NAT_GNB",
+    "name": "Guinea-Bissau (GNB)"
+  },
+  {
+    "id": "NAT_GUY",
+    "name": "Guyana (GUY)"
+  },
+  {
+    "id": "165669",
+    "name": "HUN: Budapest Honvéd FC"
+  },
+  {
+    "id": "159975",
+    "name": "HUN: Békéscsaba 1912 Előre SE"
+  },
+  {
+    "id": "174162",
+    "name": "HUN: Debreceni VSC"
+  },
+  {
+    "id": "153898",
+    "name": "HUN: Dunaújváros FC"
+  },
+  {
+    "id": "161784",
+    "name": "HUN: Ferencvárosi TC"
+  },
+  {
+    "id": "167939",
+    "name": "HUN: MOL Vidi FC"
+  },
+  {
+    "id": "174392",
+    "name": "HUN: MTK Budapest FC"
+  },
+  {
+    "id": "170366",
+    "name": "HUN: Vasas FC"
+  },
+  {
+    "id": "170544",
+    "name": "HUN: Vác FC"
+  },
+  {
+    "id": "161133",
+    "name": "HUN: Zalaegerszegi TE"
+  },
+  {
+    "id": "153142",
+    "name": "HUN: Újpest FC"
+  },
+  {
+    "id": "NAT_HAI",
+    "name": "Haiti (HAI)"
+  },
+  {
+    "id": "NAT_HON",
+    "name": "Honduras (HON)"
+  },
+  {
+    "id": "NAT_HKG",
+    "name": "Hong Kong (HKG)"
+  },
+  {
+    "id": "NAT_HUN",
+    "name": "Hungary (HUN)"
+  },
+  {
+    "id": "156102",
+    "name": "IRL: Bohemian FC"
+  },
+  {
+    "id": "158908",
+    "name": "IRL: Cork City FC"
+  },
+  {
+    "id": "153722",
+    "name": "IRL: Derry City FC"
+  },
+  {
+    "id": "174443",
+    "name": "IRL: Dundalk FC"
+  },
+  {
+    "id": "159862",
+    "name": "IRL: Raheny United"
+  },
+  {
+    "id": "175616",
+    "name": "IRL: Shamrock Rovers FC"
+  },
+  {
+    "id": "168219",
+    "name": "IRL: Shelbourne FC"
+  },
+  {
+    "id": "165425",
+    "name": "IRL: St Patrick's Athletic FC"
+  },
+  {
+    "id": "158992",
+    "name": "ISL: Breiðablik UBK"
+  },
+  {
+    "id": "167120",
+    "name": "ISL: Fimleikafélag Hafnarfjarðar"
+  },
+  {
+    "id": "156634",
+    "name": "ISL: Fylkir"
+  },
+  {
+    "id": "169003",
+    "name": "ISL: Knattspyrnufélag Reykjavíkur"
+  },
+  {
+    "id": "160617",
+    "name": "ISL: Knattspyrnufélagið Fram"
+  },
+  {
+    "id": "175064",
+    "name": "ISL: Knattspyrnufélagið Víkingur"
+  },
+  {
+    "id": "175675",
+    "name": "ISL: Stjarnan"
+  },
+  {
+    "id": "163849",
+    "name": "ISL: Íþróttabandalag Akraness"
+  },
+  {
+    "id": "177233",
+    "name": "ISL: Þór/KA"
+  },
+  {
+    "id": "163654",
+    "name": "ISR: Beitar Jerusalem FC"
+  },
+  {
+    "id": "171684",
+    "name": "ISR: Bnei Sakhnin FC"
+  },
+  {
+    "id": "153430",
+    "name": "ISR: Hapoel Be'er Sheva FC"
+  },
+  {
+    "id": "166001",
+    "name": "ISR: Hapoel Haifa FC"
+  },
+  {
+    "id": "159092",
+    "name": "ISR: Hapoel Ironi Kiryat Shmona FC"
+  },
+  {
+    "id": "159464",
+    "name": "ISR: Hapoel Petah Tikva FC"
+  },
+  {
+    "id": "154662",
+    "name": "ISR: Hapoel Ramat Gan Givatayim FC"
+  },
+  {
+    "id": "165552",
+    "name": "ISR: Hapoel Tel Aviv FC"
+  },
+  {
+    "id": "153980",
+    "name": "ISR: Maccabi Haifa FC"
+  },
+  {
+    "id": "156874",
+    "name": "ISR: Maccabi Petah Tikva FC"
+  },
+  {
+    "id": "151936",
+    "name": "ISR: Maccabi Tel Aviv FC"
+  },
+  {
+    "id": "154455",
+    "name": "ITA: AC Ancona"
+  },
+  {
+    "id": "155634",
+    "name": "ITA: AC Cesena"
+  },
+  {
+    "id": "172000",
+    "name": "ITA: AC ChievoVerona"
+  },
+  {
+    "id": "173603",
+    "name": "ITA: AC Milan"
+  },
+  {
+    "id": "154875",
+    "name": "ITA: AC Monza Brianza 1912"
+  },
+  {
+    "id": "157182",
+    "name": "ITA: AC Perugia Calcio"
+  },
+  {
+    "id": "159266",
+    "name": "ITA: AC Pisa 1909"
+  },
+  {
+    "id": "154023",
+    "name": "ITA: AC Reggiana 1919"
+  },
+  {
+    "id": "176264",
+    "name": "ITA: ACD Treviso 2013"
+  },
+  {
+    "id": "177234",
+    "name": "ITA: ACF Brescia Femminile"
+  },
+  {
+    "id": "158193",
+    "name": "ITA: ACF Fiorentina"
+  },
+  {
+    "id": "176988",
+    "name": "ITA: ACR Messina"
+  },
+  {
+    "id": "166372",
+    "name": "ITA: AS Livorno Calcio"
+  },
+  {
+    "id": "172305",
+    "name": "ITA: AS Roma"
+  },
+  {
+    "id": "172929",
+    "name": "ITA: ASD AGSM Verona FC"
+  },
+  {
+    "id": "184292",
+    "name": "ITA: ASD Calcio Pomigliano"
+  },
+  {
+    "id": "177254",
+    "name": "ITA: ASD Orobica Calcio Bergamo"
+  },
+  {
+    "id": "176088",
+    "name": "ITA: ASD Torres Calcio Femminile"
+  },
+  {
+    "id": "163030",
+    "name": "ITA: Ascoli Picchio FC 1898"
+  },
+  {
+    "id": "166223",
+    "name": "ITA: Atalanta BC"
+  },
+  {
+    "id": "159582",
+    "name": "ITA: Benevento Calcio"
+  },
+  {
+    "id": "154488",
+    "name": "ITA: Bologna FC 1909"
+  },
+  {
+    "id": "159491",
+    "name": "ITA: Brescia Calcio"
+  },
+  {
+    "id": "177255",
+    "name": "ITA: CF Florentia"
+  },
+  {
+    "id": "171217",
+    "name": "ITA: Cagliari Calcio"
+  },
+  {
+    "id": "163862",
+    "name": "ITA: Calcio Catania"
+  },
+  {
+    "id": "159430",
+    "name": "ITA: Calcio Padova"
+  },
+  {
+    "id": "162935",
+    "name": "ITA: Carpi FC 1909"
+  },
+  {
+    "id": "155689",
+    "name": "ITA: Como 1907"
+  },
+  {
+    "id": "170141",
+    "name": "ITA: Delfino Pescara 1936"
+  },
+  {
+    "id": "168001",
+    "name": "ITA: Empoli FC"
+  },
+  {
+    "id": "151613",
+    "name": "ITA: FC Bari 1908"
+  },
+  {
+    "id": "186756",
+    "name": "ITA: FC Como Women"
+  },
+  {
+    "id": "156457",
+    "name": "ITA: FC Crotone"
+  },
+  {
+    "id": "172965",
+    "name": "ITA: FC Internazionale Milano"
+  },
+  {
+    "id": "166488",
+    "name": "ITA: Foggia Calcio"
+  },
+  {
+    "id": "162211",
+    "name": "ITA: Frosinone Calcio"
+  },
+  {
+    "id": "161731",
+    "name": "ITA: Genoa CFC"
+  },
+  {
+    "id": "152924",
+    "name": "ITA: Hellas Verona FC"
+  },
+  {
+    "id": "173984",
+    "name": "ITA: Juventus FC"
+  },
+  {
+    "id": "162901",
+    "name": "ITA: Modena FC"
+  },
+  {
+    "id": "162382",
+    "name": "ITA: Novara Calcio"
+  },
+  {
+    "id": "175049",
+    "name": "ITA: Parma Calcio"
+  },
+  {
+    "id": "164545",
+    "name": "ITA: Piacenza Calcio 1919"
+  },
+  {
+    "id": "154456",
+    "name": "ITA: SPAL 2013"
+  },
+  {
+    "id": "162952",
+    "name": "ITA: SS Lazio"
+  },
+  {
+    "id": "158565",
+    "name": "ITA: SS Robur Siena"
+  },
+  {
+    "id": "172833",
+    "name": "ITA: SSC Napoli"
+  },
+  {
+    "id": "162009",
+    "name": "ITA: Spezia Calcio"
+  },
+  {
+    "id": "173243",
+    "name": "ITA: Ternana Calcio"
+  },
+  {
+    "id": "153120",
+    "name": "ITA: Torino FC"
+  },
+  {
+    "id": "166002",
+    "name": "ITA: UC Sampdoria"
+  },
+  {
+    "id": "156716",
+    "name": "ITA: UPC Tavagnacco"
+  },
+  {
+    "id": "175379",
+    "name": "ITA: US Città di Palermo"
+  },
+  {
+    "id": "167110",
+    "name": "ITA: US Cremonese"
+  },
+  {
+    "id": "177156",
+    "name": "ITA: US Lecce"
+  },
+  {
+    "id": "171331",
+    "name": "ITA: US Salernitana 1919"
+  },
+  {
+    "id": "174210",
+    "name": "ITA: US Sassuolo Calcio"
+  },
+  {
+    "id": "151963",
+    "name": "ITA: Udinese Calcio"
+  },
+  {
+    "id": "158678",
+    "name": "ITA: Urbs Reggina 1914"
+  },
+  {
+    "id": "169143",
+    "name": "ITA: Venezia FC"
+  },
+  {
+    "id": "155354",
+    "name": "ITA: Vicenza Calcio"
+  },
+  {
+    "id": "NAT_ISL",
+    "name": "Iceland (ISL)"
+  },
+  {
+    "id": "NAT_IND",
+    "name": "India (IND)"
+  },
+  {
+    "id": "NAT_IDN",
+    "name": "Indonesia (IDN)"
+  },
+  {
+    "id": "NAT_IRN",
+    "name": "Iran (IRN)"
+  },
+  {
+    "id": "NAT_IRQ",
+    "name": "Iraq (IRQ)"
+  },
+  {
+    "id": "NAT_EIR",
+    "name": "Ireland (EIR)"
+  },
+  {
+    "id": "NAT_ISR",
+    "name": "Israel (ISR)"
+  },
+  {
+    "id": "NAT_ITA",
+    "name": "Italy (ITA)"
+  },
+  {
+    "id": "NAT_JAM",
+    "name": "Jamaica (JAM)"
+  },
+  {
+    "id": "NAT_JPN",
+    "name": "Japan (JPN)"
+  },
+  {
+    "id": "NAT_JOR",
+    "name": "Jordan (JOR)"
+  },
+  {
+    "id": "162708",
+    "name": "KAZ: BIIK Kazygurt"
+  },
+  {
+    "id": "171522",
+    "name": "KAZ: FC Astana"
+  },
+  {
+    "id": "163392",
+    "name": "KAZ: FC Kairat"
+  },
+  {
+    "id": "168453",
+    "name": "KAZ: FC Shakhter Karagandy"
+  },
+  {
+    "id": "182822",
+    "name": "KVX: KF Ballkani Therandë"
+  },
+  {
+    "id": "163516",
+    "name": "KVX: KF Drita"
+  },
+  {
+    "id": "177235",
+    "name": "KVX: KFF Mitrovica"
+  },
+  {
+    "id": "NAT_KAZ",
+    "name": "Kazakhstan (KAZ)"
+  },
+  {
+    "id": "NAT_KEN",
+    "name": "Kenya (KEN)"
+  },
+  {
+    "id": "NAT_KIR",
+    "name": "Kiribati (KIR)"
+  },
+  {
+    "id": "NAT_PRK",
+    "name": "Korea DPR (PRK)"
+  },
+  {
+    "id": "NAT_KOR",
+    "name": "Korea Republic (KOR)"
+  },
+  {
+    "id": "NAT_KVX",
+    "name": "Kosovo (KVX)"
+  },
+  {
+    "id": "NAT_KUW",
+    "name": "Kuwait (KUW)"
+  },
+  {
+    "id": "NAT_KGZ",
+    "name": "Kyrgyzstan (KGZ)"
+  },
+  {
+    "id": "169392",
+    "name": "LIE: FC Vaduz"
+  },
+  {
+    "id": "164484",
+    "name": "LTU: FBK Kaunas"
+  },
+  {
+    "id": "157670",
+    "name": "LTU: FK Ekranas"
+  },
+  {
+    "id": "167470",
+    "name": "LTU: FK Sūduva Marijampolė"
+  },
+  {
+    "id": "159216",
+    "name": "LTU: FK Žalgiris"
+  },
+  {
+    "id": "155800",
+    "name": "LTU: Gintra Universitetas"
+  },
+  {
+    "id": "173755",
+    "name": "LUX: CA Spora Luxembourg"
+  },
+  {
+    "id": "170240",
+    "name": "LUX: F91 Dudelange"
+  },
+  {
+    "id": "153655",
+    "name": "LUX: FC Avenir Beggen"
+  },
+  {
+    "id": "157457",
+    "name": "LUX: Union Luxembourg"
+  },
+  {
+    "id": "155665",
+    "name": "LVA: FK Liepājas Metalurgs"
+  },
+  {
+    "id": "164021",
+    "name": "LVA: FK Rīgas Futbola skola"
+  },
+  {
+    "id": "165012",
+    "name": "LVA: FK Ventspils"
+  },
+  {
+    "id": "182490",
+    "name": "LVA: RAF Jelgava"
+  },
+  {
+    "id": "165304",
+    "name": "LVA: Skonto FC"
+  },
+  {
+    "id": "NAT_LAO",
+    "name": "Laos (LAO)"
+  },
+  {
+    "id": "NAT_LVA",
+    "name": "Latvia (LVA)"
+  },
+  {
+    "id": "NAT_LIB",
+    "name": "Lebanon (LIB)"
+  },
+  {
+    "id": "NAT_LES",
+    "name": "Lesotho (LES)"
+  },
+  {
+    "id": "NAT_LBR",
+    "name": "Liberia (LBR)"
+  },
+  {
+    "id": "NAT_LBY",
+    "name": "Libya (LBY)"
+  },
+  {
+    "id": "NAT_LIE",
+    "name": "Liechtenstein (LIE)"
+  },
+  {
+    "id": "NAT_LTU",
+    "name": "Lithuania (LTU)"
+  },
+  {
+    "id": "NAT_LUX",
+    "name": "Luxembourg (LUX)"
+  },
+  {
+    "id": "169048",
+    "name": "MDA: FC Petrocub Sărata-Galbenă"
+  },
+  {
+    "id": "159657",
+    "name": "MDA: FC Sheriff Tiraspol"
+  },
+  {
+    "id": "158176",
+    "name": "MDA: FC Zimbru-2 Chișinău"
+  },
+  {
+    "id": "166312",
+    "name": "MKD: FK Cementarnica 55"
+  },
+  {
+    "id": "171094",
+    "name": "MKD: FK Pobeda"
+  },
+  {
+    "id": "159468",
+    "name": "MKD: FK Rabotnički"
+  },
+  {
+    "id": "171248",
+    "name": "MKD: FK Shkëndija"
+  },
+  {
+    "id": "160699",
+    "name": "MKD: FK Vardar"
+  },
+  {
+    "id": "163934",
+    "name": "MLT: Birkirkara FC"
+  },
+  {
+    "id": "167236",
+    "name": "MLT: Floriana FC"
+  },
+  {
+    "id": "157936",
+    "name": "MLT: Valletta FC"
+  },
+  {
+    "id": "169164",
+    "name": "MLT: Ħamrun Spartans FC"
+  },
+  {
+    "id": "NAT_MAC",
+    "name": "Macau (MAC)"
+  },
+  {
+    "id": "NAT_MAD",
+    "name": "Madagascar (MAD)"
+  },
+  {
+    "id": "NAT_MWI",
+    "name": "Malawi (MWI)"
+  },
+  {
+    "id": "NAT_MAS",
+    "name": "Malaysia (MAS)"
+  },
+  {
+    "id": "NAT_MDV",
+    "name": "Maldives (MDV)"
+  },
+  {
+    "id": "NAT_MLI",
+    "name": "Mali (MLI)"
+  },
+  {
+    "id": "NAT_MLT",
+    "name": "Malta (MLT)"
+  },
+  {
+    "id": "NAT_MTQ",
+    "name": "Martinique (MTQ)"
+  },
+  {
+    "id": "NAT_MTN",
+    "name": "Mauritania (MTN)"
+  },
+  {
+    "id": "NAT_MRI",
+    "name": "Mauritius (MRI)"
+  },
+  {
+    "id": "NAT_MEX",
+    "name": "Mexico (MEX)"
+  },
+  {
+    "id": "NAT_MDA",
+    "name": "Moldova (MDA)"
+  },
+  {
+    "id": "NAT_MNG",
+    "name": "Mongolia (MNG)"
+  },
+  {
+    "id": "NAT_MNE",
+    "name": "Montenegro (MNE)"
+  },
+  {
+    "id": "NAT_MSR",
+    "name": "Montserrat (MSR)"
+  },
+  {
+    "id": "NAT_MAR",
+    "name": "Morocco (MAR)"
+  },
+  {
+    "id": "NAT_MOZ",
+    "name": "Mozambique (MOZ)"
+  },
+  {
+    "id": "NAT_MYA",
+    "name": "Myanmar (MYA)"
+  },
+  {
+    "id": "154112",
+    "name": "NED: AFC Ajax"
+  },
+  {
+    "id": "157372",
+    "name": "NED: AZ Alkmaar"
+  },
+  {
+    "id": "170671",
+    "name": "NED: FC Groningen"
+  },
+  {
+    "id": "167822",
+    "name": "NED: FC Twente"
+  },
+  {
+    "id": "155843",
+    "name": "NED: FC Utrecht"
+  },
+  {
+    "id": "176687",
+    "name": "NED: Feyenoord Rotterdam"
+  },
+  {
+    "id": "174266",
+    "name": "NED: Go Ahead Eagles"
+  },
+  {
+    "id": "165881",
+    "name": "NED: NAC Breda"
+  },
+  {
+    "id": "176808",
+    "name": "NED: NEC Nijmegen"
+  },
+  {
+    "id": "174260",
+    "name": "NED: PSV Eindhoven"
+  },
+  {
+    "id": "158568",
+    "name": "NED: Roda JC Kerkrade"
+  },
+  {
+    "id": "154056",
+    "name": "NED: SC Heerenveen"
+  },
+  {
+    "id": "154794",
+    "name": "NED: Vitesse Arnhem"
+  },
+  {
+    "id": "175599",
+    "name": "NED: Willem II"
+  },
+  {
+    "id": "152592",
+    "name": "NIR: Crusaders FC"
+  },
+  {
+    "id": "169569",
+    "name": "NIR: Glenavon FC"
+  },
+  {
+    "id": "175044",
+    "name": "NIR: Glentoran FC"
+  },
+  {
+    "id": "162188",
+    "name": "NIR: Larne FC"
+  },
+  {
+    "id": "159248",
+    "name": "NIR: Linfield FC"
+  },
+  {
+    "id": "161599",
+    "name": "NIR: Portadown FC"
+  },
+  {
+    "id": "177240",
+    "name": "NOR: Avaldsnes IL"
+  },
+  {
+    "id": "173210",
+    "name": "NOR: FK Bodø/Glimt"
+  },
+  {
+    "id": "157125",
+    "name": "NOR: IK Start"
+  },
+  {
+    "id": "159134",
+    "name": "NOR: Kongsvinger IL Toppfotball"
+  },
+  {
+    "id": "166245",
+    "name": "NOR: Lillestrøm SK"
+  },
+  {
+    "id": "172781",
+    "name": "NOR: Lyn Fotball"
+  },
+  {
+    "id": "153866",
+    "name": "NOR: Molde FK"
+  },
+  {
+    "id": "169890",
+    "name": "NOR: Odds BK"
+  },
+  {
+    "id": "166099",
+    "name": "NOR: Rosenborg BK"
+  },
+  {
+    "id": "169063",
+    "name": "NOR: SK Brann"
+  },
+  {
+    "id": "158740",
+    "name": "NOR: Sarpsborg 08 FF"
+  },
+  {
+    "id": "171006",
+    "name": "NOR: Stabæk Fotball"
+  },
+  {
+    "id": "166108",
+    "name": "NOR: Strømsgodset Toppfotball"
+  },
+  {
+    "id": "168013",
+    "name": "NOR: Tromsø IL"
+  },
+  {
+    "id": "152561",
+    "name": "NOR: Viking FK"
+  },
+  {
+    "id": "161256",
+    "name": "NOR: Vålerenga Fotball"
+  },
+  {
+    "id": "NAT_NAM",
+    "name": "Namibia (NAM)"
+  },
+  {
+    "id": "NAT_NEP",
+    "name": "Nepal (NEP)"
+  },
+  {
+    "id": "NAT_NED",
+    "name": "Netherlands (NED)"
+  },
+  {
+    "id": "NAT_ANT",
+    "name": "Netherlands Antilles (ANT)"
+  },
+  {
+    "id": "NAT_NCL",
+    "name": "New Caledonia (NCL)"
+  },
+  {
+    "id": "NAT_NZL",
+    "name": "New Zealand (NZL)"
+  },
+  {
+    "id": "NAT_NCA",
+    "name": "Nicaragua (NCA)"
+  },
+  {
+    "id": "NAT_NIG",
+    "name": "Niger (NIG)"
+  },
+  {
+    "id": "NAT_NGA",
+    "name": "Nigeria (NGA)"
+  },
+  {
+    "id": "NAT_MKD",
+    "name": "North Macedonia (MKD)"
+  },
+  {
+    "id": "NAT_NIR",
+    "name": "Northern Ireland (NIR)"
+  },
+  {
+    "id": "NAT_NMI",
+    "name": "Northern Mariana Islands (NMI)"
+  },
+  {
+    "id": "NAT_NOR",
+    "name": "Norway (NOR)"
+  },
+  {
+    "id": "NAT_OMA",
+    "name": "Oman (OMA)"
+  },
+  {
+    "id": "155199",
+    "name": "POL: Dyskobolia Grodzisk Wielkopolski"
+  },
+  {
+    "id": "156156",
+    "name": "POL: GKS Górnik Łęczna"
+  },
+  {
+    "id": "162377",
+    "name": "POL: GKS Katowice"
+  },
+  {
+    "id": "173408",
+    "name": "POL: Hutnik Kraków"
+  },
+  {
+    "id": "159541",
+    "name": "POL: Jagiellonia Białystok"
+  },
+  {
+    "id": "156859",
+    "name": "POL: KGHM Zagłębie Lubin"
+  },
+  {
+    "id": "176409",
+    "name": "POL: KKPK Medyk Konin"
+  },
+  {
+    "id": "176942",
+    "name": "POL: KKS Lech Poznań"
+  },
+  {
+    "id": "153738",
+    "name": "POL: KS Amica Wronki"
+  },
+  {
+    "id": "172671",
+    "name": "POL: KS Górnik Zabrze"
+  },
+  {
+    "id": "176138",
+    "name": "POL: KS Polonia Warsaw"
+  },
+  {
+    "id": "171159",
+    "name": "POL: KS Ruch Chorzów"
+  },
+  {
+    "id": "168305",
+    "name": "POL: Legia Warsaw"
+  },
+  {
+    "id": "154973",
+    "name": "POL: RTS Widzew Łódź"
+  },
+  {
+    "id": "174012",
+    "name": "POL: Raków Częstochowa"
+  },
+  {
+    "id": "153736",
+    "name": "POL: Wisła Kraków"
+  },
+  {
+    "id": "162950",
+    "name": "POL: ŁKS Łódź"
+  },
+  {
+    "id": "152495",
+    "name": "POR: Académica de Coimbra"
+  },
+  {
+    "id": "157176",
+    "name": "POR: Boavista FC"
+  },
+  {
+    "id": "177329",
+    "name": "POR: CA Ouriense"
+  },
+  {
+    "id": "160833",
+    "name": "POR: CD Nacional"
+  },
+  {
+    "id": "154123",
+    "name": "POR: CF Os Belenenses"
+  },
+  {
+    "id": "170963",
+    "name": "POR: CS Marítimo"
+  },
+  {
+    "id": "176223",
+    "name": "POR: FC Paços de Ferreira"
+  },
+  {
+    "id": "161031",
+    "name": "POR: FC Porto"
+  },
+  {
+    "id": "151524",
+    "name": "POR: GD Estoril Praia"
+  },
+  {
+    "id": "174356",
+    "name": "POR: Leixões SC"
+  },
+  {
+    "id": "175444",
+    "name": "POR: Rio Ave FC"
+  },
+  {
+    "id": "154754",
+    "name": "POR: SC Beira-Mar"
+  },
+  {
+    "id": "162142",
+    "name": "POR: SC Braga"
+  },
+  {
+    "id": "158843",
+    "name": "POR: SC Farense"
+  },
+  {
+    "id": "168350",
+    "name": "POR: SL Benfica"
+  },
+  {
+    "id": "153506",
+    "name": "POR: Sporting CP"
+  },
+  {
+    "id": "172498",
+    "name": "POR: UD Leiria"
+  },
+  {
+    "id": "157925",
+    "name": "POR: Vitória de Guimarães"
+  },
+  {
+    "id": "159259",
+    "name": "POR: Vitória de Setúbal"
+  },
+  {
+    "id": "NAT_PAK",
+    "name": "Pakistan (PAK)"
+  },
+  {
+    "id": "NAT_PLE",
+    "name": "Palestine (PLE)"
+  },
+  {
+    "id": "NAT_PAN",
+    "name": "Panama (PAN)"
+  },
+  {
+    "id": "NAT_PNG",
+    "name": "Papua New Guinea (PNG)"
+  },
+  {
+    "id": "NAT_PAR",
+    "name": "Paraguay (PAR)"
+  },
+  {
+    "id": "NAT_PER",
+    "name": "Peru (PER)"
+  },
+  {
+    "id": "NAT_PHI",
+    "name": "Philippines (PHI)"
+  },
+  {
+    "id": "NAT_POL",
+    "name": "Poland (POL)"
+  },
+  {
+    "id": "NAT_POR",
+    "name": "Portugal (POR)"
+  },
+  {
+    "id": "NAT_PUR",
+    "name": "Puerto Rico (PUR)"
+  },
+  {
+    "id": "NAT_QAT",
+    "name": "Qatar (QAT)"
+  },
+  {
+    "id": "173618",
+    "name": "ROU: ACF Gloria Bistrița"
+  },
+  {
+    "id": "176713",
+    "name": "ROU: AS Progresul București"
+  },
+  {
+    "id": "165053",
+    "name": "ROU: ASC Oțelul Galați"
+  },
+  {
+    "id": "177071",
+    "name": "ROU: CFR Cluj"
+  },
+  {
+    "id": "158634",
+    "name": "ROU: CS Pandurii Târgu Jiu"
+  },
+  {
+    "id": "168776",
+    "name": "ROU: FC Argeș Pitești"
+  },
+  {
+    "id": "153396",
+    "name": "ROU: FC Astra Giurgiu"
+  },
+  {
+    "id": "171122",
+    "name": "ROU: FC Caracal"
+  },
+  {
+    "id": "158443",
+    "name": "ROU: FC Dinamo București"
+  },
+  {
+    "id": "174313",
+    "name": "ROU: FC Politehnica Timișoara"
+  },
+  {
+    "id": "152414",
+    "name": "ROU: FC Rapid București"
+  },
+  {
+    "id": "165819",
+    "name": "ROU: FC U Craiova 1948"
+  },
+  {
+    "id": "175522",
+    "name": "ROU: FC Unirea Urziceni"
+  },
+  {
+    "id": "168755",
+    "name": "ROU: FC Universitatea Cluj"
+  },
+  {
+    "id": "153717",
+    "name": "ROU: FC Vaslui"
+  },
+  {
+    "id": "169085",
+    "name": "ROU: FCSB"
+  },
+  {
+    "id": "157110",
+    "name": "ROU: SR Brașov"
+  },
+  {
+    "id": "177206",
+    "name": "ROU: U Craiova 1948 Club Sportiv"
+  },
+  {
+    "id": "165443",
+    "name": "RUS: FC Akhmat Grozny"
+  },
+  {
+    "id": "172690",
+    "name": "RUS: FC Anzhi Makhachkala"
+  },
+  {
+    "id": "160602",
+    "name": "RUS: FC Chernomorets Novorossiysk"
+  },
+  {
+    "id": "171980",
+    "name": "RUS: FC Chertanovo Moscow"
+  },
+  {
+    "id": "159972",
+    "name": "RUS: FC Dynamo Moscow"
+  },
+  {
+    "id": "176548",
+    "name": "RUS: FC Krasnodar"
+  },
+  {
+    "id": "164555",
+    "name": "RUS: FC Kuban Krasnodar"
+  },
+  {
+    "id": "160618",
+    "name": "RUS: FC Lokomotiv Moscow"
+  },
+  {
+    "id": "158425",
+    "name": "RUS: FC Moscow"
+  },
+  {
+    "id": "172962",
+    "name": "RUS: FC Rostov"
+  },
+  {
+    "id": "155339",
+    "name": "RUS: FC Rotor Volgograd"
+  },
+  {
+    "id": "160166",
+    "name": "RUS: FC Rubin Kazan"
+  },
+  {
+    "id": "165638",
+    "name": "RUS: FC Spartak Moscow"
+  },
+  {
+    "id": "181451",
+    "name": "RUS: FC Spartak Vladikavkaz"
+  },
+  {
+    "id": "157203",
+    "name": "RUS: FC Tekstilshchik Kamyshin"
+  },
+  {
+    "id": "154434",
+    "name": "RUS: FC Torpedo Moscow"
+  },
+  {
+    "id": "166917",
+    "name": "RUS: FC Zenit Saint Petersburg"
+  },
+  {
+    "id": "160807",
+    "name": "RUS: FC Zorky Krasnogorsk"
+  },
+  {
+    "id": "175641",
+    "name": "RUS: PFC CSKA Moscow"
+  },
+  {
+    "id": "158796",
+    "name": "RUS: PFC Krylia Sovetov Samara"
+  },
+  {
+    "id": "177042",
+    "name": "RUS: Ryazan VDV"
+  },
+  {
+    "id": "164488",
+    "name": "RUS: WFC Rossiyanka"
+  },
+  {
+    "id": "164613",
+    "name": "RUS: Zvezda 2005 Perm"
+  },
+  {
+    "id": "NAT_IRL",
+    "name": "Republic of Ireland (IRL)"
+  },
+  {
+    "id": "NAT_ROU",
+    "name": "Romania (ROU)"
+  },
+  {
+    "id": "NAT_RUS",
+    "name": "Russia (RUS)"
+  },
+  {
+    "id": "NAT_RWA",
+    "name": "Rwanda (RWA)"
+  },
+  {
+    "id": "NAT_REU",
+    "name": "Réunion (REU)"
+  },
+  {
+    "id": "165559",
+    "name": "SCO: Aberdeen FC"
+  },
+  {
+    "id": "169991",
+    "name": "SCO: Celtic FC"
+  },
+  {
+    "id": "151453",
+    "name": "SCO: Dundee FC"
+  },
+  {
+    "id": "174928",
+    "name": "SCO: Dundee United FC"
+  },
+  {
+    "id": "157387",
+    "name": "SCO: Glasgow City FC"
+  },
+  {
+    "id": "164006",
+    "name": "SCO: Heart of Midlothian FC"
+  },
+  {
+    "id": "175911",
+    "name": "SCO: Hibernian FC"
+  },
+  {
+    "id": "155400",
+    "name": "SCO: Kilmarnock FC"
+  },
+  {
+    "id": "153821",
+    "name": "SCO: Livingston FC"
+  },
+  {
+    "id": "167350",
+    "name": "SCO: Motherwell FC"
+  },
+  {
+    "id": "168259",
+    "name": "SCO: Raith Rovers FC"
+  },
+  {
+    "id": "165024",
+    "name": "SCO: Rangers FC"
+  },
+  {
+    "id": "173676",
+    "name": "SCO: St Johnstone FC"
+  },
+  {
+    "id": "184099",
+    "name": "SMR: San Marino Academy"
+  },
+  {
+    "id": "157730",
+    "name": "SRB: FK Borac Čačak"
+  },
+  {
+    "id": "157249",
+    "name": "SRB: FK Napredak Kruševac"
+  },
+  {
+    "id": "151806",
+    "name": "SRB: FK Obilić"
+  },
+  {
+    "id": "173758",
+    "name": "SRB: FK Partizan"
+  },
+  {
+    "id": "173998",
+    "name": "SRB: FK Smederevo"
+  },
+  {
+    "id": "162475",
+    "name": "SRB: FK Spartak Subotica"
+  },
+  {
+    "id": "155566",
+    "name": "SRB: FK Vojvodina"
+  },
+  {
+    "id": "158290",
+    "name": "SRB: FK Čukarički"
+  },
+  {
+    "id": "152413",
+    "name": "SRB: Red Star Belgrade"
+  },
+  {
+    "id": "162153",
+    "name": "SRB: TSC Bačka Topola"
+  },
+  {
+    "id": "163398",
+    "name": "SUI: AC Bellinzona"
+  },
+  {
+    "id": "159123",
+    "name": "SUI: BSC Young Boys"
+  },
+  {
+    "id": "167871",
+    "name": "SUI: FC Aarau"
+  },
+  {
+    "id": "172769",
+    "name": "SUI: FC Basel"
+  },
+  {
+    "id": "155644",
+    "name": "SUI: FC Lausanne-Sport"
+  },
+  {
+    "id": "159367",
+    "name": "SUI: FC Lugano"
+  },
+  {
+    "id": "156264",
+    "name": "SUI: FC Sion"
+  },
+  {
+    "id": "172120",
+    "name": "SUI: FC St. Gallen"
+  },
+  {
+    "id": "167132",
+    "name": "SUI: FC Thun"
+  },
+  {
+    "id": "155019",
+    "name": "SUI: FC Zurich"
+  },
+  {
+    "id": "163904",
+    "name": "SUI: Grasshopper Club Zürich"
+  },
+  {
+    "id": "155522",
+    "name": "SUI: Neuchâtel Xamax"
+  },
+  {
+    "id": "161601",
+    "name": "SUI: Servette FC"
+  },
+  {
+    "id": "184199",
+    "name": "SUI: Servette FC Chênois Féminin"
+  },
+  {
+    "id": "169324",
+    "name": "SVK: FC DAC 1904 Dunajská Streda"
+  },
+  {
+    "id": "162408",
+    "name": "SVK: FC Petržalka akadémia"
+  },
+  {
+    "id": "170932",
+    "name": "SVK: FC Spartak Trnava"
+  },
+  {
+    "id": "165843",
+    "name": "SVK: FK Dukla Banská Bystrica"
+  },
+  {
+    "id": "173118",
+    "name": "SVK: FK Inter Bratislava"
+  },
+  {
+    "id": "177065",
+    "name": "SVK: FK Púchov"
+  },
+  {
+    "id": "176284",
+    "name": "SVK: MFK Košice"
+  },
+  {
+    "id": "156966",
+    "name": "SVK: MFK Ružomberok"
+  },
+  {
+    "id": "174559",
+    "name": "SVK: MSK Zilina"
+  },
+  {
+    "id": "169038",
+    "name": "SVK: ŠK Slovan Bratislava"
+  },
+  {
+    "id": "155956",
+    "name": "SVN: MNK Izola"
+  },
+  {
+    "id": "174363",
+    "name": "SVN: ND Gorica"
+  },
+  {
+    "id": "171341",
+    "name": "SVN: NK Celje"
+  },
+  {
+    "id": "165457",
+    "name": "SVN: NK Domžale"
+  },
+  {
+    "id": "155895",
+    "name": "SVN: NK Maribor"
+  },
+  {
+    "id": "165271",
+    "name": "SVN: NK Olimpija Ljubljana"
+  },
+  {
+    "id": "165480",
+    "name": "SVN: NK Olimpija Ljubljana"
+  },
+  {
+    "id": "155442",
+    "name": "SVN: NK Primorje"
+  },
+  {
+    "id": "158355",
+    "name": "SVN: NŠ Mura"
+  },
+  {
+    "id": "169986",
+    "name": "SVN: ŽNK Pomurje"
+  },
+  {
+    "id": "169225",
+    "name": "SWE: AIK Stockholm"
+  },
+  {
+    "id": "165098",
+    "name": "SWE: BK Häcken"
+  },
+  {
+    "id": "166436",
+    "name": "SWE: Djurgårdens IF"
+  },
+  {
+    "id": "175221",
+    "name": "SWE: Eskilstuna United DFF"
+  },
+  {
+    "id": "164044",
+    "name": "SWE: FC Rosengård"
+  },
+  {
+    "id": "153852",
+    "name": "SWE: Halmstads BK"
+  },
+  {
+    "id": "166290",
+    "name": "SWE: Hammarby IF"
+  },
+  {
+    "id": "176405",
+    "name": "SWE: Helsingborgs IF"
+  },
+  {
+    "id": "159687",
+    "name": "SWE: IF Elfsborg"
+  },
+  {
+    "id": "175491",
+    "name": "SWE: IFK Göteborg"
+  },
+  {
+    "id": "154436",
+    "name": "SWE: IFK Norrköping"
+  },
+  {
+    "id": "167556",
+    "name": "SWE: Kalmar FF"
+  },
+  {
+    "id": "162747",
+    "name": "SWE: Karlslunds IF HFK"
+  },
+  {
+    "id": "155749",
+    "name": "SWE: Linköpings FC"
+  },
+  {
+    "id": "175932",
+    "name": "SWE: Malmö FF"
+  },
+  {
+    "id": "168193",
+    "name": "SWE: Piteå IF"
+  },
+  {
+    "id": "154169",
+    "name": "SWE: Trelleborgs FF"
+  },
+  {
+    "id": "164712",
+    "name": "SWE: Åtvidabergs FF"
+  },
+  {
+    "id": "162527",
+    "name": "SWE: Örebro SK"
+  },
+  {
+    "id": "153434",
+    "name": "SWE: Örgryte IS"
+  },
+  {
+    "id": "173567",
+    "name": "SWE: Östers IF"
+  },
+  {
+    "id": "160301",
+    "name": "SWE: Östersunds FK"
+  },
+  {
+    "id": "NAT_SAA",
+    "name": "Saar (SAA)"
+  },
+  {
+    "id": "NAT_SKN",
+    "name": "Saint Kitts and Nevis (SKN)"
+  },
+  {
+    "id": "NAT_LCA",
+    "name": "Saint Lucia (LCA)"
+  },
+  {
+    "id": "NAT_SMN",
+    "name": "Saint Martin (SMN)"
+  },
+  {
+    "id": "NAT_VIN",
+    "name": "Saint Vincent and the Grenadines (VIN)"
+  },
+  {
+    "id": "NAT_SAM",
+    "name": "Samoa (SAM)"
+  },
+  {
+    "id": "NAT_SMR",
+    "name": "San Marino (SMR)"
+  },
+  {
+    "id": "NAT_KSA",
+    "name": "Saudi Arabia (KSA)"
+  },
+  {
+    "id": "NAT_SCO",
+    "name": "Scotland (SCO)"
+  },
+  {
+    "id": "NAT_SEN",
+    "name": "Senegal (SEN)"
+  },
+  {
+    "id": "NAT_SRB",
+    "name": "Serbia (SRB)"
+  },
+  {
+    "id": "NAT_SCG",
+    "name": "Serbia and Montenegro (SCG)"
+  },
+  {
+    "id": "NAT_SEY",
+    "name": "Seychelles (SEY)"
+  },
+  {
+    "id": "NAT_SLE",
+    "name": "Sierra Leone (SLE)"
+  },
+  {
+    "id": "NAT_SIN",
+    "name": "Singapore (SIN)"
+  },
+  {
+    "id": "NAT_SMA",
+    "name": "Sint Maarten (SMA)"
+  },
+  {
+    "id": "NAT_SVK",
+    "name": "Slovakia (SVK)"
+  },
+  {
+    "id": "NAT_SVN",
+    "name": "Slovenia (SVN)"
+  },
+  {
+    "id": "NAT_SOL",
+    "name": "Solomon Islands (SOL)"
+  },
+  {
+    "id": "NAT_SOM",
+    "name": "Somalia (SOM)"
+  },
+  {
+    "id": "NAT_RSA",
+    "name": "South Africa (RSA)"
+  },
+  {
+    "id": "NAT_SSD",
+    "name": "South Sudan (SSD)"
+  },
+  {
+    "id": "NAT_VSO",
+    "name": "South Vietnam (VSO)"
+  },
+  {
+    "id": "NAT_URS",
+    "name": "Soviet Union (URS)"
+  },
+  {
+    "id": "NAT_ESP",
+    "name": "Spain (ESP)"
+  },
+  {
+    "id": "NAT_SRI",
+    "name": "Sri Lanka (SRI)"
+  },
+  {
+    "id": "NAT_SDN",
+    "name": "Sudan (SDN)"
+  },
+  {
+    "id": "NAT_SUR",
+    "name": "Suriname (SUR)"
+  },
+  {
+    "id": "NAT_SWE",
+    "name": "Sweden (SWE)"
+  },
+  {
+    "id": "NAT_SUI",
+    "name": "Switzerland (SUI)"
+  },
+  {
+    "id": "NAT_SYR",
+    "name": "Syria (SYR)"
+  },
+  {
+    "id": "NAT_STP",
+    "name": "São Tomé e Príncipe (STP)"
+  },
+  {
+    "id": "166302",
+    "name": "TUR: Akhisar Belediyespor"
+  },
+  {
+    "id": "160648",
+    "name": "TUR: Antalyaspor"
+  },
+  {
+    "id": "153043",
+    "name": "TUR: Beşiktaş JK"
+  },
+  {
+    "id": "162186",
+    "name": "TUR: Bursaspor"
+  },
+  {
+    "id": "155381",
+    "name": "TUR: Denizlispor"
+  },
+  {
+    "id": "169007",
+    "name": "TUR: Fenerbahçe SK"
+  },
+  {
+    "id": "175278",
+    "name": "TUR: Galatasaray SK"
+  },
+  {
+    "id": "185314",
+    "name": "TUR: Galatasaray SK Hepsiburada"
+  },
+  {
+    "id": "167174",
+    "name": "TUR: Gaziantepspor"
+  },
+  {
+    "id": "176240",
+    "name": "TUR: Gençlerbirliği SK"
+  },
+  {
+    "id": "166970",
+    "name": "TUR: Kayseri Erciyesspor"
+  },
+  {
+    "id": "154647",
+    "name": "TUR: Kayserispor"
+  },
+  {
+    "id": "157202",
+    "name": "TUR: Kocaelispor"
+  },
+  {
+    "id": "160248",
+    "name": "TUR: Konyaspor"
+  },
+  {
+    "id": "170037",
+    "name": "TUR: MKE Ankaragücü"
+  },
+  {
+    "id": "165439",
+    "name": "TUR: Malatyaspor"
+  },
+  {
+    "id": "175335",
+    "name": "TUR: Osmanlıspor FK"
+  },
+  {
+    "id": "163460",
+    "name": "TUR: Samsunspor"
+  },
+  {
+    "id": "171425",
+    "name": "TUR: Sivasspor"
+  },
+  {
+    "id": "171639",
+    "name": "TUR: Trabzonspor"
+  },
+  {
+    "id": "170777",
+    "name": "TUR: İstanbul Başakşehir FK"
+  },
+  {
+    "id": "NAT_TAH",
+    "name": "Tahiti (TAH)"
+  },
+  {
+    "id": "NAT_TJK",
+    "name": "Tajikistan (TJK)"
+  },
+  {
+    "id": "NAT_TAN",
+    "name": "Tanzania (TAN)"
+  },
+  {
+    "id": "NAT_THA",
+    "name": "Thailand (THA)"
+  },
+  {
+    "id": "NAT_TLS",
+    "name": "Timor-Leste (TLS)"
+  },
+  {
+    "id": "NAT_TOG",
+    "name": "Togo (TOG)"
+  },
+  {
+    "id": "NAT_TGA",
+    "name": "Tonga (TGA)"
+  },
+  {
+    "id": "NAT_TRI",
+    "name": "Trinidad and Tobago (TRI)"
+  },
+  {
+    "id": "NAT_TUN",
+    "name": "Tunisia (TUN)"
+  },
+  {
+    "id": "NAT_TUR",
+    "name": "Turkey (TUR)"
+  },
+  {
+    "id": "NAT_TKM",
+    "name": "Turkmenistan (TKM)"
+  },
+  {
+    "id": "NAT_TCA",
+    "name": "Turks and Caicos Islands (TCA)"
+  },
+  {
+    "id": "NAT_TUV",
+    "name": "Tuvalu (TUV)"
+  },
+  {
+    "id": "157622",
+    "name": "UKR: FC Arsenal Kiev"
+  },
+  {
+    "id": "172138",
+    "name": "UKR: FC Chornomorets Odesa"
+  },
+  {
+    "id": "171244",
+    "name": "UKR: FC Dnipro Dnipropetrovsk"
+  },
+  {
+    "id": "171525",
+    "name": "UKR: FC Dynamo Kyiv"
+  },
+  {
+    "id": "155086",
+    "name": "UKR: FC Karpaty Lviv"
+  },
+  {
+    "id": "176954",
+    "name": "UKR: FC Kryvbas Kryvyi Rih"
+  },
+  {
+    "id": "180703",
+    "name": "UKR: FC Metalist 1925 Kharkiv"
+  },
+  {
+    "id": "158499",
+    "name": "UKR: FC Metalist Kharkiv"
+  },
+  {
+    "id": "173570",
+    "name": "UKR: FC Metalurh Donetsk"
+  },
+  {
+    "id": "160918",
+    "name": "UKR: FC Metalurh Zaporizhya"
+  },
+  {
+    "id": "163700",
+    "name": "UKR: FC Oleksandriya"
+  },
+  {
+    "id": "174834",
+    "name": "UKR: FC Shakhtar Donetsk"
+  },
+  {
+    "id": "167041",
+    "name": "UKR: FC Vorskla Poltava"
+  },
+  {
+    "id": "166470",
+    "name": "UKR: FC Zorya Luhansk"
+  },
+  {
+    "id": "177322",
+    "name": "UKR: SC Dnipro-1"
+  },
+  {
+    "id": "168470",
+    "name": "UKR: SC Tavriya Simferopol"
+  },
+  {
+    "id": "NAT_VIR",
+    "name": "US Virgin Islands (VIR)"
+  },
+  {
+    "id": "184913",
+    "name": "USA: Angel City Football Club"
+  },
+  {
+    "id": "177182",
+    "name": "USA: Atlanta United FC"
+  },
+  {
+    "id": "181770",
+    "name": "USA: Austin FC"
+  },
+  {
+    "id": "187795",
+    "name": "USA: Bay FC"
+  },
+  {
+    "id": "168730",
+    "name": "USA: Boston Breakers"
+  },
+  {
+    "id": "188020",
+    "name": "USA: Boston Legacy FC"
+  },
+  {
+    "id": "168452",
+    "name": "USA: CD Chivas USA"
+  },
+  {
+    "id": "182492",
+    "name": "USA: Charlotte FC"
+  },
+  {
+    "id": "176501",
+    "name": "USA: Chicago Fire FC"
+  },
+  {
+    "id": "173321",
+    "name": "USA: Chicago Red Stars"
+  },
+  {
+    "id": "158141",
+    "name": "USA: Colorado Rapids"
+  },
+  {
+    "id": "159846",
+    "name": "USA: Columbus Crew"
+  },
+  {
+    "id": "158401",
+    "name": "USA: D.C. United"
+  },
+  {
+    "id": "188021",
+    "name": "USA: Denver Summit FC"
+  },
+  {
+    "id": "177223",
+    "name": "USA: FC Cincinnati"
+  },
+  {
+    "id": "153707",
+    "name": "USA: FC Dallas"
+  },
+  {
+    "id": "161664",
+    "name": "USA: FC Kansas City"
+  },
+  {
+    "id": "165823",
+    "name": "USA: Gotham FC"
+  },
+  {
+    "id": "152818",
+    "name": "USA: Houston Dynamo FC"
+  },
+  {
+    "id": "181500",
+    "name": "USA: Inter Miami CF"
+  },
+  {
+    "id": "184251",
+    "name": "USA: Kansas City Current"
+  },
+  {
+    "id": "173238",
+    "name": "USA: LA Galaxy"
+  },
+  {
+    "id": "177194",
+    "name": "USA: Los Angeles FC"
+  },
+  {
+    "id": "158386",
+    "name": "USA: Louisville City FC"
+  },
+  {
+    "id": "155779",
+    "name": "USA: Miami Fusion FC"
+  },
+  {
+    "id": "177183",
+    "name": "USA: Minnesota United FC"
+  },
+  {
+    "id": "181501",
+    "name": "USA: Nashville SC"
+  },
+  {
+    "id": "157615",
+    "name": "USA: New England Revolution"
+  },
+  {
+    "id": "161672",
+    "name": "USA: New York City FC"
+  },
+  {
+    "id": "162117",
+    "name": "USA: New York Red Bulls"
+  },
+  {
+    "id": "177247",
+    "name": "USA: North Carolina Courage"
+  },
+  {
+    "id": "177189",
+    "name": "USA: Orlando City SC"
+  },
+  {
+    "id": "158600",
+    "name": "USA: Philadelphia Union"
+  },
+  {
+    "id": "187905",
+    "name": "USA: Portland Thorns FC"
+  },
+  {
+    "id": "172402",
+    "name": "USA: Portland Timbers"
+  },
+  {
+    "id": "176333",
+    "name": "USA: Real Salt Lake"
+  },
+  {
+    "id": "187909",
+    "name": "USA: San Diego FC"
+  },
+  {
+    "id": "184912",
+    "name": "USA: San Diego Wave FC"
+  },
+  {
+    "id": "171786",
+    "name": "USA: San Jose Earthquakes"
+  },
+  {
+    "id": "155348",
+    "name": "USA: Seattle Reign FC"
+  },
+  {
+    "id": "161392",
+    "name": "USA: Seattle Sounders FC"
+  },
+  {
+    "id": "159055",
+    "name": "USA: Sporting Kansas City"
+  },
+  {
+    "id": "185228",
+    "name": "USA: St. Louis City SC"
+  },
+  {
+    "id": "170278",
+    "name": "USA: Tampa Bay Mutiny"
+  },
+  {
+    "id": "174386",
+    "name": "USA: Washington Spirit"
+  },
+  {
+    "id": "161147",
+    "name": "USA: Western New York Flash"
+  },
+  {
+    "id": "NAT_UGA",
+    "name": "Uganda (UGA)"
+  },
+  {
+    "id": "NAT_UKR",
+    "name": "Ukraine (UKR)"
+  },
+  {
+    "id": "NAT_UAE",
+    "name": "United Arab Emirates (UAE)"
+  },
+  {
+    "id": "NAT_USA",
+    "name": "United States (USA)"
+  },
+  {
+    "id": "NAT_URU",
+    "name": "Uruguay (URU)"
+  },
+  {
+    "id": "NAT_UZB",
+    "name": "Uzbekistan (UZB)"
+  },
+  {
+    "id": "NAT_VAN",
+    "name": "Vanuatu (VAN)"
+  },
+  {
+    "id": "NAT_VEN",
+    "name": "Venezuela (VEN)"
+  },
+  {
+    "id": "NAT_VIE",
+    "name": "Vietnam (VIE)"
+  },
+  {
+    "id": "173219",
+    "name": "WAL: Barry Town United FC"
+  },
+  {
+    "id": "151942",
+    "name": "WAL: Cwmbrân Town AFC"
+  },
+  {
+    "id": "176868",
+    "name": "WAL: The New Saints FC"
+  },
+  {
+    "id": "NAT_WAL",
+    "name": "Wales (WAL)"
+  },
+  {
+    "id": "NAT_FRG",
+    "name": "West Germany (FRG)"
+  },
+  {
+    "id": "NAT_YEM",
+    "name": "Yemen (YEM)"
+  },
+  {
+    "id": "NAT_YUG",
+    "name": "Yugoslavia (YUG)"
+  },
+  {
+    "id": "NAT_ZAM",
+    "name": "Zambia (ZAM)"
+  },
+  {
+    "id": "NAT_ZAN",
+    "name": "Zanzibar (ZAN)"
+  },
+  {
+    "id": "NAT_ZIM",
+    "name": "Zimbabwe (ZIM)"
+  }
+]
