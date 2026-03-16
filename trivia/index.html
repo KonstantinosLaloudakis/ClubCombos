@@ -38,13 +38,20 @@
                     <h1>The Greek Giants Grid</h1>
                     <p>Name a player who played for <strong>both</strong> intersecting clubs. You have one guess for each cell.</p>
                     
+                    <div class="daily-section">
+                        <button id="btn-daily" class="btn btn-daily">🗓 Today's Daily Challenge</button>
+                        <p>Same grid for everyone · Resets daily</p>
+                    </div>
+
+                    <div class="daily-divider">or free play</div>
+
                     <div class="config-options">
                         <h3>Select Grid Size</h3>
                         <div class="size-buttons">
                             <button class="btn btn-primary" data-size="3">2 x 3 Grid</button>
                             <button class="btn btn-outline" data-size="4">2 x 4 Grid</button>
                         </div>
-                        
+
                         <div class="mode-toggle">
                             <label class="switch">
                                 <input type="checkbox" id="easy-mode-toggle">
@@ -53,6 +60,16 @@
                             <span class="mode-label">Easy Mode <span class="mode-desc">(Min. 2 valid players per cell)</span></span>
                         </div>
                     </div>
+
+                    <div class="daily-divider">other modes</div>
+
+                    <button id="btn-common-club" class="btn-game-mode">
+                        <span class="game-mode-icon">🏟️</span>
+                        <span class="game-mode-info">
+                            <strong>Common Club</strong>
+                            <small>Name the club these players share</small>
+                        </span>
+                    </button>
                 </div>
             </div>
 
@@ -80,10 +97,54 @@
                 <div class="hero-box results-box">
                     <h1 id="end-title">Game Over!</h1>
                     <p id="end-message">You scored X out of Y.</p>
+
+                    <div id="share-section" class="hidden">
+                        <pre id="daily-emoji-grid" class="emoji-grid"></pre>
+                        <button id="btn-share" class="btn btn-outline">📋 Copy Result</button>
+                        <p class="daily-return-msg">Come back tomorrow for the next challenge!</p>
+                    </div>
+
                     <button id="btn-play-again" class="btn btn-primary mt-4">Play Again</button>
                 </div>
             </div>
-            
+
+            <!-- Common Club Screen -->
+            <div id="common-club-screen" class="view-panel">
+
+                <!-- Round view -->
+                <div id="cc-game" class="cc-container">
+                    <div class="cc-meta">
+                        <span class="cc-label">Round <span id="cc-round-num">1</span>/<span id="cc-total-rounds">6</span></span>
+                        <span class="cc-label">Score: <span id="cc-score-display">0</span></span>
+                    </div>
+                    <p class="cc-prompt">These players all share one club in common.<br>Which club is it?</p>
+                    <div class="cc-players" id="cc-players"></div>
+                    <div class="cc-input-area">
+                        <div class="cc-search-wrap">
+                            <input type="text" id="cc-search-input" placeholder="Type a club name..." autocomplete="off">
+                            <div id="cc-dropdown" class="cc-dropdown hidden"></div>
+                        </div>
+                        <button id="cc-give-up-btn" class="btn-surrender cc-give-up-btn">🏳️ Give up on this round</button>
+                    </div>
+                    <div id="cc-feedback" class="cc-feedback"></div>
+                    <button id="cc-next-btn" class="btn btn-primary cc-action-btn hidden">Next Round →</button>
+                    <button id="cc-quit-btn" class="btn btn-outline cc-action-btn">Back to Menu</button>
+                </div>
+
+                <!-- Results view (shown after all rounds) -->
+                <div id="cc-results-panel" class="cc-container hidden">
+                    <h2 id="cc-result-title" class="cc-result-title"></h2>
+                    <p id="cc-result-msg" class="cc-result-msg"></p>
+                    <pre id="cc-emoji-grid" class="emoji-grid"></pre>
+                    <button id="cc-share-btn" class="btn btn-outline">📋 Copy Result</button>
+                    <div class="cc-result-actions">
+                        <button id="cc-play-again-btn" class="btn btn-primary">Play Again</button>
+                        <button id="cc-menu-btn" class="btn btn-outline">Back to Menu</button>
+                    </div>
+                </div>
+
+            </div>
+
         </main>
 
         <!-- Search Modal Overlay -->

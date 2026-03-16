@@ -12,14 +12,16 @@ let state = {
     columns: [], // Selected target teams
     focusTeams: [], // The Greek teams
     cells: {}, // State of each cell: 'empty', 'solved', 'failed'
-    usedPlayers: new Set() // Prevent using the same player twice
+    usedPlayers: new Set(), // Prevent using the same player twice
+    isDailyChallenge: false
 };
 
 // DOM Elements
 const views = {
     start: document.getElementById('start-screen'),
     game: document.getElementById('game-screen'),
-    end: document.getElementById('game-over-screen')
+    end: document.getElementById('game-over-screen'),
+    commonClub: document.getElementById('common-club-screen')
 };
 
 const dom = {
@@ -41,25 +43,170 @@ const dom = {
     endMsg: document.getElementById('end-message')
 };
 
+// --- Daily Challenge ---
+
+// Seeded PRNG (mulberry32) — used so everyone gets the same daily grid.
+function mulberry32(seed) {
+    return function() {
+        seed |= 0; seed = seed + 0x6D2B79F5 | 0;
+        let t = Math.imul(seed ^ seed >>> 15, 1 | seed);
+        t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+        return ((t ^ t >>> 14) >>> 0) / 4294967296;
+    };
+}
+
+function getDailyKey() {
+    const now = new Date();
+    return `${now.getFullYear()}${String(now.getMonth() + 1).padStart(2, '0')}${String(now.getDate()).padStart(2, '0')}`;
+}
+
+function formatDailyDate() {
+    const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    const now = new Date();
+    return `${now.getDate()} ${months[now.getMonth()]} ${now.getFullYear()}`;
+}
+
+function startDailyChallenge() {
+    const key = getDailyKey();
+    const stored = localStorage.getItem(`clubcombos_daily_${key}`);
+
+    if (stored) {
+        showAlreadyPlayedResult(JSON.parse(stored));
+        return;
+    }
+
+    state.isDailyChallenge = true;
+    state.gridSize = 3;
+
+    const totalCells = TRIVIA_DATA.focus_teams.length * 3;
+    state.lives = totalCells;
+    state.score = 0;
+    state.cells = {};
+    state.usedPlayers.clear();
+    state.focusTeams = TRIVIA_DATA.focus_teams;
+
+    // Seeded Fisher-Yates — same shuffle every day
+    const rng = mulberry32(parseInt(key));
+    const available = [...TRIVIA_DATA.valid_target_teams];
+    for (let i = available.length - 1; i > 0; i--) {
+        const j = Math.floor(rng() * (i + 1));
+        [available[i], available[j]] = [available[j], available[i]];
+    }
+    state.columns = available.slice(0, 3);
+
+    dom.maxScore.textContent = totalCells;
+    document.getElementById('btn-give-up').style.display = 'block';
+    renderLives();
+    dom.score.textContent = state.score;
+    buildGrid();
+    showView('game');
+}
+
+function showAlreadyPlayedResult(result) {
+    dom.endTitle.textContent = result.score === result.total ? 'Immaculate!' :
+                               result.score === 0 ? 'Better luck tomorrow!' : 'Daily Complete!';
+    dom.endMsg.textContent = `Today's score: ${result.score}/${result.total}`;
+    document.getElementById('daily-emoji-grid').textContent = result.emojiGrid;
+    document.getElementById('share-section').classList.remove('hidden');
+    showView('end');
+}
+
+function generateEmojiGrid() {
+    return state.focusTeams.map(focusTeam =>
+        state.columns.map(col => {
+            const cellId = `${focusTeam.id}-${col.id}`;
+            return state.cells[cellId] === 'solved' ? '🟩' : '🟥';
+        }).join('')
+    ).join('\n');
+}
+
+function saveDailyResult() {
+    const key = getDailyKey();
+    const totalCells = state.focusTeams.length * state.gridSize;
+    localStorage.setItem(`clubcombos_daily_${key}`, JSON.stringify({
+        score: state.score,
+        total: totalCells,
+        emojiGrid: generateEmojiGrid(),
+        date: key
+    }));
+}
+
+async function handleShare() {
+    const key = getDailyKey();
+    const stored = localStorage.getItem(`clubcombos_daily_${key}`);
+    if (!stored) return;
+
+    const result = JSON.parse(stored);
+    const shareText = `Club Combos – ${formatDailyDate()}\n${result.emojiGrid}\nScore: ${result.score}/${result.total}\nhttps://konstantinoslaloudakis.github.io/ClubCombos/`;
+
+    if (navigator.share) {
+        try {
+            await navigator.share({ text: shareText });
+            return;
+        } catch(e) { /* user cancelled or API unavailable */ }
+    }
+
+    try {
+        await navigator.clipboard.writeText(shareText);
+        showToast('Result copied to clipboard!', 'success');
+    } catch(e) {
+        showToast('Could not copy to clipboard.', 'error');
+    }
+}
+
+function updateDailyButtonState() {
+    const btn = document.getElementById('btn-daily');
+    if (!btn) return;
+    if (localStorage.getItem(`clubcombos_daily_${getDailyKey()}`)) {
+        btn.textContent = '✓ Daily Completed – View Result';
+        btn.classList.add('btn-daily-done');
+    } else {
+        btn.textContent = '🗓 Today\'s Daily Challenge';
+        btn.classList.remove('btn-daily-done');
+    }
+}
+
 // --- Initialization ---
+
+// Timeout handle so we can cancel the end-screen transition if user navigates away early
+let gameOverTimeoutId = null;
 
 function init() {
     state.focusTeams = TRIVIA_DATA.focus_teams;
-    
+
     // Bind buttons
     document.querySelectorAll('[data-size]').forEach(btn => {
         btn.addEventListener('click', (e) => startGame(parseInt(e.target.dataset.size)));
     });
-    
+
+    document.getElementById('btn-daily').addEventListener('click', startDailyChallenge);
     document.getElementById('btn-give-up').addEventListener('click', gameOver);
     document.getElementById('btn-restart').addEventListener('click', resetToStart);
     document.getElementById('btn-play-again').addEventListener('click', resetToStart);
-    
+    document.getElementById('btn-share').addEventListener('click', handleShare);
+
+    // Common Club buttons
+    document.getElementById('btn-common-club').addEventListener('click', startCommonClub);
+    document.getElementById('cc-quit-btn').addEventListener('click', resetToStart);
+    document.getElementById('cc-play-again-btn').addEventListener('click', startCommonClub);
+    document.getElementById('cc-menu-btn').addEventListener('click', resetToStart);
+    document.getElementById('cc-share-btn').addEventListener('click', handleCCShare);
+    document.getElementById('cc-search-input').addEventListener('input', handleCCSearch);
+    document.getElementById('cc-give-up-btn').addEventListener('click', handleCCGiveUp);
+
+    // Close CC dropdown when clicking outside
+    document.addEventListener('click', e => {
+        const wrap = document.getElementById('cc-search-input')?.closest('.cc-search-wrap');
+        if (wrap && !wrap.contains(e.target)) {
+            document.getElementById('cc-dropdown').classList.add('hidden');
+        }
+    });
+
     // Modal events
     dom.btnCloseModal.addEventListener('click', closeModal);
     dom.btnSurrenderCell.addEventListener('click', handleSurrenderCell);
     dom.searchInput.addEventListener('input', handleSearch);
-    
+
     // Close modal on escape or background click
     document.addEventListener('keydown', e => {
         if(e.key === 'Escape' && !dom.searchModal.classList.contains('hidden')) {
@@ -69,6 +216,8 @@ function init() {
     dom.searchModal.addEventListener('click', e => {
         if(e.target === dom.searchModal) closeModal();
     });
+
+    updateDailyButtonState();
 }
 
 function showView(viewName) {
@@ -395,12 +544,12 @@ function checkWinCondition() {
 }
 
 function gameOver() {
-    state.lives = 0; 
+    state.lives = 0;
     renderLives();
     document.getElementById('btn-give-up').style.display = 'none';
 
     const totalCells = state.focusTeams.length * state.gridSize;
-    
+
     if(state.score === totalCells) {
         showToast(`Immaculate! Perfect ${state.score}/${totalCells}!`, 'success');
     } else if(state.score === 0) {
@@ -408,20 +557,19 @@ function gameOver() {
     } else {
         showToast(`Game Over! You scored ${state.score}/${totalCells}.`, 'error');
     }
-    
-    // Reveal missing answers
+
+    // Reveal missing answers on the board
     Object.keys(state.cells).forEach(cellId => {
         if(state.cells[cellId] === 'empty') {
             const [r, c] = cellId.split('-');
             const valid = TRIVIA_DATA.matrix[r][c];
             const cellEl = document.querySelector(`.grid-cell[data-id="${cellId}"]`);
             cellEl.className = 'grid-cell failed';
-            
+
             if(valid && valid.length > 0) {
-                // Show all valid answers
                 const names = valid.map(id => TRIVIA_DATA.players[id]);
                 const displayNames = names.join('<br/>');
-                
+
                 cellEl.innerHTML = `
                     <div style="font-size:0.75rem;color:var(--text-muted);margin-bottom:4px;text-align:center;width:100%;">Missed:</div>
                     <div class="player-name" style="font-size:0.8rem;opacity:0.8;text-align:center;line-height:1.2;width:100%;">
@@ -433,9 +581,42 @@ function gameOver() {
             }
         }
     });
+
+    // Transition to end screen after a short delay so the reveals are visible
+    gameOverTimeoutId = setTimeout(() => {
+        gameOverTimeoutId = null;
+
+        if (state.score === totalCells) {
+            dom.endTitle.textContent = 'Immaculate!';
+        } else if (state.score === 0) {
+            dom.endTitle.textContent = 'Rough Day...';
+        } else {
+            dom.endTitle.textContent = 'Game Over!';
+        }
+        dom.endMsg.textContent = `You scored ${state.score} out of ${totalCells}.`;
+
+        if (state.isDailyChallenge) {
+            saveDailyResult();
+            updateDailyButtonState();
+            document.getElementById('daily-emoji-grid').textContent = generateEmojiGrid();
+            document.getElementById('share-section').classList.remove('hidden');
+        } else {
+            document.getElementById('share-section').classList.add('hidden');
+        }
+
+        showView('end');
+    }, 1500);
 }
 
 function resetToStart() {
+    if (gameOverTimeoutId) {
+        clearTimeout(gameOverTimeoutId);
+        gameOverTimeoutId = null;
+    }
+    state.isDailyChallenge = false;
+    document.getElementById('share-section').classList.add('hidden');
+    document.querySelector('.score-panel').style.visibility = '';
+    updateDailyButtonState();
     showView('start');
 }
 
@@ -471,6 +652,215 @@ async function fetchPlayerImage(playerName) {
         console.error("Wikipedia API error:", err);
     }
     return null;
+}
+
+// --- Common Club Game ---
+
+const ccState = {
+    puzzles: [],
+    currentRound: 0,
+    score: 0,
+    results: [], // 'correct' | 'wrong' per round
+    totalRounds: 6
+};
+
+function buildCommonClubPuzzles() {
+    const puzzles = [];
+    for (const team of TRIVIA_DATA.valid_target_teams) {
+        const playerIdSet = new Set();
+        for (const ft of TRIVIA_DATA.focus_teams) {
+            (TRIVIA_DATA.matrix[ft.id]?.[team.id] || []).forEach(id => playerIdSet.add(id));
+        }
+        if (playerIdSet.size >= 4) {
+            puzzles.push({
+                clubId: team.id,
+                clubName: team.name.replace(/^[A-Z]+:\s*/, ''),
+                playerIds: [...playerIdSet]
+            });
+        }
+    }
+    return puzzles;
+}
+
+function startCommonClub() {
+    const all = buildCommonClubPuzzles();
+    shuffleArray(all);
+
+    ccState.puzzles = all.slice(0, ccState.totalRounds);
+    ccState.currentRound = 0;
+    ccState.score = 0;
+    ccState.results = [];
+
+    document.getElementById('cc-game').classList.remove('hidden');
+    document.getElementById('cc-results-panel').classList.add('hidden');
+    document.querySelector('.score-panel').style.visibility = 'hidden';
+
+    showView('commonClub');
+    renderCCRound();
+}
+
+function renderCCRound() {
+    const puzzle = ccState.puzzles[ccState.currentRound];
+
+    document.getElementById('cc-round-num').textContent = ccState.currentRound + 1;
+    document.getElementById('cc-total-rounds').textContent = ccState.totalRounds;
+    document.getElementById('cc-score-display').textContent = ccState.score;
+
+    // Pick 4 random players from the pool to show
+    const pool = [...puzzle.playerIds];
+    shuffleArray(pool);
+    const shown = pool.slice(0, 4);
+
+    document.getElementById('cc-players').innerHTML = shown.map(id => `
+        <div class="cc-player-card">
+            <div class="cc-player-name">${TRIVIA_DATA.players[id]}</div>
+        </div>
+    `).join('');
+
+    const input = document.getElementById('cc-search-input');
+    input.value = '';
+    input.disabled = false;
+    setTimeout(() => input.focus(), 100);
+
+    const dropdown = document.getElementById('cc-dropdown');
+    dropdown.innerHTML = '';
+    dropdown.classList.add('hidden');
+
+    document.getElementById('cc-feedback').innerHTML = '';
+
+    const nextBtn = document.getElementById('cc-next-btn');
+    nextBtn.classList.add('hidden');
+    nextBtn.onclick = null;
+
+    document.getElementById('cc-give-up-btn').style.display = '';
+}
+
+function handleCCGiveUp() {
+    const puzzle = ccState.puzzles[ccState.currentRound];
+    ccState.results.push('wrong');
+
+    const input = document.getElementById('cc-search-input');
+    input.disabled = true;
+    document.getElementById('cc-dropdown').classList.add('hidden');
+    document.getElementById('cc-give-up-btn').style.display = 'none';
+
+    document.getElementById('cc-feedback').innerHTML =
+        `<div class="cc-feedback-wrong">The answer was <strong>${puzzle.clubName}</strong>.</div>`;
+
+    const nextBtn = document.getElementById('cc-next-btn');
+    nextBtn.classList.remove('hidden');
+
+    if (ccState.currentRound === ccState.totalRounds - 1) {
+        nextBtn.textContent = 'See Results →';
+        nextBtn.onclick = showCCResults;
+    } else {
+        nextBtn.textContent = 'Next Round →';
+        nextBtn.onclick = () => { ccState.currentRound++; renderCCRound(); };
+    }
+}
+
+function handleCCSearch(e) {
+    const query = stripDiacritics(e.target.value.toLowerCase().trim());
+    const dropdown = document.getElementById('cc-dropdown');
+
+    if (query.length < 2) {
+        dropdown.classList.add('hidden');
+        return;
+    }
+
+    const matches = TRIVIA_DATA.valid_target_teams.filter(team => {
+        const name = team.name.replace(/^[A-Z]+:\s*/, '');
+        return stripDiacritics(name.toLowerCase()).includes(query);
+    }).slice(0, 8);
+
+    if (matches.length === 0) {
+        dropdown.classList.add('hidden');
+        return;
+    }
+
+    dropdown.innerHTML = matches.map(team => {
+        const name = team.name.replace(/^[A-Z]+:\s*/, '');
+        return `<div class="result-item" data-id="${team.id}" data-name="${name}">${name}</div>`;
+    }).join('');
+    dropdown.classList.remove('hidden');
+
+    dropdown.querySelectorAll('.result-item').forEach(item => {
+        item.addEventListener('click', () => handleCCGuess(item.dataset.id, item.dataset.name));
+    });
+}
+
+function handleCCGuess(clubId, clubName) {
+    const puzzle = ccState.puzzles[ccState.currentRound];
+    const isCorrect = clubId === puzzle.clubId;
+
+    const input = document.getElementById('cc-search-input');
+    input.disabled = true;
+    input.value = clubName;
+    document.getElementById('cc-dropdown').classList.add('hidden');
+    document.getElementById('cc-give-up-btn').style.display = 'none';
+
+    if (isCorrect) {
+        ccState.score++;
+        ccState.results.push('correct');
+        document.getElementById('cc-score-display').textContent = ccState.score;
+        document.getElementById('cc-feedback').innerHTML =
+            `<div class="cc-feedback-correct">✓ Correct! It was <strong>${puzzle.clubName}</strong>.</div>`;
+        showToast(`Correct! ${puzzle.clubName}`, 'success');
+    } else {
+        ccState.results.push('wrong');
+        document.getElementById('cc-feedback').innerHTML =
+            `<div class="cc-feedback-wrong">✗ Wrong! The answer was <strong>${puzzle.clubName}</strong>.</div>`;
+        showToast(`It was ${puzzle.clubName}`, 'error');
+    }
+
+    const nextBtn = document.getElementById('cc-next-btn');
+    nextBtn.classList.remove('hidden');
+
+    if (ccState.currentRound === ccState.totalRounds - 1) {
+        nextBtn.textContent = 'See Results →';
+        nextBtn.onclick = showCCResults;
+    } else {
+        nextBtn.textContent = 'Next Round →';
+        nextBtn.onclick = () => {
+            ccState.currentRound++;
+            renderCCRound();
+        };
+    }
+}
+
+function showCCResults() {
+    document.getElementById('cc-game').classList.add('hidden');
+    document.getElementById('cc-results-panel').classList.remove('hidden');
+
+    const score = ccState.score;
+    const total = ccState.totalRounds;
+
+    const title = score === total ? 'Perfect Score! 🎯' :
+                  score >= Math.ceil(total * 0.7) ? 'Well Played!' :
+                  score >= Math.ceil(total * 0.4) ? 'Not Bad!' :
+                  'Better Luck Next Time!';
+
+    document.getElementById('cc-result-title').textContent = title;
+    document.getElementById('cc-result-msg').textContent = `Common Club · ${score}/${total}`;
+    document.getElementById('cc-emoji-grid').textContent =
+        ccState.results.map(r => r === 'correct' ? '🟩' : '🟥').join('');
+}
+
+async function handleCCShare() {
+    const score = ccState.score;
+    const total = ccState.totalRounds;
+    const emojiGrid = document.getElementById('cc-emoji-grid').textContent;
+    const text = `Club Combos – Common Club\n${emojiGrid}\nScore: ${score}/${total}\nhttps://konstantinoslaloudakis.github.io/ClubCombos/`;
+
+    if (navigator.share) {
+        try { await navigator.share({ text }); return; } catch(e) {}
+    }
+    try {
+        await navigator.clipboard.writeText(text);
+        showToast('Result copied to clipboard!', 'success');
+    } catch(e) {
+        showToast('Could not copy to clipboard.', 'error');
+    }
 }
 
 // Start
