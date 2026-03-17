@@ -97,6 +97,7 @@ function startDailyChallenge() {
 
     dom.maxScore.textContent = totalCells;
     document.getElementById('btn-give-up').style.display = 'block';
+    document.getElementById('btn-see-results').style.display = 'none';
     renderLives();
     dom.score.textContent = state.score;
     buildGrid();
@@ -183,6 +184,7 @@ function init() {
     document.getElementById('btn-daily').addEventListener('click', startDailyChallenge);
     document.getElementById('btn-give-up').addEventListener('click', gameOver);
     document.getElementById('btn-restart').addEventListener('click', resetToStart);
+    document.getElementById('btn-see-results').addEventListener('click', () => showView('end'));
     document.getElementById('btn-play-again').addEventListener('click', resetToStart);
     document.getElementById('btn-share').addEventListener('click', handleShare);
 
@@ -245,9 +247,10 @@ function startGame(columns) {
     state.cells = {};
     state.usedPlayers.clear();
     dom.maxScore.textContent = totalCells;
-    
+
     document.getElementById('btn-give-up').style.display = 'block';
-    
+    document.getElementById('btn-see-results').style.display = 'none';
+
     // Filter target teams based on Easy Mode toggle
     const isEasyMode = document.getElementById('easy-mode-toggle').checked;
     let availableTargets = [...TRIVIA_DATA.valid_target_teams];
@@ -592,7 +595,7 @@ function gameOver() {
         }
     });
 
-    // Transition to end screen after a short delay so the reveals are visible
+    // Prepare the end screen content, then let the user navigate there manually
     gameOverTimeoutId = setTimeout(() => {
         gameOverTimeoutId = null;
 
@@ -614,7 +617,9 @@ function gameOver() {
             document.getElementById('share-section').classList.add('hidden');
         }
 
-        showView('end');
+        // Hide give-up, show "See Results" button
+        document.getElementById('btn-give-up').style.display = 'none';
+        document.getElementById('btn-see-results').style.display = '';
     }, 1500);
 }
 
