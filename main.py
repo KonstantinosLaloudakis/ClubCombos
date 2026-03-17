@@ -3,11 +3,13 @@ ClubCombos - Find football players who played for multiple clubs.
 Uses FBRef's multi-club tool to query player combinations.
 
 Usage:
-    python main.py teams              - Scrape all available teams from FBRef
-    python main.py search "term"      - Search for a team by name
-    python main.py combo ID1 ID2      - Query a single team combination
-    python main.py batch "TeamName"   - Run a team against all Top 5 League teams
-    python main.py batch_all "TeamName" - Run a team against ALL available teams
+    python main.py teams                     - Scrape all available teams from FBRef
+    python main.py search "term"             - Search for a team by name
+    python main.py combo ID1 ID2             - Query a single team combination
+    python main.py batch "TeamName"          - Run a team against all Top 5 League teams
+    python main.py batch_all "TeamName"      - Run a team against ALL available teams
+    python main.py careers                   - Scrape career histories for all players
+    python main.py careers --resume          - Resume a previous career scrape
 """
 
 import sys
@@ -99,6 +101,18 @@ def cmd_batch(team_name, all_teams=False):
     run_batch(squad1_name=team_name, top5_only=not all_teams)
 
 
+def cmd_careers(resume=False):
+    """Scrape career histories for all players in the combo data."""
+    from scrape_careers import run_career_scrape
+    run_career_scrape(resume=resume)
+
+
+def cmd_badges(resume=False):
+    """Fetch club badge URLs from Wikipedia and store in data/badges.json."""
+    from fetch_badges import run_fetch_badges
+    run_fetch_badges(resume=resume)
+
+
 def main():
     if len(sys.argv) < 2:
         print(__doc__)
@@ -128,6 +142,10 @@ def main():
             print("Usage: python main.py batch_all <team_name>")
             return
         cmd_batch(sys.argv[2], all_teams=True)
+    elif command == "careers":
+        cmd_careers(resume="--resume" in sys.argv)
+    elif command == "badges":
+        cmd_badges(resume="--resume" in sys.argv)
     else:
         print(f"Unknown command: {command}")
         print(__doc__)

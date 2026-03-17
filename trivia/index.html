@@ -70,6 +70,14 @@
                             <small>Name the club these players share</small>
                         </span>
                     </button>
+
+                    <button id="btn-career-path" class="btn-game-mode btn-game-mode--teal">
+                        <span class="game-mode-icon">📅</span>
+                        <span class="game-mode-info">
+                            <strong class="teal-text">Career Path</strong>
+                            <small>Sort a player's clubs in order</small>
+                        </span>
+                    </button>
                 </div>
             </div>
 
@@ -140,6 +148,41 @@
                     <div class="cc-result-actions">
                         <button id="cc-play-again-btn" class="btn btn-primary">Play Again</button>
                         <button id="cc-menu-btn" class="btn btn-outline">Back to Menu</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Career Path Screen -->
+            <div id="career-path-screen" class="view-panel">
+
+                <!-- Round view -->
+                <div id="cp-game" class="cp-container">
+                    <div class="cp-meta">
+                        <span class="cp-label">Round <span id="cp-round-num">1</span>/<span id="cp-round-total">5</span></span>
+                        <span class="cp-label">Score: <span id="cp-score-display">0</span>/<span id="cp-max-score-display">0</span></span>
+                    </div>
+                    <p class="cp-prompt">Arrange these clubs from earliest to latest.</p>
+                    <p class="cp-player-name" id="cp-player-name"></p>
+                    <div class="cp-clubs" id="cp-clubs"></div>
+                    <div class="cp-actions">
+                        <button id="cp-submit-btn" class="btn btn-primary cp-action-btn" disabled>Confirm Order</button>
+                        <button id="cp-give-up-btn" class="btn-surrender">🏳️ Give up on this round</button>
+                    </div>
+                    <div id="cp-feedback" class="cp-feedback"></div>
+                    <button id="cp-next-btn" class="btn btn-primary cp-action-btn hidden">Next Round →</button>
+                    <button id="cp-quit-btn" class="btn btn-outline cp-action-btn">Back to Menu</button>
+                </div>
+
+                <!-- Results view -->
+                <div id="cp-results-panel" class="cp-container hidden">
+                    <h2 id="cp-result-title" class="cp-result-title"></h2>
+                    <p id="cp-result-msg" class="cp-result-msg"></p>
+                    <pre id="cp-emoji-grid" class="emoji-grid"></pre>
+                    <button id="cp-share-btn" class="btn btn-outline">📋 Copy Result</button>
+                    <div class="cp-result-actions">
+                        <button id="cp-play-again-btn" class="btn btn-primary">Play Again</button>
+                        <button id="cp-menu-btn" class="btn btn-outline">Back to Menu</button>
                     </div>
                 </div>
 

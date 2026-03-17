@@ -8,8 +8,10 @@ import json
 import os
 import re
 
-DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "combos")
-OUTPUT_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data.js")
+DATA_DIR     = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "combos")
+CAREERS_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "careers.json")
+BADGES_FILE  = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "badges.json")
+OUTPUT_FILE  = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data.js")
 
 def clean_name(name):
     """Remove country prefixes like 'ENG: ' or 'GRE: '"""
@@ -127,6 +129,22 @@ def main():
                 final_matrix[oly_id][pao_id] = shared
                 final_matrix[pao_id][oly_id] = shared
 
+    # Load career data and keep only players that exist in our dataset
+    careers_data = {}
+    if os.path.exists(CAREERS_FILE):
+        with open(CAREERS_FILE, "r", encoding="utf-8") as f:
+            raw_careers = json.load(f)
+        for pid, stints in raw_careers.items():
+            if pid in players_dict and stints and len(stints) >= 2:
+                careers_data[pid] = stints
+
+    # Load badge URLs (keyed by club name, value is thumbnail URL or null)
+    badges_data = {}
+    if os.path.exists(BADGES_FILE):
+        with open(BADGES_FILE, "r", encoding="utf-8") as f:
+            raw_badges = json.load(f)
+        badges_data = {k: v for k, v in raw_badges.items() if v}  # drop nulls
+
     # Compile the final object
     trivia_data = {
         "focus_teams": [
@@ -135,7 +153,9 @@ def main():
         ],
         "valid_target_teams": valid_target_teams,
         "players": players_dict,
-        "matrix": final_matrix
+        "matrix": final_matrix,
+        "careers": careers_data,
+        "badges": badges_data
     }
 
     # Write as a JavaScript variable assignment
@@ -147,6 +167,10 @@ def main():
     print(f"Successfully generated JS database at {OUTPUT_FILE}")
     print(f"  - {len(players_dict)} Total unique players mapped")
     print(f"  - {len(valid_target_teams)} Valid Top 5 teams available for columns")
+    print(f"  - {len(careers_data)} Players with career history included")
+    four_to_six = sum(1 for s in careers_data.values() if 4 <= len(s) <= 6)
+    print(f"  - {four_to_six} of those have 4-6 stints (Career Path puzzle pool)")
+    print(f"  - {len(badges_data)} club badges included")
 
 if __name__ == "__main__":
     main()

@@ -21,7 +21,8 @@ const views = {
     start: document.getElementById('start-screen'),
     game: document.getElementById('game-screen'),
     end: document.getElementById('game-over-screen'),
-    commonClub: document.getElementById('common-club-screen')
+    commonClub: document.getElementById('common-club-screen'),
+    careerPath: document.getElementById('career-path-screen')
 };
 
 const dom = {
@@ -193,6 +194,15 @@ function init() {
     document.getElementById('cc-share-btn').addEventListener('click', handleCCShare);
     document.getElementById('cc-search-input').addEventListener('input', handleCCSearch);
     document.getElementById('cc-give-up-btn').addEventListener('click', handleCCGiveUp);
+
+    // Career Path buttons
+    document.getElementById('btn-career-path').addEventListener('click', startCareerPath);
+    document.getElementById('cp-submit-btn').addEventListener('click', submitCPOrder);
+    document.getElementById('cp-give-up-btn').addEventListener('click', handleCPGiveUp);
+    document.getElementById('cp-quit-btn').addEventListener('click', resetToStart);
+    document.getElementById('cp-play-again-btn').addEventListener('click', startCareerPath);
+    document.getElementById('cp-menu-btn').addEventListener('click', resetToStart);
+    document.getElementById('cp-share-btn').addEventListener('click', handleCPShare);
 
     // Close CC dropdown when clicking outside
     document.addEventListener('click', e => {
@@ -632,6 +642,11 @@ function stripDiacritics(str) {
     return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 }
 
+function getClubBadge(clubName) {
+    // Badge URLs are pre-fetched at build time and baked into TRIVIA_DATA.badges
+    return TRIVIA_DATA.badges?.[clubName] ?? null;
+}
+
 async function fetchPlayerImage(playerName) {
     try {
         // We append "football" to improve Wikipedia search accuracy for common names
@@ -851,6 +866,289 @@ async function handleCCShare() {
     const total = ccState.totalRounds;
     const emojiGrid = document.getElementById('cc-emoji-grid').textContent;
     const text = `Club Combos – Common Club\n${emojiGrid}\nScore: ${score}/${total}\nhttps://konstantinoslaloudakis.github.io/ClubCombos/`;
+
+    if (navigator.share) {
+        try { await navigator.share({ text }); return; } catch(e) {}
+    }
+    try {
+        await navigator.clipboard.writeText(text);
+        showToast('Result copied to clipboard!', 'success');
+    } catch(e) {
+        showToast('Could not copy to clipboard.', 'error');
+    }
+}
+
+// --- Career Path Game ---
+
+const cpState = {
+    puzzles: [],
+    currentRound: 0,
+    totalRounds: 5,
+    score: 0,       // sum of correct pairs earned
+    maxScore: 0,    // sum of possible pairs across played rounds
+    results: [],    // [{earned, possible, gaveUp?}]
+    currentScrambled: []  // clubs shown this round (shuffled); DOM order = user's answer
+};
+
+function buildCareerPuzzles() {
+    const puzzles = [];
+    for (const [pid, stints] of Object.entries(TRIVIA_DATA.careers)) {
+        if (!stints || stints.length < 4) continue;
+
+        let selected = [...stints];
+        if (selected.length > 5) {
+            // Keep the 5 most-played clubs, then restore chronological order
+            selected.sort((a, b) => b.apps - a.apps);
+            selected = selected.slice(0, 5);
+        }
+        selected.sort((a, b) => a.start_year - b.start_year);
+
+        puzzles.push({
+            playerId: pid,
+            playerName: TRIVIA_DATA.players[pid],
+            clubs: selected
+        });
+    }
+    return puzzles;
+}
+
+function startCareerPath() {
+    const all = buildCareerPuzzles();
+    shuffleArray(all);
+
+    cpState.puzzles = all.slice(0, cpState.totalRounds);
+    cpState.currentRound = 0;
+    cpState.score = 0;
+    cpState.maxScore = 0;
+    cpState.results = [];
+
+    document.getElementById('cp-game').classList.remove('hidden');
+    document.getElementById('cp-results-panel').classList.add('hidden');
+    document.querySelector('.score-panel').style.visibility = 'hidden';
+
+    showView('careerPath');
+    renderCPRound();
+}
+
+function renderCPRound() {
+    const puzzle = cpState.puzzles[cpState.currentRound];
+
+    document.getElementById('cp-round-num').textContent = cpState.currentRound + 1;
+    document.getElementById('cp-round-total').textContent = cpState.totalRounds;
+    document.getElementById('cp-score-display').textContent = cpState.score;
+    document.getElementById('cp-max-score-display').textContent = cpState.maxScore;
+    document.getElementById('cp-player-name').textContent = puzzle.playerName;
+
+    // Scramble clubs for this round
+    cpState.currentScrambled = [...puzzle.clubs];
+    shuffleArray(cpState.currentScrambled);
+
+    renderCPCards();
+
+    document.getElementById('cp-feedback').innerHTML = '';
+    document.getElementById('cp-submit-btn').disabled = false;
+    document.getElementById('cp-submit-btn').style.display = '';
+    document.getElementById('cp-give-up-btn').style.display = '';
+
+    const nextBtn = document.getElementById('cp-next-btn');
+    nextBtn.classList.add('hidden');
+    nextBtn.onclick = null;
+}
+
+function renderCPCards() {
+    const container = document.getElementById('cp-clubs');
+    container.innerHTML = cpState.currentScrambled.map((stint, idx) => `
+        <div class="cp-club-card" data-stintidx="${idx}">
+            <span class="cp-drag-handle">⠿</span>
+            <div class="cp-badge-wrap"><img class="cp-club-badge" id="cp-badge-${idx}" draggable="false" alt=""></div>
+            <span class="cp-club-name">${stint.club}</span>
+        </div>
+    `).join('');
+    initCPDragDrop(container);
+
+    cpState.currentScrambled.forEach((stint, idx) => {
+        const img = document.getElementById(`cp-badge-${idx}`);
+        if (!img) return;
+        const src = getClubBadge(stint.club);
+        if (src) { img.src = src; img.classList.add('loaded'); }
+    });
+}
+
+function initCPDragDrop(container) {
+    let drag = null;
+
+    container.addEventListener('pointerdown', e => {
+        const card = e.target.closest('.cp-club-card');
+        if (!card) return;
+        e.preventDefault();
+
+        const rect = card.getBoundingClientRect();
+        const grabOffsetY = e.clientY - rect.top;
+
+        // Fixed clone follows the pointer
+        const ghost = card.cloneNode(true);
+        Object.assign(ghost.style, {
+            position: 'fixed',
+            left:  rect.left + 'px',
+            top:   (e.clientY - grabOffsetY) + 'px',
+            width: rect.width + 'px',
+            margin: '0',
+            zIndex: '9999',
+            opacity: '0.9',
+            pointerEvents: 'none',
+            boxShadow: '0 10px 30px rgba(0,0,0,0.5)',
+            transform: 'scale(1.03)',
+            transition: 'none',
+        });
+        document.body.appendChild(ghost);
+        card.classList.add('cp-card-dragging');
+
+        drag = { card, ghost, grabOffsetY };
+        container.setPointerCapture(e.pointerId);
+    });
+
+    container.addEventListener('pointermove', e => {
+        if (!drag) return;
+        drag.ghost.style.top = (e.clientY - drag.grabOffsetY) + 'px';
+
+        // Find insertion point by scanning other cards' midpoints
+        const others = [...container.querySelectorAll('.cp-club-card:not(.cp-card-dragging)')];
+        let insertBefore = null;
+        for (const c of others) {
+            const r = c.getBoundingClientRect();
+            if (e.clientY < r.top + r.height / 2) { insertBefore = c; break; }
+        }
+        if (insertBefore) container.insertBefore(drag.card, insertBefore);
+        else              container.appendChild(drag.card);
+    });
+
+    const endDrag = () => {
+        if (!drag) return;
+        drag.ghost.remove();
+        drag.card.classList.remove('cp-card-dragging');
+        drag = null;
+    };
+    container.addEventListener('pointerup',     endDrag);
+    container.addEventListener('pointercancel', endDrag);
+}
+
+function cpScorePositions(userOrder, correctOrder) {
+    // 1 point for each club that lands in its exact correct position.
+    return correctOrder.map((stint, i) => userOrder[i]?.club === stint.club);
+}
+
+function showCPFeedback(userOrder, correctOrder, hits) {
+    const earned = hits.filter(Boolean).length;
+    const possible = hits.length;
+
+    let html = '<div class="cp-correct-order">';
+    html += '<p class="cp-feedback-label">Correct order:</p>';
+
+    correctOrder.forEach((stint, i) => {
+        const correct = hits[i];
+        html += `
+            <div class="cp-correct-item ${correct ? 'pos-correct' : 'pos-wrong'}">
+                <span class="cp-pos-icon">${correct ? '✓' : '✗'}</span>
+                <div class="cp-badge-wrap"><img class="cp-club-badge" id="cp-fb-badge-${i}" draggable="false" alt=""></div>
+                <div class="cp-item-info">
+                    <span class="cp-item-club">${stint.club}</span>
+                    <span class="cp-item-years">${stint.start_year}–${stint.end_year} · ${stint.apps} apps</span>
+                </div>
+            </div>`;
+    });
+
+    // Load badges into feedback rows after HTML is set
+    setTimeout(() => {
+        correctOrder.forEach((stint, i) => {
+            const img = document.getElementById(`cp-fb-badge-${i}`);
+            if (!img) return;
+            const src = getClubBadge(stint.club);
+            if (src) { img.src = src; img.classList.add('loaded'); }
+        });
+    }, 0);
+
+    html += `<p class="cp-round-score">${earned}/${possible} clubs in the right position</p>`;
+    html += '</div>';
+
+    document.getElementById('cp-feedback').innerHTML = html;
+}
+
+function submitCPOrder() {
+    const puzzle = cpState.puzzles[cpState.currentRound];
+    const userOrder = [...document.querySelectorAll('#cp-clubs .cp-club-card')]
+        .map(c => cpState.currentScrambled[parseInt(c.dataset.stintidx)]);
+    const hits = cpScorePositions(userOrder, puzzle.clubs);
+    const earned = hits.filter(Boolean).length;
+    const possible = hits.length;
+
+    cpState.score += earned;
+    cpState.maxScore += possible;
+    cpState.results.push({ earned, possible });
+
+    document.getElementById('cp-score-display').textContent = cpState.score;
+    document.getElementById('cp-max-score-display').textContent = cpState.maxScore;
+    document.getElementById('cp-submit-btn').style.display = 'none';
+    document.getElementById('cp-give-up-btn').style.display = 'none';
+    document.querySelectorAll('.cp-club-card').forEach(c => c.style.pointerEvents = 'none');
+
+    showCPFeedback(userOrder, puzzle.clubs, hits);
+    advanceCPRound();
+}
+
+function handleCPGiveUp() {
+    const puzzle = cpState.puzzles[cpState.currentRound];
+    const possible = puzzle.clubs.length;
+
+    cpState.maxScore += possible;
+    cpState.results.push({ earned: 0, possible, gaveUp: true });
+
+    document.getElementById('cp-max-score-display').textContent = cpState.maxScore;
+    document.getElementById('cp-submit-btn').style.display = 'none';
+    document.getElementById('cp-give-up-btn').style.display = 'none';
+    document.querySelectorAll('.cp-club-card').forEach(c => c.style.pointerEvents = 'none');
+
+    showCPFeedback(null, puzzle.clubs, new Array(puzzle.clubs.length).fill(false));
+    advanceCPRound();
+}
+
+function advanceCPRound() {
+    const nextBtn = document.getElementById('cp-next-btn');
+    nextBtn.classList.remove('hidden');
+    const isLast = cpState.currentRound === cpState.totalRounds - 1;
+    nextBtn.textContent = isLast ? 'See Results →' : 'Next Round →';
+    nextBtn.onclick = isLast ? showCPResults : () => { cpState.currentRound++; renderCPRound(); };
+}
+
+function showCPResults() {
+    document.getElementById('cp-game').classList.add('hidden');
+    document.getElementById('cp-results-panel').classList.remove('hidden');
+
+    const score = cpState.score;
+    const max = cpState.maxScore;
+    const pct = max > 0 ? score / max : 0;
+
+    const title = pct === 1    ? 'Perfect! 🎯'  :
+                  pct >= 0.75  ? 'Great Work!'   :
+                  pct >= 0.5   ? 'Not Bad!'      :
+                  pct > 0      ? 'Keep Practising!' : 'Better Luck Next Time!';
+
+    document.getElementById('cp-result-title').textContent = title;
+    document.getElementById('cp-result-msg').textContent = `Career Path · ${score}/${max} clubs correct`;
+
+    const emojis = cpState.results.map(r => {
+        if (r.gaveUp) return '⬛';
+        if (r.earned === r.possible) return '🟩';
+        if (r.earned > 0) return '🟨';
+        return '🟥';
+    }).join('');
+    document.getElementById('cp-emoji-grid').textContent = emojis;
+}
+
+async function handleCPShare() {
+    const score = cpState.score;
+    const max = cpState.maxScore;
+    const emojis = document.getElementById('cp-emoji-grid').textContent;
+    const text = `Club Combos – Career Path\n${emojis}\nScore: ${score}/${max} clubs correct\nhttps://konstantinoslaloudakis.github.io/ClubCombos/`;
 
     if (navigator.share) {
         try { await navigator.share({ text }); return; } catch(e) {}
