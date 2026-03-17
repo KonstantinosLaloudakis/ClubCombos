@@ -26,11 +26,12 @@ from scrape_teams import launch_browser, wait_for_page_ready
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
 COMBOS_DIR = os.path.join(DATA_DIR, "combos")
 OUTPUT_FILE = os.path.join(DATA_DIR, "careers.json")
+NATIONALITY_FILE = os.path.join(DATA_DIR, "nationalities.json")
 
 PLAYER_BASE_URL = "https://fbref.com/en/players/{player_id}/"
 REQUEST_DELAY = 4       # seconds between requests
 SAVE_INTERVAL = 20      # save progress every N players
-MIN_APPS = 3            # minimum appearances to count a stint
+MIN_APPS = 1            # minimum appearances to count a stint
 
 
 # ---------------------------------------------------------------------------
@@ -123,6 +124,29 @@ def _find_career_table(soup):
     return None
 
 
+def parse_player_nationality(soup):
+    """
+    Extract a player's nationality from their FBRef page.
+    Returns a country name string or None.
+    """
+    meta = soup.find("div", id="meta")
+    if not meta:
+        return None
+
+    # Strategy 1: anchor next to a flag span (f-i f-XX class)
+    for span in meta.find_all("span", class_=re.compile(r'\bf-i\b')):
+        for a in [span.find_previous_sibling("a"), span.find_next_sibling("a")]:
+            if a and "/country/" in a.get("href", ""):
+                return a.get_text(strip=True)
+
+    # Strategy 2: any anchor pointing to a country players page
+    for p in meta.find_all("p"):
+        for a in p.find_all("a", href=re.compile(r'/en/country/')):
+            return a.get_text(strip=True)
+
+    return None
+
+
 def parse_player_career(html):
     """
     Parse a player's FBRef page and return an ordered list of career stints.
@@ -136,14 +160,15 @@ def parse_player_career(html):
     - Results are sorted chronologically by start_year.
     """
     soup = BeautifulSoup(html, "lxml")
+    nationality = parse_player_nationality(soup)
     table = _find_career_table(soup)
 
     if not table:
-        return None  # page structure not recognised
+        return None, nationality  # page structure not recognised
 
     tbody = table.find("tbody")
     if not tbody:
-        return None
+        return None, nationality
 
     raw_rows = []
 
@@ -188,9 +213,9 @@ def parse_player_career(html):
         raw_rows.append({"squad": team_text, "year": start_year, "apps": apps, "goals": goals})
 
     if not raw_rows:
-        return []
+        return [], nationality
 
-    return _process_raw_rows(raw_rows)
+    return _process_raw_rows(raw_rows), nationality
 
 
 def _process_raw_rows(raw_rows):
@@ -269,8 +294,8 @@ def scrape_player_career(driver, player_id):
 
     time.sleep(3)  # allow FBRef's JS to uncomment stats tables
 
-    career = parse_player_career(driver.page_source)
-    return career
+    career, nationality = parse_player_career(driver.page_source)
+    return career, nationality
 
 
 # ---------------------------------------------------------------------------
@@ -293,6 +318,21 @@ def _save_careers(careers_dict):
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(output, f, indent=2, ensure_ascii=False)
     print(f"    Saved {len(careers_dict)} players → {OUTPUT_FILE}")
+
+
+def _save_nationalities(nationalities_dict):
+    """Persist the nationalities dict to disk."""
+    os.makedirs(DATA_DIR, exist_ok=True)
+    with open(NATIONALITY_FILE, "w", encoding="utf-8") as f:
+        json.dump(nationalities_dict, f, indent=2, ensure_ascii=False)
+    print(f"    Saved {len(nationalities_dict)} nationalities → {NATIONALITY_FILE}")
+
+
+def load_existing_nationalities():
+    if not os.path.exists(NATIONALITY_FILE):
+        return {}
+    with open(NATIONALITY_FILE, "r", encoding="utf-8") as f:
+        return json.load(f)
 
 
 def _needs_goals(stints):
@@ -321,6 +361,7 @@ def run_career_scrape(resume=False, goals_only=False, headless=False):
     print(f"Found {len(all_players)} unique players in combo data.")
 
     careers = {}
+    nationalities = load_existing_nationalities()
     if resume or goals_only:
         careers = load_existing_careers()
         skipped = sum(1 for pid, _ in all_players if pid in careers)
@@ -359,7 +400,10 @@ def run_career_scrape(resume=False, goals_only=False, headless=False):
         for i, (player_id, player_name) in enumerate(to_scrape, start=1):
             print(f"[{i}/{total}] {player_name} ({player_id})")
 
-            career = scrape_player_career(driver, player_id)
+            career, nationality = scrape_player_career(driver, player_id)
+
+            if nationality:
+                nationalities[player_id] = nationality
 
             if career is None:
                 print(f"    ✗ Failed to parse page")
@@ -368,14 +412,16 @@ def run_career_scrape(resume=False, goals_only=False, headless=False):
                 print(f"    – Only {len(career)} usable stint(s), storing anyway")
                 careers[player_id] = career
             else:
+                nat_str = f" [{nationality}]" if nationality else ""
                 club_names = " → ".join(s["club"] for s in career)
-                print(f"    ✓ {len(career)} clubs: {club_names}")
+                print(f"    ✓ {len(career)} clubs{nat_str}: {club_names}")
                 careers[player_id] = career
 
             # Auto-save progress
             if i % SAVE_INTERVAL == 0:
                 print(f"  [Auto-save at {i}/{total}]")
                 _save_careers(careers)
+                _save_nationalities(nationalities)
 
             if i < total:
                 time.sleep(REQUEST_DELAY)
@@ -387,6 +433,7 @@ def run_career_scrape(resume=False, goals_only=False, headless=False):
             pass
 
     _save_careers(careers)
+    _save_nationalities(nationalities)
 
     valid = sum(1 for v in careers.values() if v and len(v) >= 4)
     print(f"\n{'='*50}")

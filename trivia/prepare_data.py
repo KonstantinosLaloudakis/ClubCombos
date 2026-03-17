@@ -8,10 +8,11 @@ import json
 import os
 import re
 
-DATA_DIR     = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "combos")
-CAREERS_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "careers.json")
-BADGES_FILE  = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "badges.json")
-OUTPUT_FILE  = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data.js")
+DATA_DIR           = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "combos")
+CAREERS_FILE       = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "careers.json")
+BADGES_FILE        = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "badges.json")
+NATIONALITIES_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "nationalities.json")
+OUTPUT_FILE        = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data.js")
 
 def clean_name(name):
     """Remove country prefixes like 'ENG: ' or 'GRE: '"""
@@ -145,6 +146,14 @@ def main():
             raw_badges = json.load(f)
         badges_data = {k: v for k, v in raw_badges.items() if v}  # drop nulls
 
+    # Load nationalities (keyed by player id, value is country name string)
+    nationalities_data = {}
+    if os.path.exists(NATIONALITIES_FILE):
+        with open(NATIONALITIES_FILE, "r", encoding="utf-8") as f:
+            raw_nat = json.load(f)
+        nationalities_data = {pid: nat for pid, nat in raw_nat.items()
+                              if pid in players_dict and nat}
+
     # Compile the final object
     trivia_data = {
         "focus_teams": [
@@ -155,7 +164,8 @@ def main():
         "players": players_dict,
         "matrix": final_matrix,
         "careers": careers_data,
-        "badges": badges_data
+        "badges": badges_data,
+        "nationalities": nationalities_data
     }
 
     # Write as a JavaScript variable assignment
@@ -171,6 +181,7 @@ def main():
     four_to_six = sum(1 for s in careers_data.values() if 4 <= len(s) <= 6)
     print(f"  - {four_to_six} of those have 4-6 stints (Career Path puzzle pool)")
     print(f"  - {len(badges_data)} club badges included")
+    print(f"  - {len(nationalities_data)} player nationalities included")
 
 if __name__ == "__main__":
     main()
