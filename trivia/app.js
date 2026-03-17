@@ -22,7 +22,8 @@ const views = {
     game: document.getElementById('game-screen'),
     end: document.getElementById('game-over-screen'),
     commonClub: document.getElementById('common-club-screen'),
-    careerPath: document.getElementById('career-path-screen')
+    careerPath: document.getElementById('career-path-screen'),
+    mysteryPlayer: document.getElementById('mystery-player-screen')
 };
 
 const dom = {
@@ -196,6 +197,23 @@ function init() {
     document.getElementById('cc-share-btn').addEventListener('click', handleCCShare);
     document.getElementById('cc-search-input').addEventListener('input', handleCCSearch);
     document.getElementById('cc-give-up-btn').addEventListener('click', handleCCGiveUp);
+
+    // Mystery Player buttons
+    document.getElementById('btn-mystery-player').addEventListener('click', startMysteryPlayer);
+    document.getElementById('mp-give-up-btn').addEventListener('click', handleMPGiveUp);
+    document.getElementById('mp-quit-btn').addEventListener('click', resetToStart);
+    document.getElementById('mp-play-again-btn').addEventListener('click', startMysteryPlayer);
+    document.getElementById('mp-menu-btn').addEventListener('click', resetToStart);
+    document.getElementById('mp-share-btn').addEventListener('click', handleMPShare);
+    document.getElementById('mp-search-input').addEventListener('input', handleMPSearch);
+
+    // Close MP dropdown when clicking outside
+    document.addEventListener('click', e => {
+        const wrap = document.getElementById('mp-search-input')?.closest('.mp-search-wrap');
+        if (wrap && !wrap.contains(e.target)) {
+            document.getElementById('mp-dropdown').classList.add('hidden');
+        }
+    });
 
     // Career Path buttons
     document.getElementById('btn-career-path').addEventListener('click', startCareerPath);
@@ -1155,6 +1173,249 @@ async function handleCPShare() {
     const emojis = document.getElementById('cp-emoji-grid').textContent;
     const text = `Club Combos – Career Path\n${emojis}\nScore: ${score}/${max} clubs correct\nhttps://konstantinoslaloudakis.github.io/ClubCombos/`;
 
+    if (navigator.share) {
+        try { await navigator.share({ text }); return; } catch(e) {}
+    }
+    try {
+        await navigator.clipboard.writeText(text);
+        showToast('Result copied to clipboard!', 'success');
+    } catch(e) {
+        showToast('Could not copy to clipboard.', 'error');
+    }
+}
+
+// =============================================================================
+// MYSTERY PLAYER
+// =============================================================================
+
+let mpState = {
+    puzzles: [],
+    currentRound: 0,
+    totalRounds: 5,
+    score: 0,
+    maxScore: 25,   // 5 rounds × 5 max pts
+    revealedCount: 0,
+    roundOver: false,
+    results: []     // points earned per round (0–5)
+};
+
+function buildMPPuzzles() {
+    const pool = [];
+    for (const [pid, stints] of Object.entries(TRIVIA_DATA.careers)) {
+        if (!stints || stints.length < 4 || stints.length > 6) continue;
+        if (!TRIVIA_DATA.players[pid]) continue;
+        // Sort clubs chronologically: earliest → latest
+        const sorted = [...stints].sort((a, b) => a.start_year - b.start_year);
+        pool.push({ playerId: pid, playerName: TRIVIA_DATA.players[pid], clubs: sorted });
+    }
+    return pool;
+}
+
+function startMysteryPlayer() {
+    const all = buildMPPuzzles();
+    shuffleArray(all);
+
+    mpState.puzzles    = all.slice(0, mpState.totalRounds);
+    mpState.currentRound = 0;
+    mpState.score      = 0;
+    mpState.results    = [];
+
+    document.getElementById('mp-game').classList.remove('hidden');
+    document.getElementById('mp-results-panel').classList.add('hidden');
+    document.querySelector('.score-panel').style.visibility = 'hidden';
+
+    showView('mysteryPlayer');
+    renderMPRound();
+}
+
+function renderMPRound() {
+    mpState.revealedCount = 1;
+    mpState.roundOver     = false;
+
+    document.getElementById('mp-round-num').textContent      = mpState.currentRound + 1;
+    document.getElementById('mp-round-total').textContent    = mpState.totalRounds;
+    document.getElementById('mp-score-display').textContent  = mpState.score;
+    document.getElementById('mp-max-score-display').textContent = mpState.maxScore;
+
+    renderMPClubs();
+
+    const input = document.getElementById('mp-search-input');
+    input.value    = '';
+    input.disabled = false;
+    document.getElementById('mp-dropdown').innerHTML = '';
+    document.getElementById('mp-dropdown').classList.add('hidden');
+    document.getElementById('mp-feedback').innerHTML = '';
+    document.getElementById('mp-give-up-btn').style.display = '';
+
+    const nextBtn = document.getElementById('mp-next-btn');
+    nextBtn.classList.add('hidden');
+    nextBtn.onclick = null;
+
+    setTimeout(() => input.focus(), 100);
+}
+
+function renderMPClubs() {
+    const puzzle  = mpState.puzzles[mpState.currentRound];
+    const revealed = puzzle.clubs.slice(0, mpState.revealedCount);
+
+    const giveUpBtn = document.getElementById('mp-give-up-btn');
+    if (mpState.revealedCount >= puzzle.clubs.length) {
+        giveUpBtn.textContent = '🏳️ Give Up';
+    } else {
+        giveUpBtn.textContent = '💡 Reveal Next Club';
+    }
+
+    document.getElementById('mp-clubs').innerHTML = revealed.map(stint => {
+        const badge = getClubBadge(stint.club);
+        const years = `${stint.start_year}–${stint.end_year}`;
+        const stats = `${stint.apps} apps · ${stint.goals} goals`;
+        return `
+            <div class="mp-club-card">
+                <div class="mp-badge-wrap">
+                    ${badge ? `<img class="mp-club-badge loaded" src="${badge}" alt="" draggable="false">` : ''}
+                </div>
+                <div class="mp-club-info">
+                    <span class="mp-club-name">${stint.club}</span>
+                    <span class="mp-club-stats">${stats}</span>
+                </div>
+                <span class="mp-club-years">${years}</span>
+            </div>`;
+    }).join('');
+}
+
+function handleMPSearch(e) {
+    const query    = stripDiacritics(e.target.value.toLowerCase().trim());
+    const dropdown = document.getElementById('mp-dropdown');
+
+    if (query.length < 2) { dropdown.classList.add('hidden'); return; }
+
+    const matches = Object.entries(TRIVIA_DATA.players)
+        .filter(([, name]) => stripDiacritics(name.toLowerCase()).includes(query))
+        .slice(0, 8);
+
+    if (!matches.length) { dropdown.classList.add('hidden'); return; }
+
+    dropdown.innerHTML = matches.map(([id, name]) =>
+        `<div class="result-item" data-id="${id}">${name}</div>`
+    ).join('');
+    dropdown.classList.remove('hidden');
+
+    dropdown.querySelectorAll('.result-item').forEach(item => {
+        item.addEventListener('click', () => handleMPGuess(item.dataset.id, item.textContent));
+    });
+}
+
+function handleMPGuess(playerId, playerName) {
+    if (mpState.roundOver) return;
+
+    const puzzle = mpState.puzzles[mpState.currentRound];
+    const input  = document.getElementById('mp-search-input');
+    input.value  = playerName;
+    document.getElementById('mp-dropdown').classList.add('hidden');
+
+    if (playerId === puzzle.playerId) {
+        // Correct — award points based on how many clubs were needed
+        const points = Math.max(1, 6 - mpState.revealedCount);
+        mpState.score += points;
+        mpState.results.push(points);
+        mpState.roundOver = true;
+
+        document.getElementById('mp-score-display').textContent = mpState.score;
+
+        // Reveal all remaining clubs
+        mpState.revealedCount = puzzle.clubs.length;
+        renderMPClubs();
+
+        document.getElementById('mp-feedback').innerHTML =
+            `<div class="mp-feedback-correct">✓ Correct! +${points} point${points !== 1 ? 's' : ''}</div>`;
+        input.disabled = true;
+        document.getElementById('mp-give-up-btn').style.display = 'none';
+
+        advanceMPRound();
+    } else {
+        // Wrong — reveal next club if available, otherwise end round
+        if (mpState.revealedCount < puzzle.clubs.length) {
+            mpState.revealedCount++;
+            renderMPClubs();
+            document.getElementById('mp-feedback').innerHTML =
+                `<div class="mp-feedback-wrong">✗ Not quite — here's another club.</div>`;
+            input.value = '';
+            setTimeout(() => input.focus(), 100);
+        } else {
+            // All clubs shown, still wrong
+            mpState.results.push(0);
+            mpState.roundOver = true;
+            input.disabled = true;
+            document.getElementById('mp-give-up-btn').style.display = 'none';
+            document.getElementById('mp-feedback').innerHTML =
+                `<div class="mp-feedback-wrong">The answer was <strong>${puzzle.playerName}</strong>.</div>`;
+            advanceMPRound();
+        }
+    }
+}
+
+function handleMPGiveUp() {
+    if (mpState.roundOver) return;
+
+    const puzzle = mpState.puzzles[mpState.currentRound];
+
+    if (mpState.revealedCount < puzzle.clubs.length) {
+        // Reveal the next club
+        mpState.revealedCount++;
+        renderMPClubs();
+        document.getElementById('mp-feedback').innerHTML =
+            `<div class="mp-feedback-wrong">Here's another clue — keep guessing!</div>`;
+        const input = document.getElementById('mp-search-input');
+        input.value = '';
+        setTimeout(() => input.focus(), 100);
+    } else {
+        // All clubs revealed — end round with 0 points
+        mpState.results.push(0);
+        mpState.roundOver = true;
+        document.getElementById('mp-search-input').disabled = true;
+        document.getElementById('mp-dropdown').classList.add('hidden');
+        document.getElementById('mp-give-up-btn').style.display = 'none';
+        document.getElementById('mp-feedback').innerHTML =
+            `<div class="mp-feedback-wrong">The answer was <strong>${puzzle.playerName}</strong>.</div>`;
+        advanceMPRound();
+    }
+}
+
+function advanceMPRound() {
+    const nextBtn = document.getElementById('mp-next-btn');
+    nextBtn.classList.remove('hidden');
+    const isLast = mpState.currentRound === mpState.totalRounds - 1;
+    nextBtn.textContent = isLast ? 'See Results →' : 'Next Round →';
+    nextBtn.onclick = isLast ? showMPResults : () => { mpState.currentRound++; renderMPRound(); };
+}
+
+function showMPResults() {
+    document.getElementById('mp-game').classList.add('hidden');
+    document.getElementById('mp-results-panel').classList.remove('hidden');
+
+    const score = mpState.score;
+    const max   = mpState.maxScore;
+    const pct   = score / max;
+
+    const title = pct === 1    ? 'Perfect! 🎯'       :
+                  pct >= 0.8   ? 'Excellent!'         :
+                  pct >= 0.6   ? 'Well Played!'       :
+                  pct >= 0.4   ? 'Not Bad!'           : 'Better Luck Next Time!';
+
+    document.getElementById('mp-result-title').textContent = title;
+    document.getElementById('mp-result-msg').textContent   = `Mystery Player · ${score}/${max}`;
+
+    // Emoji: 5pts=🟦 4=🟩 3=🟨 2=🟧 1=🟥 0=⬛
+    const emoji = { 5: '🟦', 4: '🟩', 3: '🟨', 2: '🟧', 1: '🟥', 0: '⬛' };
+    document.getElementById('mp-emoji-grid').textContent =
+        mpState.results.map(p => emoji[p] ?? '⬛').join('');
+}
+
+async function handleMPShare() {
+    const score    = mpState.score;
+    const max      = mpState.maxScore;
+    const emojis   = document.getElementById('mp-emoji-grid').textContent;
+    const text     = `Club Combos – Mystery Player\n${emojis}\nScore: ${score}/${max}\nhttps://konstantinoslaloudakis.github.io/ClubCombos/`;
     if (navigator.share) {
         try { await navigator.share({ text }); return; } catch(e) {}
     }

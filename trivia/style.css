@@ -777,7 +777,10 @@ input:checked + .slider:before {
 #cc-results-panel.hidden,
 #cp-game.hidden,
 #cp-results-panel.hidden,
-.cc-dropdown.hidden { display: none; }
+#mp-game.hidden,
+#mp-results-panel.hidden,
+.cc-dropdown.hidden,
+.mp-dropdown.hidden { display: none; }
 
 /* Game Mode Button (start screen) */
 .btn-game-mode {
@@ -1243,6 +1246,185 @@ input:checked + .slider:before {
 }
 
 .cp-result-actions {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+/* =============================================================================
+   MYSTERY PLAYER
+   ============================================================================= */
+
+.btn-game-mode--purple {
+    background: rgba(168, 85, 247, 0.08);
+    border-color: rgba(168, 85, 247, 0.3);
+}
+.btn-game-mode--purple:hover {
+    background: rgba(168, 85, 247, 0.18);
+    border-color: rgba(168, 85, 247, 0.6);
+}
+.btn-game-mode--purple .purple-text,
+.purple-text { color: #a855f7; }
+
+#mp-game.hidden, #mp-results-panel.hidden { display: none; }
+
+.mp-container {
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 1.5rem 1rem;
+}
+
+.mp-meta {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.mp-prompt {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    text-align: center;
+    margin: 0;
+}
+
+.mp-clubs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.mp-club-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: var(--cell-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    animation: slideInCard 0.3s ease;
+}
+
+@keyframes slideInCard {
+    from { opacity: 0; transform: translateY(-8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.mp-badge-wrap {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,0.08);
+    border-radius: 6px;
+}
+
+.mp-club-badge {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
+
+.mp-club-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.mp-club-name {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--text-primary);
+}
+
+.mp-club-stats {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.mp-club-years {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+/* Search input */
+.mp-input-area {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.mp-search-wrap {
+    position: relative;
+    width: 100%;
+}
+
+.mp-search-wrap input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: var(--cell-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    color: var(--text-primary);
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+.mp-search-wrap input:focus { outline: none; border-color: #a855f7; }
+.mp-search-wrap input:disabled { opacity: 0.5; }
+
+.mp-dropdown {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0; right: 0;
+    background: rgba(10, 15, 35, 0.98);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    z-index: 9999;
+    max-height: 220px;
+    overflow-y: auto;
+}
+
+/* Feedback */
+.mp-feedback { width: 100%; text-align: center; min-height: 1.5rem; }
+.mp-feedback-correct {
+    color: var(--success-color, #4ade80);
+    font-weight: 600;
+    font-size: 1rem;
+}
+.mp-feedback-wrong {
+    color: var(--error-color, #f87171);
+    font-size: 0.95rem;
+}
+
+.mp-action-btn { width: 100%; max-width: 340px; }
+
+/* Results panel */
+.mp-result-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+}
+.mp-result-msg {
+    color: var(--text-muted);
+    text-align: center;
+    font-size: 1rem;
+    margin: 0;
+}
+.mp-result-actions {
     display: flex;
     gap: 1rem;
     width: 100%;

@@ -78,6 +78,14 @@
                             <small>Sort a player's clubs in order</small>
                         </span>
                     </button>
+
+                    <button id="btn-mystery-player" class="btn-game-mode btn-game-mode--purple">
+                        <span class="game-mode-icon">🕵️</span>
+                        <span class="game-mode-info">
+                            <strong class="purple-text">Mystery Player</strong>
+                            <small>Guess the player from their clubs</small>
+                        </span>
+                    </button>
                 </div>
             </div>
 
@@ -184,6 +192,43 @@
                     <div class="cp-result-actions">
                         <button id="cp-play-again-btn" class="btn btn-primary">Play Again</button>
                         <button id="cp-menu-btn" class="btn btn-outline">Back to Menu</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Mystery Player Screen -->
+            <div id="mystery-player-screen" class="view-panel">
+
+                <!-- Round view -->
+                <div id="mp-game" class="mp-container">
+                    <div class="mp-meta">
+                        <span class="mp-label">Round <span id="mp-round-num">1</span>/<span id="mp-round-total">5</span></span>
+                        <span class="mp-label">Score: <span id="mp-score-display">0</span>/<span id="mp-max-score-display">25</span></span>
+                    </div>
+                    <p class="mp-prompt">Clubs are revealed one by one — guess the mystery player.</p>
+                    <div class="mp-clubs" id="mp-clubs"></div>
+                    <div class="mp-input-area">
+                        <div class="mp-search-wrap">
+                            <input type="text" id="mp-search-input" placeholder="Type a player name..." autocomplete="off">
+                            <div id="mp-dropdown" class="mp-dropdown hidden"></div>
+                        </div>
+                        <button id="mp-give-up-btn" class="btn-surrender">💡 Reveal Next Club</button>
+                    </div>
+                    <div id="mp-feedback" class="mp-feedback"></div>
+                    <button id="mp-next-btn" class="btn btn-primary mp-action-btn hidden">Next Round →</button>
+                    <button id="mp-quit-btn" class="btn btn-outline mp-action-btn">Back to Menu</button>
+                </div>
+
+                <!-- Results view -->
+                <div id="mp-results-panel" class="mp-container hidden">
+                    <h2 id="mp-result-title" class="mp-result-title"></h2>
+                    <p id="mp-result-msg" class="mp-result-msg"></p>
+                    <pre id="mp-emoji-grid" class="emoji-grid"></pre>
+                    <button id="mp-share-btn" class="btn btn-outline">📋 Copy Result</button>
+                    <div class="mp-result-actions">
+                        <button id="mp-play-again-btn" class="btn btn-primary">Play Again</button>
+                        <button id="mp-menu-btn" class="btn btn-outline">Back to Menu</button>
                     </div>
                 </div>
 

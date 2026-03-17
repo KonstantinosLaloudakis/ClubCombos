@@ -128,7 +128,7 @@ def parse_player_career(html):
     Parse a player's FBRef page and return an ordered list of career stints.
 
     Each stint is a dict:
-        {club, start_year, end_year, apps}
+        {club, start_year, end_year, apps, goals}
 
     Rules applied:
     - Only the first occurrence of each club is kept (handles loan returns).
@@ -156,6 +156,7 @@ def parse_player_career(html):
         year_cell   = row.find(attrs={"data-stat": "year_id"})
         team_cell   = row.find(attrs={"data-stat": "team"})
         games_cell  = row.find(attrs={"data-stat": "games"})
+        goals_cell  = row.find(attrs={"data-stat": "goals"})
 
         if not year_cell or not team_cell:
             continue
@@ -178,7 +179,13 @@ def parse_player_career(html):
         except (ValueError, TypeError):
             apps = 0
 
-        raw_rows.append({"squad": team_text, "year": start_year, "apps": apps})
+        goals_text = goals_cell.get_text(strip=True) if goals_cell else ""
+        try:
+            goals = int(goals_text)
+        except (ValueError, TypeError):
+            goals = 0
+
+        raw_rows.append({"squad": team_text, "year": start_year, "apps": apps, "goals": goals})
 
     if not raw_rows:
         return []
@@ -200,6 +207,7 @@ def _process_raw_rows(raw_rows):
             # Extend the current stint
             current["end_year"] = row["year"] + 1
             current["apps"] += row["apps"]
+            current["goals"] += row["goals"]
         else:
             if current:
                 grouped.append(current)
@@ -208,6 +216,7 @@ def _process_raw_rows(raw_rows):
                 "start_year": row["year"],
                 "end_year": row["year"] + 1,
                 "apps": row["apps"],
+                "goals": row["goals"],
             }
 
     if current:
@@ -286,13 +295,21 @@ def _save_careers(careers_dict):
     print(f"    Saved {len(careers_dict)} players → {OUTPUT_FILE}")
 
 
-def run_career_scrape(resume=False, headless=False):
+def _needs_goals(stints):
+    """Return True if any stint in the list is missing the 'goals' key."""
+    if not stints:
+        return False
+    return any("goals" not in s for s in stints)
+
+
+def run_career_scrape(resume=False, goals_only=False, headless=False):
     """
     Scrape career data for all players found in the combo files.
 
     Args:
-        resume:   If True, skip players already present in careers.json.
-        headless: Run Chrome headlessly (may fail Cloudflare more easily).
+        resume:     If True, skip players already present in careers.json.
+        goals_only: If True, only re-scrape players whose stints lack goal data.
+        headless:   Run Chrome headlessly (may fail Cloudflare more easily).
     """
     print("\n=== Career Scraper ===")
 
@@ -304,12 +321,20 @@ def run_career_scrape(resume=False, headless=False):
     print(f"Found {len(all_players)} unique players in combo data.")
 
     careers = {}
-    if resume:
+    if resume or goals_only:
         careers = load_existing_careers()
         skipped = sum(1 for pid, _ in all_players if pid in careers)
-        print(f"Resume mode: {skipped}/{len(all_players)} already scraped, skipping those.")
+        print(f"Resume mode: {skipped}/{len(all_players)} already scraped.")
 
-    to_scrape = [(pid, name) for pid, name in all_players if pid not in careers]
+    if goals_only:
+        # Re-scrape only players whose existing stints are missing goal data
+        to_scrape = [
+            (pid, name) for pid, name in all_players
+            if pid not in careers or _needs_goals(careers.get(pid) or [])
+        ]
+        print(f"Goals mode: {len(to_scrape)} players need goal data added.")
+    else:
+        to_scrape = [(pid, name) for pid, name in all_players if pid not in careers]
     total = len(to_scrape)
     print(f"Players to scrape: {total}")
 

@@ -10,6 +10,7 @@ Usage:
     python main.py batch_all "TeamName"      - Run a team against ALL available teams
     python main.py careers                   - Scrape career histories for all players
     python main.py careers --resume          - Resume a previous career scrape
+    python main.py careers --goals           - Re-scrape only players missing goal data
 """
 
 import sys
@@ -101,10 +102,10 @@ def cmd_batch(team_name, all_teams=False):
     run_batch(squad1_name=team_name, top5_only=not all_teams)
 
 
-def cmd_careers(resume=False):
+def cmd_careers(resume=False, goals_only=False):
     """Scrape career histories for all players in the combo data."""
     from scrape_careers import run_career_scrape
-    run_career_scrape(resume=resume)
+    run_career_scrape(resume=resume, goals_only=goals_only)
 
 
 def cmd_badges(resume=False):
@@ -143,7 +144,7 @@ def main():
             return
         cmd_batch(sys.argv[2], all_teams=True)
     elif command == "careers":
-        cmd_careers(resume="--resume" in sys.argv)
+        cmd_careers(resume="--resume" in sys.argv, goals_only="--goals" in sys.argv)
     elif command == "badges":
         cmd_badges(resume="--resume" in sys.argv)
     else:
