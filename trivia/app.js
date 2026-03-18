@@ -81,16 +81,20 @@ function startDailyChallenge() {
     state.isDailyChallenge = true;
     state.gridSize = 3;
 
-    const totalCells = TRIVIA_DATA.focus_teams.length * 3;
+    // Seeded rng — same result every day
+    const rng = mulberry32(parseInt(key));
+
+    // Pick 2 focus teams deterministically for the day
+    state.focusTeams = pickFocusTeams(rng);
+
+    const totalCells = state.focusTeams.length * 3;
     state.lives = totalCells;
     state.score = 0;
     state.cells = {};
     state.usedPlayers.clear();
-    state.focusTeams = TRIVIA_DATA.focus_teams;
 
-    // Seeded Fisher-Yates — same shuffle every day
-    const rng = mulberry32(parseInt(key));
-    const available = [...TRIVIA_DATA.valid_target_teams];
+    // Pick columns valid for today's focus pair
+    const available = [...validColumnsForPair(state.focusTeams, 1)];
     for (let i = available.length - 1; i > 0; i--) {
         const j = Math.floor(rng() * (i + 1));
         [available[i], available[j]] = [available[j], available[i]];
@@ -267,9 +271,35 @@ function showView(viewName) {
 
 // --- Game Flow ---
 
+// Pick 2 focus teams from all available, optionally using a seeded rng
+function pickFocusTeams(rng) {
+    const all = [...TRIVIA_DATA.focus_teams];
+    // Shuffle with rng (or Math.random if no rng given)
+    const rand = rng || Math.random.bind(Math);
+    for (let i = all.length - 1; i > 0; i--) {
+        const j = Math.floor(rand() * (i + 1));
+        [all[i], all[j]] = [all[j], all[i]];
+    }
+    return all.slice(0, 2);
+}
+
+// Valid columns for a given pair of focus teams
+function validColumnsForPair(focusPair, minPlayers = 1) {
+    return TRIVIA_DATA.valid_target_teams.filter(target =>
+        focusPair.every(ft => {
+            const players = TRIVIA_DATA.matrix[ft.id]?.[target.id];
+            return players && players.length >= minPlayers;
+        })
+    );
+}
+
 function startGame(columns) {
     state.gridSize = columns;
-    const totalCells = TRIVIA_DATA.focus_teams.length * columns;
+
+    // Pick 2 focus teams randomly for this game
+    state.focusTeams = pickFocusTeams();
+
+    const totalCells = state.focusTeams.length * columns;
     state.lives = totalCells;
     state.score = 0;
     state.cells = {};
@@ -281,31 +311,19 @@ function startGame(columns) {
 
     // Filter target teams based on Easy Mode toggle
     const isEasyMode = document.getElementById('easy-mode-toggle').checked;
-    let availableTargets = [...TRIVIA_DATA.valid_target_teams];
-    
-    if (isEasyMode) {
-        availableTargets = availableTargets.filter(target => {
-            // Must have at least 2 players for EVERY focus team (Greek giant)
-            return state.focusTeams.every(focusTeam => {
-                const validPlayers = TRIVIA_DATA.matrix[focusTeam.id]?.[target.id];
-                return validPlayers && validPlayers.length >= 2;
-            });
-        });
-        
-        // Safety fallback in case there aren't enough 2+ player teams
-        if (availableTargets.length < columns) {
-            console.warn("Not enough Easy Mode targets found, falling back to normal mode.");
-            availableTargets = [...TRIVIA_DATA.valid_target_teams];
-        }
+    const minPlayers  = isEasyMode ? 2 : 1;
+    let availableTargets = validColumnsForPair(state.focusTeams, minPlayers);
+
+    if (availableTargets.length < columns) {
+        availableTargets = validColumnsForPair(state.focusTeams, 1);
     }
-    
-    // Randomly select n target teams
+
     shuffleArray(availableTargets);
     state.columns = availableTargets.slice(0, columns);
-    
+
     renderLives();
     dom.score.textContent = state.score;
-    
+
     buildGrid();
     showView('game');
 }
