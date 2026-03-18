@@ -1,0 +1,4657 @@
+{
+  "focus_team": {
+    "id": "172890",
+    "name": "GRE: AEK Athens FC"
+  },
+  "target_group": "Top 5 European Leagues (ENG, ESP, GER, ITA, FRA)",
+  "scraped_at": "2026-03-18T23:04:20.014889",
+  "total_combos_found": 161,
+  "total_players": 373,
+  "combos": [
+    {
+      "team2_id": "153995",
+      "team2_name": "ENG: Arsenal FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=153995&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/b682dcf6/Sokratis-Papastathopoulos",
+          "Player": "Sokratis Papastathopoulos",
+          "Yrs": "2018-2020",
+          "MP": "70",
+          "Min": "5768",
+          "Gls": "6",
+          "Ast": "2"
+        }
+      ]
+    },
+    {
+      "team2_id": "164959",
+      "team2_name": "ENG: Aston Villa FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=164959&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/62393d3b/Joleon-Lescott",
+          "Player": "Joleon Lescott",
+          "Yrs": "2015",
+          "MP": "31",
+          "Min": "2674",
+          "Gls": "1",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "175242",
+      "team2_name": "ENG: Birmingham City FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=175242&t3=--&t4=--",
+      "player_count": 2,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/7994a7f9/Papa-Bouba-Diop",
+          "Player": "Papa Bouba Diop",
+          "Yrs": "2012",
+          "MP": "2",
+          "Min": "105",
+          "Gls": "1",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/4d425e6e/Michel",
+          "Player": "Míchel",
+          "Yrs": "2009",
+          "MP": "9",
+          "Min": "306",
+          "Gls": "0",
+          "Ast": "1"
+        }
+      ]
+    },
+    {
+      "team2_id": "164034",
+      "team2_name": "ENG: Blackpool FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=164034&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/e1f5275f/Krisztian-Nemeth",
+          "Player": "Krisztián Németh",
+          "Yrs": "2008",
+          "MP": "1",
+          "Min": "32",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "158434",
+      "team2_name": "ENG: Bolton Wanderers FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=158434&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/32fc9ff2/Eidur-Gudjohnsen",
+          "Player": "Eiður Guðjohnsen",
+          "Yrs": "1998-2014",
+          "MP": "79",
+          "Min": "1249",
+          "Gls": "24",
+          "Ast": "2"
+        }
+      ]
+    },
+    {
+      "team2_id": "172049",
+      "team2_name": "ENG: Brentford FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=172049&t3=--&t4=--",
+      "player_count": 2,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/761bc132/Moses-Odubajo",
+          "Player": "Moses Odubajo",
+          "Yrs": "2014-2018",
+          "MP": "82",
+          "Min": "6592",
+          "Gls": "3",
+          "Ast": "6"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/339fe0e8/Thomas-Strakosha",
+          "Player": "Thomas Strakosha",
+          "Yrs": "2022-2023",
+          "MP": "6",
+          "Min": "525",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "166351",
+      "team2_name": "ENG: Bristol City FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=166351&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/0033fb1b/Niclas-Eliasson",
+          "Player": "Niclas Eliasson",
+          "Yrs": "2017-2020",
+          "MP": "95",
+          "Min": "5265",
+          "Gls": "7",
+          "Ast": "21"
+        }
+      ]
+    },
+    {
+      "team2_id": "163344",
+      "team2_name": "ENG: Cardiff City FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=163344&t3=--&t4=--",
+      "player_count": 3,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/fe05804b/Cala",
+          "Player": "Cala",
+          "Yrs": "2013-2014",
+          "MP": "10",
+          "Min": "855",
+          "Gls": "2",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/8b8e759d/Marko-Grujic",
+          "Player": "Marko Grujić",
+          "Yrs": "2017",
+          "MP": "14",
+          "Min": "1079",
+          "Gls": "1",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/05778dfe/Dimitrios-Konstantopoulos",
+          "Player": "Dimitrios Konstantopoulos",
+          "Yrs": "2008",
+          "MP": "6",
+          "Min": "540",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "163816",
+      "team2_name": "ENG: Charlton Athletic FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=163816&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/aeee3365/Astrit-Ajdarevic",
+          "Player": "Astrit Ajdarević",
+          "Yrs": "2013",
+          "MP": "19",
+          "Min": "1074",
+          "Gls": "2",
+          "Ast": "2"
+        }
+      ]
+    },
+    {
+      "team2_id": "172343",
+      "team2_name": "ENG: Chelsea FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=172343&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/32fc9ff2/Eidur-Gudjohnsen",
+          "Player": "Eiður Guðjohnsen",
+          "Yrs": "2000-2005",
+          "MP": "218",
+          "Min": "13364",
+          "Gls": "61",
+          "Ast": "31"
+        }
+      ]
+    },
+    {
+      "team2_id": "176340",
+      "team2_name": "ENG: Coventry City FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=176340&t3=--&t4=--",
+      "player_count": 2,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/dccefdd4/Bright-Enobakhare",
+          "Player": "Bright Enobakhare",
+          "Yrs": "2018-2021",
+          "MP": "19",
+          "Min": "1507",
+          "Gls": "6",
+          "Ast": "1"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/05778dfe/Dimitrios-Konstantopoulos",
+          "Player": "Dimitrios Konstantopoulos",
+          "Yrs": "2007-2009",
+          "MP": "24",
+          "Min": "2151",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "158744",
+      "team2_name": "ENG: Crystal Palace FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=158744&t3=--&t4=--",
+      "player_count": 2,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/b0517083/Vasilis-Lakis",
+          "Player": "Vasilis Lakis",
+          "Yrs": "2004",
+          "MP": "18",
+          "Min": "676",
+          "Gls": "0",
+          "Ast": "1"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/1da7aa13/Gordan-Petric",
+          "Player": "Gordan Petrić",
+          "Yrs": "1998-1999",
+          "MP": "18",
+          "Min": null,
+          "Gls": "1",
+          "Ast": null
+        }
+      ]
+    },
+    {
+      "team2_id": "155480",
+      "team2_name": "ENG: Derby County FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=155480&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/90c90788/Vassilios-Borbokis",
+          "Player": "Vassilios Borbokis",
+          "Yrs": "1998-1999",
+          "MP": "16",
+          "Min": "879",
+          "Gls": "0",
+          "Ast": "1"
+        }
+      ]
+    },
+    {
+      "team2_id": "172780",
+      "team2_name": "ENG: Everton FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=172780&t3=--&t4=--",
+      "player_count": 2,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/62393d3b/Joleon-Lescott",
+          "Player": "Joleon Lescott",
+          "Yrs": "2006-2009",
+          "MP": "125",
+          "Min": "11087",
+          "Gls": "16",
+          "Ast": "4"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/4c5b714f/Djibril-Sidibe",
+          "Player": "Djibril Sidibé",
+          "Yrs": "2019",
+          "MP": "28",
+          "Min": "2094",
+          "Gls": "0",
+          "Ast": "5"
+        }
+      ]
+    },
+    {
+      "team2_id": "176928",
+      "team2_name": "ENG: Fulham FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=176928&t3=--&t4=--",
+      "player_count": 3,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/7994a7f9/Papa-Bouba-Diop",
+          "Player": "Papa Bouba Diop",
+          "Yrs": "2004-2007",
+          "MP": "76",
+          "Min": "6048",
+          "Gls": "8",
+          "Ast": "2"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/32fc9ff2/Eidur-Gudjohnsen",
+          "Player": "Eiður Guðjohnsen",
+          "Yrs": "2010",
+          "MP": "10",
+          "Min": "412",
+          "Gls": "0",
+          "Ast": "1"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/b44c39da/Muamer-Tankovic",
+          "Player": "Muamer Tanković",
+          "Yrs": "2013",
+          "MP": "3",
+          "Min": "61",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "155926",
+      "team2_name": "ENG: Hartlepool United FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=155926&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/05778dfe/Dimitrios-Konstantopoulos",
+          "Player": "Dimitrios Konstantopoulos",
+          "Yrs": "2004-2006",
+          "MP": "117",
+          "Min": "10530",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "173218",
+      "team2_name": "ENG: Hereford United FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=173218&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/aeee3365/Astrit-Ajdarevic",
+          "Player": "Astrit Ajdarević",
+          "Yrs": "2009",
+          "MP": "1",
+          "Min": "17",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "170536",
+      "team2_name": "ENG: Hull City AFC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=170536&t3=--&t4=--",
+      "player_count": 2,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/7c2a398c/Nordin-Amrabat",
+          "Player": "Nordin Amrabat",
+          "Yrs": "2024",
+          "MP": "10",
+          "Min": "288",
+          "Gls": "0",
+          "Ast": "1"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/761bc132/Moses-Odubajo",
+          "Player": "Moses Odubajo",
+          "Yrs": "2015",
+          "MP": "50",
+          "Min": "4162",
+          "Gls": "0",
+          "Ast": "1"
+        }
+      ]
+    },
+    {
+      "team2_id": "167907",
+      "team2_name": "ENG: Leicester City FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=167907&t3=--&t4=--",
+      "player_count": 2,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/aeee3365/Astrit-Ajdarevic",
+          "Player": "Astrit Ajdarević",
+          "Yrs": "2008",
+          "MP": "5",
+          "Min": "69",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/d3397c3e/Theodoros-Zagorakis",
+          "Player": "Theodoros Zagorakis",
+          "Yrs": "1997-1999",
+          "MP": "51",
+          "Min": "3006",
+          "Gls": "3",
+          "Ast": "3"
+        }
+      ]
+    },
+    {
+      "team2_id": "160481",
+      "team2_name": "ENG: Leyton Orient FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=160481&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/761bc132/Moses-Odubajo",
+          "Player": "Moses Odubajo",
+          "Yrs": "2011-2013",
+          "MP": "93",
+          "Min": "7370",
+          "Gls": "13",
+          "Ast": "11"
+        }
+      ]
+    },
+    {
+      "team2_id": "164575",
+      "team2_name": "ENG: Liverpool FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=164575&t3=--&t4=--",
+      "player_count": 2,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/8b8e759d/Marko-Grujic",
+          "Player": "Marko Grujić",
+          "Yrs": "2016-2020",
+          "MP": "24",
+          "Min": "1247",
+          "Gls": "2",
+          "Ast": "2"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/2bc82fdc/Sotirios-Kyrgiakos",
+          "Player": "Sotirios Kyrgiakos",
+          "Yrs": "2009-2010",
+          "MP": "43",
+          "Min": "3199",
+          "Gls": "3",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "170087",
+      "team2_name": "ENG: Manchester City FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=170087&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/62393d3b/Joleon-Lescott",
+          "Player": "Joleon Lescott",
+          "Yrs": "2009-2013",
+          "MP": "126",
+          "Min": "10085",
+          "Gls": "7",
+          "Ast": "3"
+        }
+      ]
+    },
+    {
+      "team2_id": "154064",
+      "team2_name": "ENG: Manchester United FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=154064&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/8b788c01/Anthony-Martial",
+          "Player": "Anthony Martial",
+          "Yrs": "2015-2023",
+          "MP": "317",
+          "Min": "19742",
+          "Gls": "90",
+          "Ast": "43"
+        }
+      ]
+    },
+    {
+      "team2_id": "164278",
+      "team2_name": "ENG: Middlesbrough FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=164278&t3=--&t4=--",
+      "player_count": 4,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/7b167dbb/Emerson",
+          "Player": "Emerson",
+          "Yrs": "1996-1997",
+          "MP": "53",
+          "Min": "2793",
+          "Gls": "9",
+          "Ast": "7"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/05778dfe/Dimitrios-Konstantopoulos",
+          "Player": "Dimitrios Konstantopoulos",
+          "Yrs": "2013-2018",
+          "MP": "110",
+          "Min": "9883",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/5f26e0c5/Harold-Moukoudi",
+          "Player": "Harold Moukoudi",
+          "Yrs": "2019",
+          "MP": "8",
+          "Min": "720",
+          "Gls": "0",
+          "Ast": "1"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/17cddb4d/Bruno-Zuculini",
+          "Player": "Bruno Zuculini",
+          "Yrs": "2015",
+          "MP": "6",
+          "Min": "346",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "169487",
+      "team2_name": "ENG: Newcastle United FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=169487&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/1aa44aea/Temur-Ketsbaia",
+          "Player": "Temur Ketsbaia",
+          "Yrs": "1997-1999",
+          "MP": "87",
+          "Min": "4617",
+          "Gls": "9",
+          "Ast": "9"
+        }
+      ]
+    },
+    {
+      "team2_id": "154385",
+      "team2_name": "ENG: Norwich City FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=154385&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/f716e4e4/Nelson-Oliveira",
+          "Player": "Nélson Oliveira",
+          "Yrs": "2016-2018",
+          "MP": "73",
+          "Min": "4572",
+          "Gls": "22",
+          "Ast": "8"
+        }
+      ]
+    },
+    {
+      "team2_id": "174440",
+      "team2_name": "ENG: Nottingham Forest FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=174440&t3=--&t4=--",
+      "player_count": 4,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/50cddd19/Karim-Ansarifard",
+          "Player": "Karim Ansarifard",
+          "Yrs": "2018",
+          "MP": "12",
+          "Min": "293",
+          "Gls": "2",
+          "Ast": "1"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/db37e4aa/Rafik-Djebbour",
+          "Player": "Rafik Djebbour",
+          "Yrs": "2013",
+          "MP": "7",
+          "Min": "272",
+          "Gls": "1",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/f716e4e4/Nelson-Oliveira",
+          "Player": "Nélson Oliveira",
+          "Yrs": "2015",
+          "MP": "29",
+          "Min": "2069",
+          "Gls": "9",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/e26bd2f4/Panagiotis-Tachtsidis",
+          "Player": "Panagiotis Tachtsidis",
+          "Yrs": "2018",
+          "MP": "0",
+          "Min": null,
+          "Gls": null,
+          "Ast": null
+        }
+      ]
+    },
+    {
+      "team2_id": "163438",
+      "team2_name": "ENG: Portsmouth FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=163438&t3=--&t4=--",
+      "player_count": 3,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/0d9168da/Angelos-Basinas",
+          "Player": "Angelos Basinas",
+          "Yrs": "2008-2009",
+          "MP": "15",
+          "Min": "1001",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/7994a7f9/Papa-Bouba-Diop",
+          "Player": "Papa Bouba Diop",
+          "Yrs": "2007-2009",
+          "MP": "57",
+          "Min": "4473",
+          "Gls": "0",
+          "Ast": "3"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/7759de38/Michalis-Vlachos",
+          "Player": "Michalis Vlachos",
+          "Yrs": "1997-1999",
+          "MP": "57",
+          "Min": null,
+          "Gls": "0",
+          "Ast": null
+        }
+      ]
+    },
+    {
+      "team2_id": "168326",
+      "team2_name": "ENG: Queens Park Rangers FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=168326&t3=--&t4=--",
+      "player_count": 2,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/761bc132/Moses-Odubajo",
+          "Player": "Moses Odubajo",
+          "Yrs": "2021",
+          "MP": "33",
+          "Min": "2510",
+          "Gls": "0",
+          "Ast": "3"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/72d6b151/Daniel-Tozser",
+          "Player": "Dániel Tőzsér",
+          "Yrs": "2015",
+          "MP": "17",
+          "Min": "1140",
+          "Gls": "1",
+          "Ast": "2"
+        }
+      ]
+    },
+    {
+      "team2_id": "169282",
+      "team2_name": "ENG: Reading FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=169282&t3=--&t4=--",
+      "player_count": 2,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/d49f3e6b/Lucas-Boye",
+          "Player": "Lucas Boyé",
+          "Yrs": "2019",
+          "MP": "24",
+          "Min": "927",
+          "Gls": "2",
+          "Ast": "1"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/f716e4e4/Nelson-Oliveira",
+          "Player": "Nélson Oliveira",
+          "Yrs": "2018",
+          "MP": "10",
+          "Min": "668",
+          "Gls": "3",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "154536",
+      "team2_name": "ENG: Sheffield United FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=154536&t3=--&t4=--",
+      "player_count": 2,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/90c90788/Vassilios-Borbokis",
+          "Player": "Vassilios Borbokis",
+          "Yrs": "1997-1998",
+          "MP": "55",
+          "Min": null,
+          "Gls": "4",
+          "Ast": null
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/cefe8bcf/Traianos-Dellas",
+          "Player": "Traianos Dellas",
+          "Yrs": "1997-1999",
+          "MP": "26",
+          "Min": null,
+          "Gls": "3",
+          "Ast": null
+        }
+      ]
+    },
+    {
+      "team2_id": "170360",
+      "team2_name": "ENG: Sheffield Wednesday FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=170360&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/761bc132/Moses-Odubajo",
+          "Player": "Moses Odubajo",
+          "Yrs": "2019-2020",
+          "MP": "46",
+          "Min": "3642",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "156806",
+      "team2_name": "ENG: Southampton FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=156806&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/20dbf9e0/Tomas-Pekhart",
+          "Player": "Tomáš Pekhart",
+          "Yrs": "2008",
+          "MP": "9",
+          "Min": "326",
+          "Gls": "1",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "168851",
+      "team2_name": "ENG: Stevenage FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=168851&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/28718256/Steve-Leo-Beleck",
+          "Player": "Steve Leo Beleck",
+          "Yrs": "2012",
+          "MP": "13",
+          "Min": "498",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "153896",
+      "team2_name": "ENG: Stoke City FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=153896&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/32fc9ff2/Eidur-Gudjohnsen",
+          "Player": "Eiður Guðjohnsen",
+          "Yrs": "2010",
+          "MP": "4",
+          "Min": "69",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "165900",
+      "team2_name": "ENG: Sunderland AFC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=165900&t3=--&t4=--",
+      "player_count": 4,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/2bc82fdc/Sotirios-Kyrgiakos",
+          "Player": "Sotirios Kyrgiakos",
+          "Yrs": "2011",
+          "MP": "3",
+          "Min": "190",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/62393d3b/Joleon-Lescott",
+          "Player": "Joleon Lescott",
+          "Yrs": "2016",
+          "MP": "2",
+          "Min": "124",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/ce8143d7/Jurgen-Macho",
+          "Player": "Jürgen Macho",
+          "Yrs": "2000-2002",
+          "MP": "22",
+          "Min": "1905",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/705a763a/Ignacio-Scocco",
+          "Player": "Ignacio Scocco",
+          "Yrs": "2013",
+          "MP": "6",
+          "Min": "99",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "176655",
+      "team2_name": "ENG: Swansea City AFC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=176655&t3=--&t4=--",
+      "player_count": 3,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/05778dfe/Dimitrios-Konstantopoulos",
+          "Player": "Dimitrios Konstantopoulos",
+          "Yrs": "2008",
+          "MP": "4",
+          "Min": "360",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/bffec2a8/Vangelis-Moras",
+          "Player": "Vangelis Moras",
+          "Yrs": "2011",
+          "MP": "1",
+          "Min": "5",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/f716e4e4/Nelson-Oliveira",
+          "Player": "Nélson Oliveira",
+          "Yrs": "2014",
+          "MP": "11",
+          "Min": "402",
+          "Gls": "1",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "157033",
+      "team2_name": "ENG: Tottenham Hotspur FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=157033&t3=--&t4=--",
+      "player_count": 2,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/32fc9ff2/Eidur-Gudjohnsen",
+          "Player": "Eiður Guðjohnsen",
+          "Yrs": "2009",
+          "MP": "11",
+          "Min": "390",
+          "Gls": "1",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/abe66106/Erik-Lamela",
+          "Player": "Érik Lamela",
+          "Yrs": "2013-2020",
+          "MP": "253",
+          "Min": "13680",
+          "Gls": "36",
+          "Ast": "41"
+        }
+      ]
+    },
+    {
+      "team2_id": "155904",
+      "team2_name": "ENG: Watford FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=155904&t3=--&t4=--",
+      "player_count": 4,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/7c2a398c/Nordin-Amrabat",
+          "Player": "Nordin Amrabat",
+          "Yrs": "2015-2017",
+          "MP": "48",
+          "Min": "3000",
+          "Gls": "0",
+          "Ast": "3"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/28718256/Steve-Leo-Beleck",
+          "Player": "Steve Leo Beleck",
+          "Yrs": "2012",
+          "MP": "5",
+          "Min": "42",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/75f2c59f/Roberto-Pereyra",
+          "Player": "Roberto Pereyra",
+          "Yrs": "2016-2019",
+          "MP": "115",
+          "Min": "7808",
+          "Gls": "18",
+          "Ast": "8"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/72d6b151/Daniel-Tozser",
+          "Player": "Dániel Tőzsér",
+          "Yrs": "2013-2014",
+          "MP": "66",
+          "Min": "5096",
+          "Gls": "5",
+          "Ast": "7"
+        }
+      ]
+    },
+    {
+      "team2_id": "161267",
+      "team2_name": "ENG: West Bromwich Albion FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=161267&t3=--&t4=--",
+      "player_count": 4,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/580d52dd/Grzegorz-Krychowiak",
+          "Player": "Grzegorz Krychowiak",
+          "Yrs": "2017",
+          "MP": "31",
+          "Min": "1986",
+          "Gls": "0",
+          "Ast": "3"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/62393d3b/Joleon-Lescott",
+          "Player": "Joleon Lescott",
+          "Yrs": "2014-2015",
+          "MP": "39",
+          "Min": "3510",
+          "Gls": "1",
+          "Ast": "2"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/4b7fd1e2/Goran-Popov",
+          "Player": "Goran Popov",
+          "Yrs": "2012-2013",
+          "MP": "14",
+          "Min": "973",
+          "Gls": "0",
+          "Ast": "1"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/62067577/Ifeanyi-Udeze",
+          "Player": "Ifeanyi Udeze",
+          "Yrs": "2002",
+          "MP": "11",
+          "Min": "508",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "163963",
+      "team2_name": "ENG: West Ham United FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=163963&t3=--&t4=--",
+      "player_count": 2,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/7994a7f9/Papa-Bouba-Diop",
+          "Player": "Papa Bouba Diop",
+          "Yrs": "2011",
+          "MP": "16",
+          "Min": "1095",
+          "Gls": "1",
+          "Ast": "1"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/f0021247/Joao-Mario",
+          "Player": "João Mário",
+          "Yrs": "2017",
+          "MP": "14",
+          "Min": "1067",
+          "Gls": "2",
+          "Ast": "1"
+        }
+      ]
+    },
+    {
+      "team2_id": "174537",
+      "team2_name": "ENG: Wigan Athletic FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=174537&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/dccefdd4/Bright-Enobakhare",
+          "Player": "Bright Enobakhare",
+          "Yrs": "2019",
+          "MP": "3",
+          "Min": "132",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "165690",
+      "team2_name": "ENG: Wolverhampton Wanderers FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=165690&t3=--&t4=--",
+      "player_count": 3,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/dccefdd4/Bright-Enobakhare",
+          "Player": "Bright Enobakhare",
+          "Yrs": "2015-2018",
+          "MP": "49",
+          "Min": "2057",
+          "Gls": "3",
+          "Ast": "1"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/1aa44aea/Temur-Ketsbaia",
+          "Player": "Temur Ketsbaia",
+          "Yrs": "2000-2001",
+          "MP": "24",
+          "Min": "22",
+          "Gls": "3",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/62393d3b/Joleon-Lescott",
+          "Player": "Joleon Lescott",
+          "Yrs": "1999-2005",
+          "MP": "212",
+          "Min": "15750",
+          "Gls": "13",
+          "Ast": "3"
+        }
+      ]
+    },
+    {
+      "team2_id": "155946",
+      "team2_name": "ESP: Athletic Club",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=155946&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/6941883f/Erik-Moran",
+          "Player": "Erik Morán",
+          "Yrs": "2012-2014",
+          "MP": "20",
+          "Min": "842",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "173488",
+      "team2_name": "ESP: Atlético Madrid",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=173488&t3=--&t4=--",
+      "player_count": 4,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/41b7a8cf/Paulo-Assuncao",
+          "Player": "Paulo Assunção",
+          "Yrs": "2008-2011",
+          "MP": "126",
+          "Min": "9600",
+          "Gls": "1",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/7b167dbb/Emerson",
+          "Player": "Emerson",
+          "Yrs": "2002",
+          "MP": "29",
+          "Min": "2096",
+          "Gls": "2",
+          "Ast": "3"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/d884ea49/Carlos-Gamarra",
+          "Player": "Carlos Gamarra",
+          "Yrs": "1999",
+          "MP": "38",
+          "Min": "3329",
+          "Gls": "1",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/7bb7562d/Demis-Nikolaidis",
+          "Player": "Demis Nikolaidis",
+          "Yrs": "2003",
+          "MP": "22",
+          "Min": "1453",
+          "Gls": "6",
+          "Ast": "2"
+        }
+      ]
+    },
+    {
+      "team2_id": "151829",
+      "team2_name": "ESP: CA Osasuna",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=151829&t3=--&t4=--",
+      "player_count": 2,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/50cddd19/Karim-Ansarifard",
+          "Player": "Karim Ansarifard",
+          "Yrs": "2014",
+          "MP": "17",
+          "Min": "684",
+          "Gls": "0",
+          "Ast": "1"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/a898d91e/Masoud-Shojaei",
+          "Player": "Masoud Shojaei",
+          "Yrs": "2008-2012",
+          "MP": "101",
+          "Min": "5223",
+          "Gls": "8",
+          "Ast": "10"
+        }
+      ]
+    },
+    {
+      "team2_id": "164001",
+      "team2_name": "ESP: CD Leganés",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=164001&t3=--&t4=--",
+      "player_count": 3,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/7c2a398c/Nordin-Amrabat",
+          "Player": "Nordin Amrabat",
+          "Yrs": "2017",
+          "MP": "35",
+          "Min": "1916",
+          "Gls": "3",
+          "Ast": "4"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/6989550f/Alberto-Brignoli",
+          "Player": "Alberto Brignoli",
+          "Yrs": "2016",
+          "MP": "2",
+          "Min": "151",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/6941883f/Erik-Moran",
+          "Player": "Erik Morán",
+          "Yrs": "2014-2017",
+          "MP": "36",
+          "Min": "2578",
+          "Gls": "0",
+          "Ast": "1"
+        }
+      ]
+    },
+    {
+      "team2_id": "163424",
+      "team2_name": "ESP: CD Numancia",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=163424&t3=--&t4=--",
+      "player_count": 2,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/af34f10d/Alexander-Callens",
+          "Player": "Alexander Callens",
+          "Yrs": "2015-2016",
+          "MP": "40",
+          "Min": "3458",
+          "Gls": "3",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/6941883f/Erik-Moran",
+          "Player": "Erik Morán",
+          "Yrs": "2019",
+          "MP": "13",
+          "Min": "1125",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "155586",
+      "team2_name": "ESP: CD Tenerife",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=155586&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/7b167dbb/Emerson",
+          "Player": "Emerson",
+          "Yrs": "1997-1998",
+          "MP": "51",
+          "Min": "4535",
+          "Gls": "3",
+          "Ast": null
+        }
+      ]
+    },
+    {
+      "team2_id": "175790",
+      "team2_name": "ESP: Celta de Vigo",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=175790&t3=--&t4=--",
+      "player_count": 5,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/d49f3e6b/Lucas-Boye",
+          "Player": "Lucas Boyé",
+          "Yrs": "2017",
+          "MP": "13",
+          "Min": "276",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/6f63913c/Roger-Guerreiro",
+          "Player": "Roger Guerreiro",
+          "Yrs": "2004",
+          "MP": "13",
+          "Min": "1100",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/d8a22e59/Juanfran",
+          "Player": "Juanfran",
+          "Yrs": "1999-2003",
+          "MP": "156",
+          "Min": "12186",
+          "Gls": "8",
+          "Ast": "5"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/a2d9544d/Ioannis-Okkas",
+          "Player": "Ioannis Okkas",
+          "Yrs": "2007",
+          "MP": "24",
+          "Min": "1241",
+          "Gls": "6",
+          "Ast": "1"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/411fabd7/Orbelin-Pineda",
+          "Player": "Orbelín Pineda",
+          "Yrs": "2021",
+          "MP": "7",
+          "Min": "99",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "175421",
+      "team2_name": "ESP: Cádiz CF",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=175421&t3=--&t4=--",
+      "player_count": 2,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/fe05804b/Cala",
+          "Player": "Cala",
+          "Yrs": "2019-2022",
+          "MP": "75",
+          "Min": "5988",
+          "Gls": "5",
+          "Ast": "2"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/53520a67/Jens-Jonsson",
+          "Player": "Jens Jønsson",
+          "Yrs": "2020-2021",
+          "MP": "61",
+          "Min": "4127",
+          "Gls": "0",
+          "Ast": "1"
+        }
+      ]
+    },
+    {
+      "team2_id": "161182",
+      "team2_name": "ESP: Córdoba CF",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=161182&t3=--&t4=--",
+      "player_count": 3,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/6738f3c6/Jose-Carlos",
+          "Player": "José Carlos",
+          "Yrs": "2014",
+          "MP": "1",
+          "Min": "20",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/50a2cb6d/Sebastian-Saja",
+          "Player": "Sebastián Saja",
+          "Yrs": "2004",
+          "MP": "23",
+          "Min": "2070",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/17cddb4d/Bruno-Zuculini",
+          "Player": "Bruno Zuculini",
+          "Yrs": "2014",
+          "MP": "8",
+          "Min": "384",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "165742",
+      "team2_name": "ESP: Deportivo Alavés",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=165742&t3=--&t4=--",
+      "player_count": 2,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/d49f3e6b/Lucas-Boye",
+          "Player": "Lucas Boyé",
+          "Yrs": "2025",
+          "MP": "24",
+          "Min": "1752",
+          "Gls": "9",
+          "Ast": "1"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/5631b735/Nenad-Krsticic",
+          "Player": "Nenad Krstičić",
+          "Yrs": "2016",
+          "MP": "20",
+          "Min": "1261",
+          "Gls": "3",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "162415",
+      "team2_name": "ESP: Elche CF",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=162415&t3=--&t4=--",
+      "player_count": 2,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/d49f3e6b/Lucas-Boye",
+          "Player": "Lucas Boyé",
+          "Yrs": "2020-2023",
+          "MP": "100",
+          "Min": "7280",
+          "Gls": "23",
+          "Ast": "9"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/ccbbe661/Ezequiel-Ponce",
+          "Player": "Ezequiel Ponce",
+          "Yrs": "2021-2022",
+          "MP": "50",
+          "Min": "2004",
+          "Gls": "7",
+          "Ast": "1"
+        }
+      ]
+    },
+    {
+      "team2_id": "154774",
+      "team2_name": "ESP: FC Barcelona",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=154774&t3=--&t4=--",
+      "player_count": 4,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/b20f5a66/Dmytro-Chygrynskiy",
+          "Player": "Dmytro Chygrynskiy",
+          "Yrs": "2009",
+          "MP": "12",
+          "Min": "876",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/32fc9ff2/Eidur-Gudjohnsen",
+          "Player": "Eiður Guðjohnsen",
+          "Yrs": "2006-2008",
+          "MP": "92",
+          "Min": "3951",
+          "Gls": "13",
+          "Ast": "6"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/5c7f3153/Rivaldo",
+          "Player": "Rivaldo",
+          "Yrs": "1997-2001",
+          "MP": "207",
+          "Min": "17557",
+          "Gls": "113",
+          "Ast": "22"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/680a7e96/Dragan-Ciric",
+          "Player": "Dragan Ćirić",
+          "Yrs": "1997-1998",
+          "MP": "32",
+          "Min": "1127",
+          "Gls": "0",
+          "Ast": null
+        }
+      ]
+    },
+    {
+      "team2_id": "163577",
+      "team2_name": "ESP: Getafe CF",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=163577&t3=--&t4=--",
+      "player_count": 2,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/fe05804b/Cala",
+          "Player": "Cala",
+          "Yrs": "2015-2017",
+          "MP": "74",
+          "Min": "6489",
+          "Gls": "5",
+          "Ast": "3"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/4d425e6e/Michel",
+          "Player": "Míchel",
+          "Yrs": "2011-2013",
+          "MP": "54",
+          "Min": "3595",
+          "Gls": "1",
+          "Ast": "1"
+        }
+      ]
+    },
+    {
+      "team2_id": "172952",
+      "team2_name": "ESP: Gimnàstic de Tarragona",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=172952&t3=--&t4=--",
+      "player_count": 5,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/b39b2cba/Christos-Almpanis",
+          "Player": "Christos Almpanis",
+          "Yrs": "2025",
+          "MP": "1",
+          "Min": "56",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/0ea37b10/Cesar-Arzo",
+          "Player": "César Arzo",
+          "Yrs": "2017-2018",
+          "MP": "12",
+          "Min": "947",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/6738f3c6/Jose-Carlos",
+          "Player": "José Carlos",
+          "Yrs": "2016",
+          "MP": "12",
+          "Min": "527",
+          "Gls": "2",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/e196c33d/Miguel-Cordero",
+          "Player": "Miguel Cordero",
+          "Yrs": "2016",
+          "MP": "20",
+          "Min": "1288",
+          "Gls": "1",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/50a2cb6d/Sebastian-Saja",
+          "Player": "Sebastián Saja",
+          "Yrs": "2016",
+          "MP": "11",
+          "Min": "990",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "166023",
+      "team2_name": "ESP: Girona FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=166023&t3=--&t4=--",
+      "player_count": 2,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/af34f10d/Alexander-Callens",
+          "Player": "Alexander Callens",
+          "Yrs": "2022",
+          "MP": "6",
+          "Min": "120",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/a094b4c5/Yago-Fernandez",
+          "Player": "Yago Fernández",
+          "Yrs": "2011",
+          "MP": "5",
+          "Min": "450",
+          "Gls": "1",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "167671",
+      "team2_name": "ESP: Granada CF",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=167671&t3=--&t4=--",
+      "player_count": 6,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/d49f3e6b/Lucas-Boye",
+          "Player": "Lucas Boyé",
+          "Yrs": "2023-2024",
+          "MP": "64",
+          "Min": "5129",
+          "Gls": "16",
+          "Ast": "8"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/4680cb30/Diego-Buonanotte",
+          "Player": "Diego Buonanotte",
+          "Yrs": "2012-2013",
+          "MP": "39",
+          "Min": "1651",
+          "Gls": "1",
+          "Ast": "2"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/fe05804b/Cala",
+          "Player": "Cala",
+          "Yrs": "2014",
+          "MP": "7",
+          "Min": "517",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/792c7b94/Emanuel-Insua",
+          "Player": "Emanuel Insúa",
+          "Yrs": "2014",
+          "MP": "12",
+          "Min": "1020",
+          "Gls": "0",
+          "Ast": "1"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/27d34558/Panagiotis-Kone",
+          "Player": "Panagiotis Kone",
+          "Yrs": "2016",
+          "MP": "2",
+          "Min": "44",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/ccbbe661/Ezequiel-Ponce",
+          "Player": "Ezequiel Ponce",
+          "Yrs": "2016",
+          "MP": "27",
+          "Min": "1318",
+          "Gls": "2",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "158201",
+      "team2_name": "ESP: Hércules CF",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=158201&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/4de03033/Andrija-Delibasic",
+          "Player": "Andrija Delibašić",
+          "Yrs": "2008-2009",
+          "MP": "65",
+          "Min": "5049",
+          "Gls": "20",
+          "Ast": "9"
+        }
+      ]
+    },
+    {
+      "team2_id": "166821",
+      "team2_name": "ESP: Levante UD",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=166821&t3=--&t4=--",
+      "player_count": 3,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/94ffc023/Bruno-Cirillo",
+          "Player": "Bruno Cirillo",
+          "Yrs": "2007",
+          "MP": "16",
+          "Min": "1412",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/d8a22e59/Juanfran",
+          "Player": "Juanfran",
+          "Yrs": "2009-2015",
+          "MP": "183",
+          "Min": "15566",
+          "Gls": "2",
+          "Ast": "4"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/a41c6410/Nikolaos-Karabelas",
+          "Player": "Nikolaos Karabelas",
+          "Yrs": "2012-2015",
+          "MP": "46",
+          "Min": "3503",
+          "Gls": "0",
+          "Ast": "2"
+        }
+      ]
+    },
+    {
+      "team2_id": "154395",
+      "team2_name": "ESP: Málaga CF",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=154395&t3=--&t4=--",
+      "player_count": 5,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/7c2a398c/Nordin-Amrabat",
+          "Player": "Nordin Amrabat",
+          "Yrs": "2013-2015",
+          "MP": "64",
+          "Min": "4607",
+          "Gls": "8",
+          "Ast": "10"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/32634b49/Nabil-Baha",
+          "Player": "Nabil Baha",
+          "Yrs": "2007-2010",
+          "MP": "109",
+          "Min": "8115",
+          "Gls": "24",
+          "Ast": "6"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/4680cb30/Diego-Buonanotte",
+          "Player": "Diego Buonanotte",
+          "Yrs": "2011-2012",
+          "MP": "21",
+          "Min": "796",
+          "Gls": "2",
+          "Ast": "5"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/1955f68d/Edinho",
+          "Player": "Edinho",
+          "Yrs": "2009-2010",
+          "MP": "18",
+          "Min": "593",
+          "Gls": "2",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/6941883f/Erik-Moran",
+          "Player": "Erik Morán",
+          "Yrs": "2018",
+          "MP": "7",
+          "Min": "424",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "155863",
+      "team2_name": "ESP: RC Deportivo de La Coruña",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=155863&t3=--&t4=--",
+      "player_count": 5,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/41b7a8cf/Paulo-Assuncao",
+          "Player": "Paulo Assunção",
+          "Yrs": "2012",
+          "MP": "9",
+          "Min": "619",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/7b167dbb/Emerson",
+          "Player": "Emerson",
+          "Yrs": "2000-2001",
+          "MP": "60",
+          "Min": "3612",
+          "Gls": "0",
+          "Ast": "2"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/591477c9/Vassilis-Lambropoulos",
+          "Player": "Vassilis Lambropoulos",
+          "Yrs": "2019",
+          "MP": "17",
+          "Min": "1501",
+          "Gls": "0",
+          "Ast": "1"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/f716e4e4/Nelson-Oliveira",
+          "Player": "Nélson Oliveira",
+          "Yrs": "2012",
+          "MP": "30",
+          "Min": "878",
+          "Gls": "4",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/5c7f3153/Rivaldo",
+          "Player": "Rivaldo",
+          "Yrs": "1996",
+          "MP": "41",
+          "Min": "3524",
+          "Gls": "21",
+          "Ast": null
+        }
+      ]
+    },
+    {
+      "team2_id": "168419",
+      "team2_name": "ESP: RCD Espanyol",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=168419&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/bad38a94/Didac-Vila",
+          "Player": "Dídac Vilà",
+          "Yrs": "2009-2021",
+          "MP": "177",
+          "Min": "13725",
+          "Gls": "2",
+          "Ast": "8"
+        }
+      ]
+    },
+    {
+      "team2_id": "155888",
+      "team2_name": "ESP: RCD Mallorca",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=155888&t3=--&t4=--",
+      "player_count": 3,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/0d9168da/Angelos-Basinas",
+          "Player": "Angelos Basinas",
+          "Yrs": "2005-2007",
+          "MP": "75",
+          "Min": "5111",
+          "Gls": "1",
+          "Ast": "1"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/4de03033/Andrija-Delibasic",
+          "Player": "Andrija Delibašić",
+          "Yrs": "2003-2004",
+          "MP": "29",
+          "Min": "1756",
+          "Gls": "7",
+          "Ast": "2"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/1f59bef7/Edson-Ratinho",
+          "Player": "Edson Ratinho",
+          "Yrs": "2010",
+          "MP": "7",
+          "Min": "573",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "173853",
+      "team2_name": "ESP: Racing de Santander",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=173853&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/cb9ec45d/Clement-Michelin",
+          "Player": "Clément Michelin",
+          "Yrs": "2024-2025",
+          "MP": "41",
+          "Min": "2653",
+          "Gls": "2",
+          "Ast": "3"
+        }
+      ]
+    },
+    {
+      "team2_id": "166933",
+      "team2_name": "ESP: Rayo Vallecano",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=166933&t3=--&t4=--",
+      "player_count": 4,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/6738f3c6/Jose-Carlos",
+          "Player": "José Carlos",
+          "Yrs": "2012-2013",
+          "MP": "35",
+          "Min": "2244",
+          "Gls": "2",
+          "Ast": "1"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/4de03033/Andrija-Delibasic",
+          "Player": "Andrija Delibašić",
+          "Yrs": "2010-2012",
+          "MP": "81",
+          "Min": "3099",
+          "Gls": "14",
+          "Ast": "5"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/50a2cb6d/Sebastian-Saja",
+          "Player": "Sebastián Saja",
+          "Yrs": "2003",
+          "MP": "20",
+          "Min": "1800",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/17cddb4d/Bruno-Zuculini",
+          "Player": "Bruno Zuculini",
+          "Yrs": "2016",
+          "MP": "11",
+          "Min": "730",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "176802",
+      "team2_name": "ESP: Real Betis",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=176802&t3=--&t4=--",
+      "player_count": 2,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/b682dcf6/Sokratis-Papastathopoulos",
+          "Player": "Sokratis Papastathopoulos",
+          "Yrs": "2023",
+          "MP": "16",
+          "Min": "1226",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/bad38a94/Didac-Vila",
+          "Player": "Dídac Vilà",
+          "Yrs": "2013",
+          "MP": "18",
+          "Min": "1457",
+          "Gls": "1",
+          "Ast": "1"
+        }
+      ]
+    },
+    {
+      "team2_id": "159928",
+      "team2_name": "ESP: Real Madrid CF",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=159928&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/4d8cd038/Luka-Jovic",
+          "Player": "Luka Jović",
+          "Yrs": "2019-2021",
+          "MP": "51",
+          "Min": "1586",
+          "Gls": "3",
+          "Ast": "5"
+        }
+      ]
+    },
+    {
+      "team2_id": "168685",
+      "team2_name": "ESP: Real Murcia CF",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=168685&t3=--&t4=--",
+      "player_count": 2,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/0ea37b10/Cesar-Arzo",
+          "Player": "César Arzo",
+          "Yrs": "2007",
+          "MP": "28",
+          "Min": "2362",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/ddee7ba5/David-Mateos",
+          "Player": "David Mateos",
+          "Yrs": "2017",
+          "MP": "4",
+          "Min": "275",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "174251",
+      "team2_name": "ESP: Real Sociedad",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=174251&t3=--&t4=--",
+      "player_count": 2,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/af34f10d/Alexander-Callens",
+          "Player": "Alexander Callens",
+          "Yrs": "2014",
+          "MP": "1",
+          "Min": "46",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/4de03033/Andrija-Delibasic",
+          "Player": "Andrija Delibašić",
+          "Yrs": "2007",
+          "MP": "33",
+          "Min": "1936",
+          "Gls": "6",
+          "Ast": "1"
+        }
+      ]
+    },
+    {
+      "team2_id": "153891",
+      "team2_name": "ESP: Real Valladolid",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=153891&t3=--&t4=--",
+      "player_count": 6,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/0ea37b10/Cesar-Arzo",
+          "Player": "César Arzo",
+          "Yrs": "2009-2010",
+          "MP": "38",
+          "Min": "3162",
+          "Gls": "2",
+          "Ast": "1"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/fe2d2289/Giannis-Gianniotas",
+          "Player": "Giannis Gianniotas",
+          "Yrs": "2017",
+          "MP": "30",
+          "Min": "1103",
+          "Gls": "3",
+          "Ast": "3"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/a41c6410/Nikolaos-Karabelas",
+          "Player": "Nikolaos Karabelas",
+          "Yrs": "2015",
+          "MP": "11",
+          "Min": "905",
+          "Gls": "0",
+          "Ast": "1"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/cb9ec45d/Clement-Michelin",
+          "Player": "Clément Michelin",
+          "Yrs": "2025",
+          "MP": "2",
+          "Min": "41",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/d3298c99/Daniele-Verde",
+          "Player": "Daniele Verde",
+          "Yrs": "2018",
+          "MP": "26",
+          "Min": "910",
+          "Gls": "6",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/680a7e96/Dragan-Ciric",
+          "Player": "Dragan Ćirić",
+          "Yrs": "2000-2003",
+          "MP": "51",
+          "Min": "2180",
+          "Gls": "4",
+          "Ast": "4"
+        }
+      ]
+    },
+    {
+      "team2_id": "164341",
+      "team2_name": "ESP: Real Zaragoza",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=164341&t3=--&t4=--",
+      "player_count": 5,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/0ea37b10/Cesar-Arzo",
+          "Player": "César Arzo",
+          "Yrs": "2013",
+          "MP": "18",
+          "Min": "1582",
+          "Gls": "2",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/d8a22e59/Juanfran",
+          "Player": "Juanfran",
+          "Yrs": "2006-2007",
+          "MP": "65",
+          "Min": "5519",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/ddee7ba5/David-Mateos",
+          "Player": "David Mateos",
+          "Yrs": "2011",
+          "MP": "14",
+          "Min": "1093",
+          "Gls": "0",
+          "Ast": "1"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/6941883f/Erik-Moran",
+          "Player": "Erik Morán",
+          "Yrs": "2015-2016",
+          "MP": "52",
+          "Min": "3859",
+          "Gls": "0",
+          "Ast": "3"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/50a2cb6d/Sebastian-Saja",
+          "Player": "Sebastián Saja",
+          "Yrs": "2016",
+          "MP": "6",
+          "Min": "540",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "162565",
+      "team2_name": "ESP: Recreativo de Huelva",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=162565&t3=--&t4=--",
+      "player_count": 2,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/0ea37b10/Cesar-Arzo",
+          "Player": "César Arzo",
+          "Yrs": "2006-2008",
+          "MP": "48",
+          "Min": "3807",
+          "Gls": "1",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/048877f5/Stefano-Sorrentino",
+          "Player": "Stefano Sorrentino",
+          "Yrs": "2007",
+          "MP": "38",
+          "Min": "3420",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "170649",
+      "team2_name": "ESP: SD Eibar",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=170649&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/bad38a94/Didac-Vila",
+          "Player": "Dídac Vilà",
+          "Yrs": "2014",
+          "MP": "16",
+          "Min": "1203",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "168910",
+      "team2_name": "ESP: Sevilla FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=168910&t3=--&t4=--",
+      "player_count": 6,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/fe05804b/Cala",
+          "Player": "Cala",
+          "Yrs": "2007-2013",
+          "MP": "56",
+          "Min": "4485",
+          "Gls": "6",
+          "Ast": "2"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/6738f3c6/Jose-Carlos",
+          "Player": "José Carlos",
+          "Yrs": "2008-2010",
+          "MP": "47",
+          "Min": "2332",
+          "Gls": "4",
+          "Ast": "2"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/580d52dd/Grzegorz-Krychowiak",
+          "Player": "Grzegorz Krychowiak",
+          "Yrs": "2014-2015",
+          "MP": "91",
+          "Min": "7770",
+          "Gls": "6",
+          "Ast": "2"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/abe66106/Erik-Lamela",
+          "Player": "Érik Lamela",
+          "Yrs": "2021-2023",
+          "MP": "92",
+          "Min": "4763",
+          "Gls": "16",
+          "Ast": "6"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/8b788c01/Anthony-Martial",
+          "Player": "Anthony Martial",
+          "Yrs": "2021",
+          "MP": "12",
+          "Min": "667",
+          "Gls": "1",
+          "Ast": "1"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/81528813/Vasilios-Tsiartas",
+          "Player": "Vasilios Tsiartas",
+          "Yrs": "1996-1999",
+          "MP": "65",
+          "Min": "4727",
+          "Gls": "18",
+          "Ast": "9"
+        }
+      ]
+    },
+    {
+      "team2_id": "170354",
+      "team2_name": "ESP: Sporting de Gijón",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=170354&t3=--&t4=--",
+      "player_count": 2,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/4d425e6e/Michel",
+          "Player": "Míchel",
+          "Yrs": "2005-2009",
+          "MP": "138",
+          "Min": "9930",
+          "Gls": "7",
+          "Ast": "6"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/b8ae831b/Ognjen-Vranjes",
+          "Player": "Ognjen Vranješ",
+          "Yrs": "2015",
+          "MP": "11",
+          "Min": "915",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "163642",
+      "team2_name": "ESP: UD Almería",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=163642&t3=--&t4=--",
+      "player_count": 2,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/e0fd942a/Helder-Barbosa",
+          "Player": "Hélder Barbosa",
+          "Yrs": "2013",
+          "MP": "28",
+          "Min": "986",
+          "Gls": "1",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/37a8a372/Fabian-Vargas",
+          "Player": "Fabián Vargas",
+          "Yrs": "2009-2010",
+          "MP": "30",
+          "Min": "1551",
+          "Gls": "1",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "151480",
+      "team2_name": "ESP: UD Las Palmas",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=151480&t3=--&t4=--",
+      "player_count": 8,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/080ac8d8/Sergio-Araujo",
+          "Player": "Sergio Araujo",
+          "Yrs": "2014-2020",
+          "MP": "144",
+          "Min": "9850",
+          "Gls": "45",
+          "Ast": "14"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/fe05804b/Cala",
+          "Player": "Cala",
+          "Yrs": "2018",
+          "MP": "30",
+          "Min": "2657",
+          "Gls": "1",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/80d82696/Macauley-Chrisantus",
+          "Player": "Macauley Chrisantus",
+          "Yrs": "2012-2013",
+          "MP": "64",
+          "Min": "3465",
+          "Gls": "19",
+          "Ast": "2"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/60e95fa4/Sanel-Jahic",
+          "Player": "Sanel Jahić",
+          "Yrs": "2003",
+          "MP": "19",
+          "Min": "1633",
+          "Gls": "3",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/6e5497ca/Marko-Livaja",
+          "Player": "Marko Livaja",
+          "Yrs": "2016",
+          "MP": "26",
+          "Min": "1534",
+          "Gls": "7",
+          "Ast": "3"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/9a34c46d/Helder-Lopes",
+          "Player": "Hélder Lopes",
+          "Yrs": "2016",
+          "MP": "17",
+          "Min": "1359",
+          "Gls": "0",
+          "Ast": "1"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/20dbf9e0/Tomas-Pekhart",
+          "Player": "Tomáš Pekhart",
+          "Yrs": "2018-2019",
+          "MP": "32",
+          "Min": "1083",
+          "Gls": "6",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/a898d91e/Masoud-Shojaei",
+          "Player": "Masoud Shojaei",
+          "Yrs": "2013",
+          "MP": "29",
+          "Min": "2233",
+          "Gls": "5",
+          "Ast": "8"
+        }
+      ]
+    },
+    {
+      "team2_id": "173635",
+      "team2_name": "ESP: Valencia CF",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=173635&t3=--&t4=--",
+      "player_count": 2,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/d8a22e59/Juanfran",
+          "Player": "Juanfran",
+          "Yrs": "1997-1998",
+          "MP": "42",
+          "Min": "2363",
+          "Gls": "0",
+          "Ast": null
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/17cddb4d/Bruno-Zuculini",
+          "Player": "Bruno Zuculini",
+          "Yrs": "2014",
+          "MP": "1",
+          "Min": "45",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "155880",
+      "team2_name": "ESP: Villarreal CF",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=155880&t3=--&t4=--",
+      "player_count": 2,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/fbd07266/Rodolfo-Arruabarrena",
+          "Player": "Rodolfo Arruabarrena",
+          "Yrs": "2000-2006",
+          "MP": "248",
+          "Min": "21187",
+          "Gls": "13",
+          "Ast": "11"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/0ea37b10/Cesar-Arzo",
+          "Player": "César Arzo",
+          "Yrs": "2002-2005",
+          "MP": "53",
+          "Min": "2043",
+          "Gls": "1",
+          "Ast": "1"
+        }
+      ]
+    },
+    {
+      "team2_id": "171434",
+      "team2_name": "ESP: Xerez CD",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=171434&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/e196c33d/Miguel-Cordero",
+          "Player": "Miguel Cordero",
+          "Yrs": "2010-2012",
+          "MP": "68",
+          "Min": "5204",
+          "Gls": "6",
+          "Ast": "2"
+        }
+      ]
+    },
+    {
+      "team2_id": "163792",
+      "team2_name": "FRA: AC Ajaccio",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=163792&t3=--&t4=--",
+      "player_count": 2,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/cb9ec45d/Clement-Michelin",
+          "Player": "Clément Michelin",
+          "Yrs": "2018",
+          "MP": "15",
+          "Min": "886",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/56393c87/Rodrigo",
+          "Player": "Rodrigo",
+          "Yrs": "2003-2005",
+          "MP": "82",
+          "Min": "7172",
+          "Gls": "0",
+          "Ast": "2"
+        }
+      ]
+    },
+    {
+      "team2_id": "174910",
+      "team2_name": "FRA: AC Arles-Avignon",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=174910&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/0d9168da/Angelos-Basinas",
+          "Player": "Angelos Basinas",
+          "Yrs": "2010",
+          "MP": "4",
+          "Min": "206",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "176908",
+      "team2_name": "FRA: AS Monaco FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=176908&t3=--&t4=--",
+      "player_count": 6,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/32fc9ff2/Eidur-Gudjohnsen",
+          "Player": "Eiður Guðjohnsen",
+          "Yrs": "2009",
+          "MP": "9",
+          "Min": "483",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/efe5e7b3/Mohamed-Kallon",
+          "Player": "Mohamed Kallon",
+          "Yrs": "2004-2007",
+          "MP": "55",
+          "Min": "3595",
+          "Gls": "13",
+          "Ast": "1"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/8b788c01/Anthony-Martial",
+          "Player": "Anthony Martial",
+          "Yrs": "2013-2015",
+          "MP": "58",
+          "Min": "3101",
+          "Gls": "13",
+          "Ast": "6"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/4c5b714f/Djibril-Sidibe",
+          "Player": "Djibril Sidibé",
+          "Yrs": "2016-2021",
+          "MP": "167",
+          "Min": "12470",
+          "Gls": "6",
+          "Ast": "20"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/d08bcc86/Georgios-Tzavellas",
+          "Player": "Georgios Tzavellas",
+          "Yrs": "2011-2012",
+          "MP": "38",
+          "Min": "3373",
+          "Gls": "3",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/9965b634/Akis-Zikos",
+          "Player": "Akis Zikos",
+          "Yrs": "2002-2005",
+          "MP": "126",
+          "Min": "10512",
+          "Gls": "2",
+          "Ast": "6"
+        }
+      ]
+    },
+    {
+      "team2_id": "174828",
+      "team2_name": "FRA: AS Nancy",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=174828&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/009799bf/Eric-Rabesandratana",
+          "Player": "Éric Rabésandratana",
+          "Yrs": "1996",
+          "MP": "34",
+          "Min": "3013",
+          "Gls": "7",
+          "Ast": null
+        }
+      ]
+    },
+    {
+      "team2_id": "172634",
+      "team2_name": "FRA: AS Saint-Étienne",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=172634&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/5f26e0c5/Harold-Moukoudi",
+          "Player": "Harold Moukoudi",
+          "Yrs": "2019-2021",
+          "MP": "69",
+          "Min": "5566",
+          "Gls": "3",
+          "Ast": "1"
+        }
+      ]
+    },
+    {
+      "team2_id": "172794",
+      "team2_name": "FRA: En Avant de Guingamp",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=172794&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/307877be/Frantzdy-Pierrot",
+          "Player": "Frantzdy Pierrot",
+          "Yrs": "2019-2021",
+          "MP": "78",
+          "Min": "5009",
+          "Gls": "28",
+          "Ast": "6"
+        }
+      ]
+    },
+    {
+      "team2_id": "153342",
+      "team2_name": "FRA: FC Girondins de Bordeaux",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=153342&t3=--&t4=--",
+      "player_count": 3,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/6f2542ad/Michalis-Kapsis",
+          "Player": "Michalis Kapsis",
+          "Yrs": "2004",
+          "MP": "29",
+          "Min": "2586",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/580d52dd/Grzegorz-Krychowiak",
+          "Player": "Grzegorz Krychowiak",
+          "Yrs": "2011",
+          "MP": "2",
+          "Min": "92",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/cb9ec45d/Clement-Michelin",
+          "Player": "Clément Michelin",
+          "Yrs": "2022-2023",
+          "MP": "60",
+          "Min": "3654",
+          "Gls": "0",
+          "Ast": "4"
+        }
+      ]
+    },
+    {
+      "team2_id": "172656",
+      "team2_name": "FRA: FC Lorient",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=172656&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/8624ae1f/Hernan-Medina",
+          "Player": "Hernán Medina",
+          "Yrs": "2001",
+          "MP": "6",
+          "Min": "456",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "173142",
+      "team2_name": "FRA: FC Nantes",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=173142&t3=--&t4=--",
+      "player_count": 3,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/04ed2a16/Nenad-Bjekovic",
+          "Player": "Nenad Bjeković",
+          "Yrs": "1996",
+          "MP": "11",
+          "Min": "376",
+          "Gls": "1",
+          "Ast": null
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/580d52dd/Grzegorz-Krychowiak",
+          "Player": "Grzegorz Krychowiak",
+          "Yrs": "2011",
+          "MP": "21",
+          "Min": "1867",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/8f4d116f/Damien-Le-Tallec",
+          "Player": "Damien Le Tallec",
+          "Yrs": "2011",
+          "MP": "8",
+          "Min": "318",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "170165",
+      "team2_name": "FRA: FC Sochaux-Montbéliard",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=170165&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/8f4d116f/Damien-Le-Tallec",
+          "Player": "Damien Le Tallec",
+          "Yrs": "2022",
+          "MP": "10",
+          "Min": "577",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "158373",
+      "team2_name": "FRA: LB Châteauroux",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=158373&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/04ed2a16/Nenad-Bjekovic",
+          "Player": "Nenad Bjeković",
+          "Yrs": "1997",
+          "MP": "7",
+          "Min": "295",
+          "Gls": "0",
+          "Ast": null
+        }
+      ]
+    },
+    {
+      "team2_id": "160785",
+      "team2_name": "FRA: Le Havre AC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=160785&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/5f26e0c5/Harold-Moukoudi",
+          "Player": "Harold Moukoudi",
+          "Yrs": "2014-2018",
+          "MP": "62",
+          "Min": "5348",
+          "Gls": "6",
+          "Ast": "1"
+        }
+      ]
+    },
+    {
+      "team2_id": "171864",
+      "team2_name": "FRA: Lille OSC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=171864&t3=--&t4=--",
+      "player_count": 3,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/dab0da1c/Viktor-Klonaridis",
+          "Player": "Viktor Klonaridis",
+          "Yrs": "2012",
+          "MP": "3",
+          "Min": "42",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/ccbbe661/Ezequiel-Ponce",
+          "Player": "Ezequiel Ponce",
+          "Yrs": "2017",
+          "MP": "32",
+          "Min": "1452",
+          "Gls": "4",
+          "Ast": "1"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/4c5b714f/Djibril-Sidibe",
+          "Player": "Djibril Sidibé",
+          "Yrs": "2012-2015",
+          "MP": "105",
+          "Min": "8213",
+          "Gls": "10",
+          "Ast": "6"
+        }
+      ]
+    },
+    {
+      "team2_id": "155616",
+      "team2_name": "FRA: Montpellier HSC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=155616&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/8f4d116f/Damien-Le-Tallec",
+          "Player": "Damien Le Tallec",
+          "Yrs": "2018-2020",
+          "MP": "97",
+          "Min": "7252",
+          "Gls": "5",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "154412",
+      "team2_name": "FRA: Nîmes Olympique",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=154412&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/0033fb1b/Niclas-Eliasson",
+          "Player": "Niclas Eliasson",
+          "Yrs": "2020-2022",
+          "MP": "72",
+          "Min": "5054",
+          "Gls": "11",
+          "Ast": "8"
+        }
+      ]
+    },
+    {
+      "team2_id": "153427",
+      "team2_name": "FRA: OGC Nice",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=153427&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/497228f9/Niklas-Hult",
+          "Player": "Niklas Hult",
+          "Yrs": "2014-2015",
+          "MP": "46",
+          "Min": "2838",
+          "Gls": "2",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "172895",
+      "team2_name": "FRA: Olympique Lyonnais",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=172895&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/8b788c01/Anthony-Martial",
+          "Player": "Anthony Martial",
+          "Yrs": "2012",
+          "MP": "4",
+          "Min": "60",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "174223",
+      "team2_name": "FRA: Paris Saint-Germain FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=174223&t3=--&t4=--",
+      "player_count": 2,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/580d52dd/Grzegorz-Krychowiak",
+          "Player": "Grzegorz Krychowiak",
+          "Yrs": "2016",
+          "MP": "18",
+          "Min": "956",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/009799bf/Eric-Rabesandratana",
+          "Player": "Éric Rabésandratana",
+          "Yrs": "1997-2000",
+          "MP": "114",
+          "Min": "9531",
+          "Gls": "7",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "176899",
+      "team2_name": "FRA: RC Lens",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=176899&t3=--&t4=--",
+      "player_count": 3,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/7994a7f9/Papa-Bouba-Diop",
+          "Player": "Papa Bouba Diop",
+          "Yrs": "2001-2003",
+          "MP": "49",
+          "Min": "3197",
+          "Gls": "7",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/dab0da1c/Viktor-Klonaridis",
+          "Player": "Viktor Klonaridis",
+          "Yrs": "2016",
+          "MP": "10",
+          "Min": "322",
+          "Gls": "1",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/cb9ec45d/Clement-Michelin",
+          "Player": "Clément Michelin",
+          "Yrs": "2019-2020",
+          "MP": "54",
+          "Min": "3506",
+          "Gls": "1",
+          "Ast": "7"
+        }
+      ]
+    },
+    {
+      "team2_id": "170873",
+      "team2_name": "FRA: RC Strasbourg Alsace",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=170873&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/56393c87/Rodrigo",
+          "Player": "Rodrigo",
+          "Yrs": "2007-2009",
+          "MP": "72",
+          "Min": "6276",
+          "Gls": "2",
+          "Ast": "6"
+        }
+      ]
+    },
+    {
+      "team2_id": "169514",
+      "team2_name": "FRA: Stade Rennais FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=169514&t3=--&t4=--",
+      "player_count": 2,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/e4a26a91/Jakob-Johansson",
+          "Player": "Jakob Johansson",
+          "Yrs": "2018-2019",
+          "MP": "22",
+          "Min": "1131",
+          "Gls": "1",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/f716e4e4/Nelson-Oliveira",
+          "Player": "Nélson Oliveira",
+          "Yrs": "2013",
+          "MP": "30",
+          "Min": "1750",
+          "Gls": "8",
+          "Ast": "1"
+        }
+      ]
+    },
+    {
+      "team2_id": "164328",
+      "team2_name": "FRA: Stade de Reims",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=164328&t3=--&t4=--",
+      "player_count": 2,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/580d52dd/Grzegorz-Krychowiak",
+          "Player": "Grzegorz Krychowiak",
+          "Yrs": "2010-2013",
+          "MP": "105",
+          "Min": "8872",
+          "Gls": "10",
+          "Ast": "2"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/1b6862e8/Dereck-Kutesa",
+          "Player": "Dereck Kutesa",
+          "Yrs": "2019-2020",
+          "MP": "46",
+          "Min": "1417",
+          "Gls": "3",
+          "Ast": "3"
+        }
+      ]
+    },
+    {
+      "team2_id": "157960",
+      "team2_name": "FRA: Toulouse FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=157960&t3=--&t4=--",
+      "player_count": 2,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/cb9ec45d/Clement-Michelin",
+          "Player": "Clément Michelin",
+          "Yrs": "2016-2018",
+          "MP": "20",
+          "Min": "1040",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/4c5b714f/Djibril-Sidibe",
+          "Player": "Djibril Sidibé",
+          "Yrs": "2024-2025",
+          "MP": "56",
+          "Min": "4102",
+          "Gls": "3",
+          "Ast": "6"
+        }
+      ]
+    },
+    {
+      "team2_id": "159970",
+      "team2_name": "FRA: Troyes AC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=159970&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/4c5b714f/Djibril-Sidibe",
+          "Player": "Djibril Sidibé",
+          "Yrs": "2010-2011",
+          "MP": "40",
+          "Min": "3326",
+          "Gls": "1",
+          "Ast": "2"
+        }
+      ]
+    },
+    {
+      "team2_id": "163109",
+      "team2_name": "GER: 1. FC Kaiserslautern",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=163109&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/ce8143d7/Jurgen-Macho",
+          "Player": "Jürgen Macho",
+          "Yrs": "2005-2006",
+          "MP": "54",
+          "Min": "4812",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "170408",
+      "team2_name": "GER: 1. FC Köln",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=170408&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/81528813/Vasilios-Tsiartas",
+          "Player": "Vasilios Tsiartas",
+          "Yrs": "2004",
+          "MP": "4",
+          "Min": "278",
+          "Gls": "1",
+          "Ast": "1"
+        }
+      ]
+    },
+    {
+      "team2_id": "162678",
+      "team2_name": "GER: 1. FC Nürnberg",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=162678&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/20dbf9e0/Tomas-Pekhart",
+          "Player": "Tomáš Pekhart",
+          "Yrs": "2011-2014",
+          "MP": "88",
+          "Min": "5468",
+          "Gls": "14",
+          "Ast": "6"
+        }
+      ]
+    },
+    {
+      "team2_id": "175101",
+      "team2_name": "GER: 1. FC Saarbrücken",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=175101&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/0afe2035/Tam-Nsaliwa",
+          "Player": "Tam Nsaliwa",
+          "Yrs": "2004-2005",
+          "MP": "64",
+          "Min": "5294",
+          "Gls": "0",
+          "Ast": "3"
+        }
+      ]
+    },
+    {
+      "team2_id": "171556",
+      "team2_name": "GER: Bayer 04 Leverkusen",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=171556&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/3f359b33/Domagoj-Vida",
+          "Player": "Domagoj Vida",
+          "Yrs": "2010",
+          "MP": "9",
+          "Min": "691",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "168970",
+      "team2_name": "GER: Borussia Dortmund",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=168970&t3=--&t4=--",
+      "player_count": 2,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/8f4d116f/Damien-Le-Tallec",
+          "Player": "Damien Le Tallec",
+          "Yrs": "2009-2010",
+          "MP": "14",
+          "Min": "716",
+          "Gls": "2",
+          "Ast": "1"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/b682dcf6/Sokratis-Papastathopoulos",
+          "Player": "Sokratis Papastathopoulos",
+          "Yrs": "2013-2017",
+          "MP": "188",
+          "Min": "15772",
+          "Gls": "10",
+          "Ast": "2"
+        }
+      ]
+    },
+    {
+      "team2_id": "156699",
+      "team2_name": "GER: Borussia Mönchengladbach",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=156699&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/dc9d189d/Vladimir-Ivic",
+          "Player": "Vladimir Ivić",
+          "Yrs": "2004",
+          "MP": "4",
+          "Min": "135",
+          "Gls": "1",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "155219",
+      "team2_name": "GER: DSC Arminia Bielefeld",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=155219&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/dfaf7a4f/Leonidas-Kampantais",
+          "Player": "Leonidas Kampantais",
+          "Yrs": "2007",
+          "MP": "8",
+          "Min": "194",
+          "Gls": "1",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "175632",
+      "team2_name": "GER: Eintracht Frankfurt",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=175632&t3=--&t4=--",
+      "player_count": 6,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/16daec92/Mijat-Gacinovic",
+          "Player": "Mijat Gaćinović",
+          "Yrs": "2015-2019",
+          "MP": "149",
+          "Min": "9437",
+          "Gls": "8",
+          "Ast": "11"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/4d8cd038/Luka-Jovic",
+          "Player": "Luka Jović",
+          "Yrs": "2017-2020",
+          "MP": "93",
+          "Min": "5346",
+          "Gls": "40",
+          "Ast": "8"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/2bc82fdc/Sotirios-Kyrgiakos",
+          "Player": "Sotirios Kyrgiakos",
+          "Yrs": "2006-2007",
+          "MP": "57",
+          "Min": "4927",
+          "Gls": "8",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/2c9b4baa/Nikos-Liberopoulos",
+          "Player": "Nikos Liberopoulos",
+          "Yrs": "2008-2009",
+          "MP": "50",
+          "Min": "3332",
+          "Gls": "10",
+          "Ast": "3"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/d08bcc86/Georgios-Tzavellas",
+          "Player": "Georgios Tzavellas",
+          "Yrs": "2010-2011",
+          "MP": "27",
+          "Min": "2137",
+          "Gls": "1",
+          "Ast": "2"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/b6a6e0a7/Steven-Zuber",
+          "Player": "Steven Zuber",
+          "Yrs": "2020-2021",
+          "MP": "23",
+          "Min": "729",
+          "Gls": "0",
+          "Ast": "3"
+        }
+      ]
+    },
+    {
+      "team2_id": "161465",
+      "team2_name": "GER: SV Werder Bremen",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=161465&t3=--&t4=--",
+      "player_count": 2,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/740acaf8/Hugo-Almeida",
+          "Player": "Hugo Almeida",
+          "Yrs": "2006-2010",
+          "MP": "159",
+          "Min": "8852",
+          "Gls": "54",
+          "Ast": "12"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/b682dcf6/Sokratis-Papastathopoulos",
+          "Player": "Sokratis Papastathopoulos",
+          "Yrs": "2011-2012",
+          "MP": "59",
+          "Min": "5107",
+          "Gls": "2",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "151770",
+      "team2_name": "GER: TSG 1899 Hoffenheim",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=151770&t3=--&t4=--",
+      "player_count": 2,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/16daec92/Mijat-Gacinovic",
+          "Player": "Mijat Gaćinović",
+          "Yrs": "2020-2021",
+          "MP": "38",
+          "Min": "1543",
+          "Gls": "1",
+          "Ast": "4"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/b6a6e0a7/Steven-Zuber",
+          "Player": "Steven Zuber",
+          "Yrs": "2014-2019",
+          "MP": "113",
+          "Min": "6914",
+          "Gls": "10",
+          "Ast": "9"
+        }
+      ]
+    },
+    {
+      "team2_id": "156380",
+      "team2_name": "GER: TSV 1860 München",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=156380&t3=--&t4=--",
+      "player_count": 3,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/0aceace2/Ismael-Blanco",
+          "Player": "Ismael Blanco",
+          "Yrs": "2012",
+          "MP": "13",
+          "Min": "421",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/eebd5530/Grigoris-Makos",
+          "Player": "Grigoris Makos",
+          "Yrs": "2012",
+          "MP": "11",
+          "Min": "534",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/dd83cca6/Charilaos-Pappas",
+          "Player": "Charilaos Pappas",
+          "Yrs": "2009",
+          "MP": "23",
+          "Min": "1259",
+          "Gls": "3",
+          "Ast": "1"
+        }
+      ]
+    },
+    {
+      "team2_id": "160532",
+      "team2_name": "GER: VfB Stuttgart",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=160532&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/b6a6e0a7/Steven-Zuber",
+          "Player": "Steven Zuber",
+          "Yrs": "2018",
+          "MP": "13",
+          "Min": "1051",
+          "Gls": "5",
+          "Ast": "1"
+        }
+      ]
+    },
+    {
+      "team2_id": "169610",
+      "team2_name": "GER: VfL Bochum",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=169610&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/591477c9/Vassilis-Lambropoulos",
+          "Player": "Vassilis Lambropoulos",
+          "Yrs": "2019-2022",
+          "MP": "51",
+          "Min": "3647",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "159458",
+      "team2_name": "GER: VfL Wolfsburg",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=159458&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/2bc82fdc/Sotirios-Kyrgiakos",
+          "Player": "Sotirios Kyrgiakos",
+          "Yrs": "2011-2012",
+          "MP": "9",
+          "Min": "714",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "155634",
+      "team2_name": "ITA: AC Cesena",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=155634&t3=--&t4=--",
+      "player_count": 3,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/740acaf8/Hugo-Almeida",
+          "Player": "Hugo Almeida",
+          "Yrs": "2014",
+          "MP": "10",
+          "Min": "684",
+          "Gls": "0",
+          "Ast": "1"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/6e5497ca/Marko-Livaja",
+          "Player": "Marko Livaja",
+          "Yrs": "2011",
+          "MP": "3",
+          "Min": "53",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/bffec2a8/Vangelis-Moras",
+          "Player": "Vangelis Moras",
+          "Yrs": "2011",
+          "MP": "15",
+          "Min": "1256",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "172000",
+      "team2_name": "ITA: AC ChievoVerona",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=172000&t3=--&t4=--",
+      "player_count": 2,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/90b70194/Perparim-Hetemaj",
+          "Player": "Përparim Hetemaj",
+          "Yrs": "2011-2019",
+          "MP": "244",
+          "Min": "18657",
+          "Gls": "6",
+          "Ast": "12"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/048877f5/Stefano-Sorrentino",
+          "Player": "Stefano Sorrentino",
+          "Yrs": "2008-2018",
+          "MP": "269",
+          "Min": "24189",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "173603",
+      "team2_name": "ITA: AC Milan",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=173603&t3=--&t4=--",
+      "player_count": 4,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/4d8cd038/Luka-Jovic",
+          "Player": "Luka Jović",
+          "Yrs": "2023-2024",
+          "MP": "47",
+          "Min": "1950",
+          "Gls": "13",
+          "Ast": "1"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/b682dcf6/Sokratis-Papastathopoulos",
+          "Player": "Sokratis Papastathopoulos",
+          "Yrs": "2010",
+          "MP": "5",
+          "Min": "344",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/5c7f3153/Rivaldo",
+          "Player": "Rivaldo",
+          "Yrs": "2002-2003",
+          "MP": "35",
+          "Min": "2251",
+          "Gls": "7",
+          "Ast": "7"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/bad38a94/Didac-Vila",
+          "Player": "Dídac Vilà",
+          "Yrs": "2010",
+          "MP": "1",
+          "Min": "90",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "157182",
+      "team2_name": "ITA: AC Perugia Calcio",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=157182&t3=--&t4=--",
+      "player_count": 6,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/6989550f/Alberto-Brignoli",
+          "Player": "Alberto Brignoli",
+          "Yrs": "2016",
+          "MP": "18",
+          "Min": "1620",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/cefe8bcf/Traianos-Dellas",
+          "Player": "Traianos Dellas",
+          "Yrs": "2001",
+          "MP": "8",
+          "Min": "720",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/8559fbe6/Paolo-Fernandes",
+          "Player": "Paolo Fernandes",
+          "Yrs": "2019",
+          "MP": "16",
+          "Min": "826",
+          "Gls": "0",
+          "Ast": "1"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/5102e15c/Vinicius-Freitas",
+          "Player": "Vinícius Freitas",
+          "Yrs": "2014",
+          "MP": "15",
+          "Min": "712",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/90390e0d/Michel-Kreek",
+          "Player": "Michel Kreek",
+          "Yrs": "1996",
+          "MP": "32",
+          "Min": "2612",
+          "Gls": "3",
+          "Ast": null
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/3964cede/Dimitris-Nalitzis",
+          "Player": "Dimitris Nalitzis",
+          "Yrs": "2001",
+          "MP": "2",
+          "Min": "20",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "158193",
+      "team2_name": "ITA: ACF Fiorentina",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=158193&t3=--&t4=--",
+      "player_count": 2,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/4d8cd038/Luka-Jovic",
+          "Player": "Luka Jović",
+          "Yrs": "2022-2023",
+          "MP": "48",
+          "Min": "2356",
+          "Gls": "13",
+          "Ast": "3"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/27d34558/Panagiotis-Kone",
+          "Player": "Panagiotis Kone",
+          "Yrs": "2015",
+          "MP": "1",
+          "Min": "9",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "166372",
+      "team2_name": "ITA: AS Livorno Calcio",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=166372&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/8ed17872/Savvas-Gentsoglou",
+          "Player": "Savvas Gentsoglou",
+          "Yrs": "2012",
+          "MP": "30",
+          "Min": "1910",
+          "Gls": "0",
+          "Ast": "3"
+        }
+      ]
+    },
+    {
+      "team2_id": "172305",
+      "team2_name": "ITA: AS Roma",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=172305&t3=--&t4=--",
+      "player_count": 6,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/cefe8bcf/Traianos-Dellas",
+          "Player": "Traianos Dellas",
+          "Yrs": "2002-2004",
+          "MP": "56",
+          "Min": "4219",
+          "Gls": "3",
+          "Ast": "2"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/abe66106/Erik-Lamela",
+          "Player": "Érik Lamela",
+          "Yrs": "2011-2012",
+          "MP": "62",
+          "Min": "4480",
+          "Gls": "19",
+          "Ast": "10"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/c707411f/Kostas-Manolas",
+          "Player": "Kostas Manolas",
+          "Yrs": "2014-2018",
+          "MP": "204",
+          "Min": "17316",
+          "Gls": "8",
+          "Ast": "6"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/ccbbe661/Ezequiel-Ponce",
+          "Player": "Ezequiel Ponce",
+          "Yrs": "2015",
+          "MP": "0",
+          "Min": null,
+          "Gls": null,
+          "Ast": null
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/e26bd2f4/Panagiotis-Tachtsidis",
+          "Player": "Panagiotis Tachtsidis",
+          "Yrs": "2012",
+          "MP": "21",
+          "Min": "1438",
+          "Gls": "1",
+          "Ast": "2"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/d3298c99/Daniele-Verde",
+          "Player": "Daniele Verde",
+          "Yrs": "2014",
+          "MP": "10",
+          "Min": "347",
+          "Gls": "0",
+          "Ast": "2"
+        }
+      ]
+    },
+    {
+      "team2_id": "163030",
+      "team2_name": "ITA: Ascoli Picchio FC 1898",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=163030&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/edb1857e/Olivier-NSiabamfumu",
+          "Player": "Olivier N'Siabamfumu",
+          "Yrs": "2006",
+          "MP": "2",
+          "Min": "86",
+          "Gls": "0",
+          "Ast": null
+        }
+      ]
+    },
+    {
+      "team2_id": "166223",
+      "team2_name": "ITA: Atalanta BC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=166223&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/6e5497ca/Marko-Livaja",
+          "Player": "Marko Livaja",
+          "Yrs": "2012-2013",
+          "MP": "31",
+          "Min": "1355",
+          "Gls": "4",
+          "Ast": "1"
+        }
+      ]
+    },
+    {
+      "team2_id": "159582",
+      "team2_name": "ITA: Benevento Calcio",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=159582&t3=--&t4=--",
+      "player_count": 2,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/6989550f/Alberto-Brignoli",
+          "Player": "Alberto Brignoli",
+          "Yrs": "2017",
+          "MP": "13",
+          "Min": "1126",
+          "Gls": "1",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/90b70194/Perparim-Hetemaj",
+          "Player": "Përparim Hetemaj",
+          "Yrs": "2019-2020",
+          "MP": "65",
+          "Min": "4612",
+          "Gls": "0",
+          "Ast": "3"
+        }
+      ]
+    },
+    {
+      "team2_id": "154488",
+      "team2_name": "ITA: Bologna FC 1909",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=154488&t3=--&t4=--",
+      "player_count": 7,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/f73abe54/Lazaros-Christodoulopoulos",
+          "Player": "Lazaros Christodoulopoulos",
+          "Yrs": "2012-2013",
+          "MP": "39",
+          "Min": "2513",
+          "Gls": "3",
+          "Ast": "2"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/efe5e7b3/Mohamed-Kallon",
+          "Player": "Mohamed Kallon",
+          "Yrs": "1997",
+          "MP": "2",
+          "Min": "32",
+          "Gls": "0",
+          "Ast": null
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/27d34558/Panagiotis-Kone",
+          "Player": "Panagiotis Kone",
+          "Yrs": "2011-2013",
+          "MP": "90",
+          "Min": "6237",
+          "Gls": "12",
+          "Ast": "3"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/5631b735/Nenad-Krsticic",
+          "Player": "Nenad Krstičić",
+          "Yrs": "2014",
+          "MP": "13",
+          "Min": "818",
+          "Gls": "0",
+          "Ast": "1"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/bffec2a8/Vangelis-Moras",
+          "Player": "Vangelis Moras",
+          "Yrs": "2007-2010",
+          "MP": "98",
+          "Min": "7421",
+          "Gls": "4",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/3b9858f5/Marios-Oikonomou",
+          "Player": "Marios Oikonomou",
+          "Yrs": "2014-2016",
+          "MP": "71",
+          "Min": "5785",
+          "Gls": "4",
+          "Ast": "1"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/d3397c3e/Theodoros-Zagorakis",
+          "Player": "Theodoros Zagorakis",
+          "Yrs": "2004",
+          "MP": "32",
+          "Min": "2702",
+          "Gls": "0",
+          "Ast": "3"
+        }
+      ]
+    },
+    {
+      "team2_id": "159491",
+      "team2_name": "ITA: Brescia Calcio",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=159491&t3=--&t4=--",
+      "player_count": 3,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/90b70194/Perparim-Hetemaj",
+          "Player": "Përparim Hetemaj",
+          "Yrs": "2009-2010",
+          "MP": "34",
+          "Min": "2609",
+          "Gls": "2",
+          "Ast": "3"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/27d34558/Panagiotis-Kone",
+          "Player": "Panagiotis Kone",
+          "Yrs": "2010",
+          "MP": "31",
+          "Min": "2049",
+          "Gls": "1",
+          "Ast": "1"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/50a2cb6d/Sebastian-Saja",
+          "Player": "Sebastián Saja",
+          "Yrs": "2003",
+          "MP": "4",
+          "Min": "360",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "171217",
+      "team2_name": "ITA: Cagliari Calcio",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=171217&t3=--&t4=--",
+      "player_count": 5,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/585a73a8/Bruno-Alves",
+          "Player": "Bruno Alves",
+          "Yrs": "2016",
+          "MP": "37",
+          "Min": "3317",
+          "Gls": "1",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/efe5e7b3/Mohamed-Kallon",
+          "Player": "Mohamed Kallon",
+          "Yrs": "1998",
+          "MP": "26",
+          "Min": "1323",
+          "Gls": "5",
+          "Ast": "1"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/7fac99d4/Razvan-Marin",
+          "Player": "Răzvan Marin",
+          "Yrs": "2020-2024",
+          "MP": "111",
+          "Min": "7582",
+          "Gls": "7",
+          "Ast": "13"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/3b9858f5/Marios-Oikonomou",
+          "Player": "Marios Oikonomou",
+          "Yrs": "2013",
+          "MP": "1",
+          "Min": "90",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/e26bd2f4/Panagiotis-Tachtsidis",
+          "Player": "Panagiotis Tachtsidis",
+          "Yrs": "2016",
+          "MP": "26",
+          "Min": "2138",
+          "Gls": "0",
+          "Ast": "4"
+        }
+      ]
+    },
+    {
+      "team2_id": "163862",
+      "team2_name": "ITA: Calcio Catania",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=163862&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/e26bd2f4/Panagiotis-Tachtsidis",
+          "Player": "Panagiotis Tachtsidis",
+          "Yrs": "2013",
+          "MP": "12",
+          "Min": "837",
+          "Gls": "0",
+          "Ast": "1"
+        }
+      ]
+    },
+    {
+      "team2_id": "159430",
+      "team2_name": "ITA: Calcio Padova",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=159430&t3=--&t4=--",
+      "player_count": 2,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/5102e15c/Vinicius-Freitas",
+          "Player": "Vinícius Freitas",
+          "Yrs": "2013",
+          "MP": "10",
+          "Min": "817",
+          "Gls": "1",
+          "Ast": "1"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/90390e0d/Michel-Kreek",
+          "Player": "Michel Kreek",
+          "Yrs": "1994-1995",
+          "MP": "53",
+          "Min": "4467",
+          "Gls": "10",
+          "Ast": null
+        }
+      ]
+    },
+    {
+      "team2_id": "170141",
+      "team2_name": "ITA: Delfino Pescara 1936",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=170141&t3=--&t4=--",
+      "player_count": 3,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/ad502194/Nicolas-Bianchi-Arce",
+          "Player": "Nicolás Bianchi Arce",
+          "Yrs": "2012",
+          "MP": "10",
+          "Min": "539",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/d3298c99/Daniele-Verde",
+          "Player": "Daniele Verde",
+          "Yrs": "2015",
+          "MP": "7",
+          "Min": "290",
+          "Gls": "1",
+          "Ast": "1"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/69960ac3/Uros-Cosic",
+          "Player": "Uroš Ćosić",
+          "Yrs": "2012-2014",
+          "MP": "47",
+          "Min": "3655",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "168001",
+      "team2_name": "ITA: Empoli FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=168001&t3=--&t4=--",
+      "player_count": 4,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/6989550f/Alberto-Brignoli",
+          "Player": "Alberto Brignoli",
+          "Yrs": "2019-2021",
+          "MP": "72",
+          "Min": "6510",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/6e5497ca/Marko-Livaja",
+          "Player": "Marko Livaja",
+          "Yrs": "2015",
+          "MP": "18",
+          "Min": "609",
+          "Gls": "1",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/7fac99d4/Razvan-Marin",
+          "Player": "Răzvan Marin",
+          "Yrs": "2022-2023",
+          "MP": "65",
+          "Min": "4495",
+          "Gls": "2",
+          "Ast": "7"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/69960ac3/Uros-Cosic",
+          "Player": "Uroš Ćosić",
+          "Yrs": "2015-2016",
+          "MP": "25",
+          "Min": "1981",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "151613",
+      "team2_name": "ITA: FC Bari 1908",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=151613&t3=--&t4=--",
+      "player_count": 4,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/8ed17872/Savvas-Gentsoglou",
+          "Player": "Savvas Gentsoglou",
+          "Yrs": "2015",
+          "MP": "13",
+          "Min": "874",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/bffec2a8/Vangelis-Moras",
+          "Player": "Vangelis Moras",
+          "Yrs": "2016-2017",
+          "MP": "24",
+          "Min": "2063",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/3b9858f5/Marios-Oikonomou",
+          "Player": "Marios Oikonomou",
+          "Yrs": "2017",
+          "MP": "3",
+          "Min": "270",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/b5e19f26/Antonis-Petropoulos",
+          "Player": "Antonis Petropoulos",
+          "Yrs": "2015",
+          "MP": "5",
+          "Min": "66",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "156457",
+      "team2_name": "ITA: FC Crotone",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=156457&t3=--&t4=--",
+      "player_count": 3,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/28718256/Steve-Leo-Beleck",
+          "Player": "Steve Leo Beleck",
+          "Yrs": "2014",
+          "MP": "12",
+          "Min": "792",
+          "Gls": "1",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/edb1857e/Olivier-NSiabamfumu",
+          "Player": "Olivier N'Siabamfumu",
+          "Yrs": "2009",
+          "MP": "1",
+          "Min": "45",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/7e40455a/Ionut-Nedelcearu",
+          "Player": "Ionuț Nedelcearu",
+          "Yrs": "2021",
+          "MP": "36",
+          "Min": "2845",
+          "Gls": "2",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "172965",
+      "team2_name": "ITA: FC Internazionale Milano",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=172965&t3=--&t4=--",
+      "player_count": 6,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/94ffc023/Bruno-Cirillo",
+          "Player": "Bruno Cirillo",
+          "Yrs": "2000",
+          "MP": "24",
+          "Min": "1699",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/d884ea49/Carlos-Gamarra",
+          "Player": "Carlos Gamarra",
+          "Yrs": "2002-2004",
+          "MP": "34",
+          "Min": "2343",
+          "Gls": "0",
+          "Ast": "1"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/35dfe297/Grigoris-Georgatos",
+          "Player": "Grigoris Georgatos",
+          "Yrs": "1999-2001",
+          "MP": "40",
+          "Min": "2897",
+          "Gls": "3",
+          "Ast": "7"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/efe5e7b3/Mohamed-Kallon",
+          "Player": "Mohamed Kallon",
+          "Yrs": "2001-2003",
+          "MP": "61",
+          "Min": "3440",
+          "Gls": "20",
+          "Ast": "7"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/6e5497ca/Marko-Livaja",
+          "Player": "Marko Livaja",
+          "Yrs": "2012",
+          "MP": "12",
+          "Min": "526",
+          "Gls": "4",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/f0021247/Joao-Mario",
+          "Player": "João Mário",
+          "Yrs": "2016-2018",
+          "MP": "69",
+          "Min": "3958",
+          "Gls": "4",
+          "Ast": "11"
+        }
+      ]
+    },
+    {
+      "team2_id": "162211",
+      "team2_name": "ITA: Frosinone Calcio",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=162211&t3=--&t4=--",
+      "player_count": 2,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/d3298c99/Daniele-Verde",
+          "Player": "Daniele Verde",
+          "Yrs": "2015",
+          "MP": "7",
+          "Min": "169",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/69960ac3/Uros-Cosic",
+          "Player": "Uroš Ćosić",
+          "Yrs": "2014",
+          "MP": "11",
+          "Min": "717",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "161731",
+      "team2_name": "ITA: Genoa CFC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=161731&t3=--&t4=--",
+      "player_count": 3,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/b682dcf6/Sokratis-Papastathopoulos",
+          "Player": "Sokratis Papastathopoulos",
+          "Yrs": "2008-2009",
+          "MP": "54",
+          "Min": "3661",
+          "Gls": "2",
+          "Ast": "1"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/e26bd2f4/Panagiotis-Tachtsidis",
+          "Player": "Panagiotis Tachtsidis",
+          "Yrs": "2015",
+          "MP": "25",
+          "Min": "957",
+          "Gls": "2",
+          "Ast": "2"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/72d6b151/Daniel-Tozser",
+          "Player": "Dániel Tőzsér",
+          "Yrs": "2012",
+          "MP": "22",
+          "Min": "1334",
+          "Gls": "0",
+          "Ast": "1"
+        }
+      ]
+    },
+    {
+      "team2_id": "152924",
+      "team2_name": "ITA: Hellas Verona FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=152924&t3=--&t4=--",
+      "player_count": 5,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/f73abe54/Lazaros-Christodoulopoulos",
+          "Player": "Lazaros Christodoulopoulos",
+          "Yrs": "2014",
+          "MP": "24",
+          "Min": "1363",
+          "Gls": "2",
+          "Ast": "5"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/bffec2a8/Vangelis-Moras",
+          "Player": "Vangelis Moras",
+          "Yrs": "2012-2015",
+          "MP": "134",
+          "Min": "11587",
+          "Gls": "5",
+          "Ast": "2"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/e26bd2f4/Panagiotis-Tachtsidis",
+          "Player": "Panagiotis Tachtsidis",
+          "Yrs": "2011-2014",
+          "MP": "72",
+          "Min": "6199",
+          "Gls": "5",
+          "Ast": "7"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/d3298c99/Daniele-Verde",
+          "Player": "Daniele Verde",
+          "Yrs": "2017",
+          "MP": "33",
+          "Min": "2136",
+          "Gls": "4",
+          "Ast": "2"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/17cddb4d/Bruno-Zuculini",
+          "Player": "Bruno Zuculini",
+          "Yrs": "2016-2017",
+          "MP": "35",
+          "Min": "2750",
+          "Gls": "4",
+          "Ast": "1"
+        }
+      ]
+    },
+    {
+      "team2_id": "173984",
+      "team2_name": "ITA: Juventus FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=173984&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/75f2c59f/Roberto-Pereyra",
+          "Player": "Roberto Pereyra",
+          "Yrs": "2014-2015",
+          "MP": "67",
+          "Min": "3750",
+          "Gls": "6",
+          "Ast": "5"
+        }
+      ]
+    },
+    {
+      "team2_id": "162901",
+      "team2_name": "ITA: Modena FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=162901&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/02170777/Manu",
+          "Player": "Manú",
+          "Yrs": "2004",
+          "MP": "5",
+          "Min": "185",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "162382",
+      "team2_name": "ITA: Novara Calcio",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=162382&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/dcd8cc1f/Giorgos-Katidis",
+          "Player": "Giorgos Katidis",
+          "Yrs": "2013",
+          "MP": "10",
+          "Min": "455",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "175049",
+      "team2_name": "ITA: Parma Calcio",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=175049&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/585a73a8/Bruno-Alves",
+          "Player": "Bruno Alves",
+          "Yrs": "2018-2020",
+          "MP": "86",
+          "Min": "7315",
+          "Gls": "5",
+          "Ast": "1"
+        }
+      ]
+    },
+    {
+      "team2_id": "154456",
+      "team2_name": "ITA: SPAL 2013",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=154456&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/3b9858f5/Marios-Oikonomou",
+          "Player": "Marios Oikonomou",
+          "Yrs": "2017",
+          "MP": "6",
+          "Min": "350",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "162952",
+      "team2_name": "ITA: SS Lazio",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=162952&t3=--&t4=--",
+      "player_count": 2,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/5102e15c/Vinicius-Freitas",
+          "Player": "Vinícius Freitas",
+          "Yrs": "2016",
+          "MP": "0",
+          "Min": null,
+          "Gls": null,
+          "Ast": null
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/339fe0e8/Thomas-Strakosha",
+          "Player": "Thomas Strakosha",
+          "Yrs": "2014-2021",
+          "MP": "208",
+          "Min": "18735",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "158565",
+      "team2_name": "ITA: SS Robur Siena",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=158565&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/94ffc023/Bruno-Cirillo",
+          "Player": "Bruno Cirillo",
+          "Yrs": "2003-2004",
+          "MP": "54",
+          "Min": "4179",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "172833",
+      "team2_name": "ITA: SSC Napoli",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=172833&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/c707411f/Kostas-Manolas",
+          "Player": "Kostas Manolas",
+          "Yrs": "2019-2021",
+          "MP": "75",
+          "Min": "6041",
+          "Gls": "4",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "162009",
+      "team2_name": "ITA: Spezia Calcio",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=162009&t3=--&t4=--",
+      "player_count": 2,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/8ed17872/Savvas-Gentsoglou",
+          "Player": "Savvas Gentsoglou",
+          "Yrs": "2013",
+          "MP": "11",
+          "Min": "550",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/d3298c99/Daniele-Verde",
+          "Player": "Daniele Verde",
+          "Yrs": "2020-2025",
+          "MP": "123",
+          "Min": "6689",
+          "Gls": "29",
+          "Ast": "9"
+        }
+      ]
+    },
+    {
+      "team2_id": "153120",
+      "team2_name": "ITA: Torino FC",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=153120&t3=--&t4=--",
+      "player_count": 4,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/d49f3e6b/Lucas-Boye",
+          "Player": "Lucas Boyé",
+          "Yrs": "2016-2017",
+          "MP": "47",
+          "Min": "1828",
+          "Gls": "2",
+          "Ast": "3"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/8c3073a2/Ilija-Ivic",
+          "Player": "Ilija Ivić",
+          "Yrs": "1999",
+          "MP": "19",
+          "Min": "1029",
+          "Gls": "0",
+          "Ast": "2"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/048877f5/Stefano-Sorrentino",
+          "Player": "Stefano Sorrentino",
+          "Yrs": "2001-2004",
+          "MP": "88",
+          "Min": "7700",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/e26bd2f4/Panagiotis-Tachtsidis",
+          "Player": "Panagiotis Tachtsidis",
+          "Yrs": "2013-2016",
+          "MP": "11",
+          "Min": "383",
+          "Gls": "1",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "166002",
+      "team2_name": "ITA: UC Sampdoria",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=166002&t3=--&t4=--",
+      "player_count": 5,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/6989550f/Alberto-Brignoli",
+          "Player": "Alberto Brignoli",
+          "Yrs": "2015",
+          "MP": "1",
+          "Min": "90",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/f73abe54/Lazaros-Christodoulopoulos",
+          "Player": "Lazaros Christodoulopoulos",
+          "Yrs": "2015",
+          "MP": "11",
+          "Min": "386",
+          "Gls": "1",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/8ed17872/Savvas-Gentsoglou",
+          "Player": "Savvas Gentsoglou",
+          "Yrs": "2013",
+          "MP": "5",
+          "Min": "283",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/5631b735/Nenad-Krsticic",
+          "Player": "Nenad Krstičić",
+          "Yrs": "2010-2015",
+          "MP": "96",
+          "Min": "5846",
+          "Gls": "2",
+          "Ast": "4"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/3b9858f5/Marios-Oikonomou",
+          "Player": "Marios Oikonomou",
+          "Yrs": "2022",
+          "MP": "6",
+          "Min": "220",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "175379",
+      "team2_name": "ITA: US Città di Palermo",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=175379&t3=--&t4=--",
+      "player_count": 3,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/6989550f/Alberto-Brignoli",
+          "Player": "Alberto Brignoli",
+          "Yrs": "2018",
+          "MP": "33",
+          "Min": "3000",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/7e40455a/Ionut-Nedelcearu",
+          "Player": "Ionuț Nedelcearu",
+          "Yrs": "2022-2024",
+          "MP": "67",
+          "Min": "5654",
+          "Gls": "2",
+          "Ast": "3"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/048877f5/Stefano-Sorrentino",
+          "Player": "Stefano Sorrentino",
+          "Yrs": "2012-2015",
+          "MP": "118",
+          "Min": "10541",
+          "Gls": "0",
+          "Ast": "0"
+        }
+      ]
+    },
+    {
+      "team2_id": "177156",
+      "team2_name": "ITA: US Lecce",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=177156&t3=--&t4=--",
+      "player_count": 3,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/94ffc023/Bruno-Cirillo",
+          "Player": "Bruno Cirillo",
+          "Yrs": "2001-2002",
+          "MP": "32",
+          "Min": "2181",
+          "Gls": "4",
+          "Ast": "1"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/ff764de3/Yevhen-Shakhov",
+          "Player": "Yevhen Shakhov",
+          "Yrs": "2019",
+          "MP": "24",
+          "Min": "1085",
+          "Gls": "1",
+          "Ast": "2"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/e26bd2f4/Panagiotis-Tachtsidis",
+          "Player": "Panagiotis Tachtsidis",
+          "Yrs": "2018-2020",
+          "MP": "73",
+          "Min": "5256",
+          "Gls": "1",
+          "Ast": "9"
+        }
+      ]
+    },
+    {
+      "team2_id": "171331",
+      "team2_name": "ITA: US Salernitana 1919",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=171331&t3=--&t4=--",
+      "player_count": 3,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/c707411f/Kostas-Manolas",
+          "Player": "Kostas Manolas",
+          "Yrs": "2023",
+          "MP": "8",
+          "Min": "488",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/339fe0e8/Thomas-Strakosha",
+          "Player": "Thomas Strakosha",
+          "Yrs": "2015",
+          "MP": "13",
+          "Min": "1200",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/d3298c99/Daniele-Verde",
+          "Player": "Daniele Verde",
+          "Yrs": "2024",
+          "MP": "36",
+          "Min": "2113",
+          "Gls": "3",
+          "Ast": "3"
+        }
+      ]
+    },
+    {
+      "team2_id": "151963",
+      "team2_name": "ITA: Udinese Calcio",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=151963&t3=--&t4=--",
+      "player_count": 3,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/792c7b94/Emanuel-Insua",
+          "Player": "Emanuel Insúa",
+          "Yrs": "2015",
+          "MP": "1",
+          "Min": "90",
+          "Gls": "0",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/27d34558/Panagiotis-Kone",
+          "Player": "Panagiotis Kone",
+          "Yrs": "2014-2016",
+          "MP": "43",
+          "Min": "2337",
+          "Gls": "3",
+          "Ast": "4"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/75f2c59f/Roberto-Pereyra",
+          "Player": "Roberto Pereyra",
+          "Yrs": "2011-2023",
+          "MP": "216",
+          "Min": "16679",
+          "Gls": "27",
+          "Ast": "32"
+        }
+      ]
+    },
+    {
+      "team2_id": "158678",
+      "team2_name": "ITA: Urbs Reggina 1914",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=158678&t3=--&t4=--",
+      "player_count": 3,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/94ffc023/Bruno-Cirillo",
+          "Player": "Bruno Cirillo",
+          "Yrs": "1999-2008",
+          "MP": "92",
+          "Min": "7627",
+          "Gls": "2",
+          "Ast": "1"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/90b70194/Perparim-Hetemaj",
+          "Player": "Përparim Hetemaj",
+          "Yrs": "2021",
+          "MP": "31",
+          "Min": "1896",
+          "Gls": "1",
+          "Ast": "0"
+        },
+        {
+          "Player_link": "https://fbref.com/en/players/efe5e7b3/Mohamed-Kallon",
+          "Player": "Mohamed Kallon",
+          "Yrs": "1999",
+          "MP": "30",
+          "Min": "2368",
+          "Gls": "11",
+          "Ast": "3"
+        }
+      ]
+    },
+    {
+      "team2_id": "155354",
+      "team2_name": "ITA: Vicenza Calcio",
+      "query_url": "https://fbref.com/en/friv/players-who-played-for-multiple-clubs-countries.fcgi?level=franch&t1=172890&t2=155354&t3=--&t4=--",
+      "player_count": 1,
+      "players": [
+        {
+          "Player_link": "https://fbref.com/en/players/efe5e7b3/Mohamed-Kallon",
+          "Player": "Mohamed Kallon",
+          "Yrs": "2000",
+          "MP": "25",
+          "Min": "2005",
+          "Gls": "8",
+          "Ast": "2"
+        }
+      ]
+    }
+  ]
+}
