@@ -23,7 +23,8 @@ const views = {
     end: document.getElementById('game-over-screen'),
     commonClub: document.getElementById('common-club-screen'),
     careerPath: document.getElementById('career-path-screen'),
-    mysteryPlayer: document.getElementById('mystery-player-screen')
+    mysteryPlayer: document.getElementById('mystery-player-screen'),
+    connections: document.getElementById('connections-screen')
 };
 
 const dom = {
@@ -197,6 +198,15 @@ function init() {
     document.getElementById('cc-share-btn').addEventListener('click', handleCCShare);
     document.getElementById('cc-search-input').addEventListener('input', handleCCSearch);
     document.getElementById('cc-give-up-btn').addEventListener('click', handleCCGiveUp);
+
+    // Connections buttons
+    document.getElementById('btn-connections').addEventListener('click', startConnections);
+    document.getElementById('cn-submit-btn').addEventListener('click', submitCNGuess);
+    document.getElementById('cn-hint-btn').addEventListener('click', handleCNHint);
+    document.getElementById('cn-deselect-btn').addEventListener('click', () => { cnState.selected = []; renderCNGrid(); });
+    document.getElementById('cn-quit-btn').addEventListener('click', resetToStart);
+    document.getElementById('cn-play-again-btn').addEventListener('click', startConnections);
+    document.getElementById('cn-menu-btn').addEventListener('click', resetToStart);
 
     // Mystery Player buttons
     document.getElementById('btn-mystery-player').addEventListener('click', startMysteryPlayer);
@@ -1182,6 +1192,309 @@ async function handleCPShare() {
     } catch(e) {
         showToast('Could not copy to clipboard.', 'error');
     }
+}
+
+// =============================================================================
+// CONNECTIONS
+// =============================================================================
+
+const CN_COLORS = ['yellow', 'green', 'blue', 'purple'];
+const CN_COLOR_LABELS = { yellow: '🟨', green: '🟩', blue: '🟦', purple: '🟪' };
+
+let cnState = {
+    groups: [],         // [{label, color, playerIds, solved}]
+    players: [],        // [{id, name}] shuffled — the 16 grid players
+    selected: [],       // player ids currently selected
+    mistakes: 0,
+    maxMistakes: 4,
+    hintedLabel: null,  // label of the currently shown hint (null = none)
+    gameOver: false
+};
+
+// --- Puzzle generator ---
+
+function buildCNGroups() {
+    const careers      = TRIVIA_DATA.careers;
+    const players      = TRIVIA_DATA.players;
+    const nationalities = TRIVIA_DATA.nationalities || {};
+
+    const candidates = [];
+
+    // 1. Nationality groups
+    const natBuckets = {};
+    for (const [pid, nat] of Object.entries(nationalities)) {
+        if (!players[pid]) continue;
+        if (!natBuckets[nat]) natBuckets[nat] = [];
+        natBuckets[nat].push(pid);
+    }
+    for (const [nat, pids] of Object.entries(natBuckets)) {
+        if (pids.length < 4) continue;
+        const diff = pids.length >= 20 ? 0 : pids.length >= 10 ? 1 : pids.length >= 6 ? 2 : 3;
+        candidates.push({ label: `All are ${nat}`, pool: pids, diff });
+    }
+
+    // 2. Shared club groups
+    const clubBuckets = {};
+    for (const [pid, stints] of Object.entries(careers)) {
+        if (!players[pid] || !stints) continue;
+        for (const stint of stints) {
+            if (!clubBuckets[stint.club]) clubBuckets[stint.club] = new Set();
+            clubBuckets[stint.club].add(pid);
+        }
+    }
+    for (const [club, pidSet] of Object.entries(clubBuckets)) {
+        const pids = [...pidSet];
+        if (pids.length < 4) continue;
+        const diff = pids.length >= 15 ? 0 : pids.length >= 8 ? 1 : pids.length >= 5 ? 2 : 3;
+        candidates.push({ label: `All played for ${club}`, pool: pids, diff });
+    }
+
+    // 3. Goals threshold groups (any club, thresholds 3/5/10/15)
+    const goalThresholds = [3, 5, 10, 15];
+    const allClubs = Object.keys(clubBuckets);
+    for (const club of allClubs) {
+        for (const minG of goalThresholds) {
+            const qualifiers = [];
+            for (const [pid, stints] of Object.entries(careers)) {
+                if (!players[pid] || !stints) continue;
+                if (stints.some(s => s.club === club && s.goals >= minG)) qualifiers.push(pid);
+            }
+            if (qualifiers.length < 4) continue;
+            const diff = minG >= 10 ? 3 : minG >= 5 ? 2 : 1;
+            candidates.push({ label: `All scored ${minG}+ goals for ${club}`, pool: qualifiers, diff });
+        }
+    }
+
+    // 4. Apps threshold groups (any club, thresholds 30/50/75/100)
+    const appThresholds = [30, 50, 75, 100];
+    for (const club of allClubs) {
+        for (const minA of appThresholds) {
+            const qualifiers = [];
+            for (const [pid, stints] of Object.entries(careers)) {
+                if (!players[pid] || !stints) continue;
+                if (stints.some(s => s.club === club && s.apps >= minA)) qualifiers.push(pid);
+            }
+            if (qualifiers.length < 4) continue;
+            const diff = minA >= 75 ? 3 : minA >= 50 ? 2 : 1;
+            candidates.push({ label: `All made ${minA}+ appearances for ${club}`, pool: qualifiers, diff });
+        }
+    }
+
+    // 5. Played for two specific clubs (intersection)
+    // Only check clubs with 6+ players to keep pair count manageable
+    const richClubs = allClubs.filter(c => clubBuckets[c].size >= 6);
+    for (let i = 0; i < richClubs.length; i++) {
+        for (let j = i + 1; j < richClubs.length; j++) {
+            const clubA = richClubs[i], clubB = richClubs[j];
+            const intersection = [...clubBuckets[clubA]].filter(pid =>
+                players[pid] && clubBuckets[clubB].has(pid)
+            );
+            if (intersection.length < 4) continue;
+            candidates.push({
+                label: `All played for both ${clubA} and ${clubB}`,
+                pool: intersection,
+                diff: 3   // always hard — very specific condition
+            });
+        }
+    }
+
+    return candidates;
+}
+
+function generateCNPuzzle() {
+    const candidates = buildCNGroups();
+
+    for (let attempt = 0; attempt < 200; attempt++) {
+        shuffleArray(candidates);
+        const chosen = [];
+        const usedPids = new Set();
+
+        for (const cand of candidates) {
+            if (chosen.length === 4) break;
+            const available = cand.pool.filter(pid => !usedPids.has(pid));
+            if (available.length < 4) continue;
+            shuffleArray(available);
+            const selected = available.slice(0, 4);
+            chosen.push({ label: cand.label, diff: cand.diff, playerIds: selected, solved: false });
+            selected.forEach(pid => usedPids.add(pid));
+        }
+
+        if (chosen.length === 4) {
+            // Sort by difficulty and assign colors
+            chosen.sort((a, b) => a.diff - b.diff);
+            return chosen.map((g, i) => ({ ...g, color: CN_COLORS[i] }));
+        }
+    }
+    return null;
+}
+
+// --- Game functions ---
+
+function startConnections() {
+    const groups = generateCNPuzzle();
+    if (!groups) { showToast('Could not generate puzzle. Try again.', 'error'); return; }
+
+    cnState.groups     = groups;
+    cnState.selected    = [];
+    cnState.mistakes    = 0;
+    cnState.hintedLabel = null;
+    cnState.gameOver    = false;
+
+    // Flatten + shuffle the 16 players
+    const allPids = groups.flatMap(g => g.playerIds);
+    shuffleArray(allPids);
+    cnState.players = allPids.map(id => ({ id, name: TRIVIA_DATA.players[id] }));
+
+    document.getElementById('cn-game').classList.remove('hidden');
+    document.getElementById('cn-results-panel').classList.add('hidden');
+    document.getElementById('cn-solved-groups').innerHTML = '';
+    document.getElementById('cn-hint-banner').classList.add('hidden');
+    document.getElementById('cn-hint-btn').disabled = false;
+    document.getElementById('cn-hint-btn').textContent = '💡 Hint';
+    document.querySelector('.score-panel').style.visibility = 'hidden';
+
+    renderCNMistakes();
+    renderCNGrid();
+    showView('connections');
+}
+
+function renderCNGrid() {
+    const grid = document.getElementById('cn-grid');
+    const solvedIds = new Set(cnState.groups.filter(g => g.solved).flatMap(g => g.playerIds));
+
+    grid.innerHTML = cnState.players
+        .filter(p => !solvedIds.has(p.id))
+        .map(p => {
+            const sel = cnState.selected.includes(p.id);
+            return `<div class="cn-card${sel ? ' cn-selected' : ''}" data-pid="${p.id}">${p.name}</div>`;
+        }).join('');
+
+    grid.querySelectorAll('.cn-card').forEach(card => {
+        card.addEventListener('click', () => handleCNCardClick(card.dataset.pid));
+    });
+
+    const submitBtn   = document.getElementById('cn-submit-btn');
+    const deselectBtn = document.getElementById('cn-deselect-btn');
+    submitBtn.disabled   = cnState.selected.length !== 4;
+    deselectBtn.disabled = cnState.selected.length === 0;
+}
+
+function renderCNMistakes() {
+    const dots = document.querySelectorAll('.cn-dot');
+    dots.forEach((dot, i) => {
+        dot.classList.toggle('cn-dot--used', i < cnState.mistakes);
+    });
+}
+
+function handleCNCardClick(pid) {
+    if (cnState.gameOver) return;
+    const idx = cnState.selected.indexOf(pid);
+    if (idx >= 0) {
+        cnState.selected.splice(idx, 1);
+    } else {
+        if (cnState.selected.length >= 4) return;
+        cnState.selected.push(pid);
+    }
+    renderCNGrid();
+}
+
+function submitCNGuess() {
+    if (cnState.selected.length !== 4 || cnState.gameOver) return;
+
+    const sel = new Set(cnState.selected);
+
+    // Find if all 4 belong to the same group
+    const matchGroup = cnState.groups.find(g =>
+        !g.solved && g.playerIds.every(pid => sel.has(pid))
+    );
+
+    if (matchGroup) {
+        matchGroup.solved = true;
+        cnState.selected  = [];
+
+        // If this was the hinted group, hide the hint banner
+        if (cnState.hintedLabel === matchGroup.label) {
+            cnState.hintedLabel = null;
+            document.getElementById('cn-hint-banner').classList.add('hidden');
+        }
+
+        // Reveal the solved group banner
+        const banner = document.createElement('div');
+        banner.className = `cn-solved-banner cn-color-${matchGroup.color}`;
+        banner.innerHTML = `<strong>${matchGroup.label}</strong><span>${matchGroup.playerIds.map(pid => TRIVIA_DATA.players[pid]).join(', ')}</span>`;
+        document.getElementById('cn-solved-groups').appendChild(banner);
+
+        renderCNGrid();
+
+        const allSolved = cnState.groups.every(g => g.solved);
+        if (allSolved) { setTimeout(showCNResults, 600); }
+    } else {
+        // Check "one away" — find group where 3/4 selected belong
+        const oneAway = cnState.groups.find(g =>
+            !g.solved && g.playerIds.filter(pid => sel.has(pid)).length === 3
+        );
+        if (oneAway) showToast('One away!', 'info');
+
+        // Shake animation
+        document.querySelectorAll('.cn-card.cn-selected').forEach(card => {
+            card.classList.add('cn-shake');
+            setTimeout(() => card.classList.remove('cn-shake'), 500);
+        });
+
+        cnState.mistakes++;
+        renderCNMistakes();
+
+        if (cnState.mistakes >= cnState.maxMistakes) {
+            cnState.gameOver = true;
+            // Reveal all remaining groups
+            setTimeout(() => {
+                cnState.groups.filter(g => !g.solved).forEach(g => {
+                    g.solved = true;
+                    const banner = document.createElement('div');
+                    banner.className = `cn-solved-banner cn-color-${g.color}`;
+                    banner.innerHTML = `<strong>${g.label}</strong><span>${g.playerIds.map(pid => TRIVIA_DATA.players[pid]).join(', ')}</span>`;
+                    document.getElementById('cn-solved-groups').appendChild(banner);
+                });
+                cnState.selected = [];
+                renderCNGrid();
+                setTimeout(showCNResults, 800);
+            }, 600);
+        }
+    }
+}
+
+function handleCNHint() {
+    // Pick a random unsolved group that isn't the currently shown hint
+    const unsolved = cnState.groups.filter(g => !g.solved && g.label !== cnState.hintedLabel);
+    if (!unsolved.length) return;
+
+    const pick = unsolved[Math.floor(Math.random() * unsolved.length)];
+    cnState.hintedLabel = pick.label;
+
+    const banner = document.getElementById('cn-hint-banner');
+    banner.textContent = `💡 Hint: "${pick.label}"`;
+    banner.classList.remove('hidden');
+}
+
+function showCNResults() {
+    document.getElementById('cn-game').classList.add('hidden');
+    document.getElementById('cn-results-panel').classList.remove('hidden');
+
+    const solved  = cnState.groups.filter(g => g.solved && cnState.mistakes < cnState.maxMistakes || g.solved).length;
+    const won     = cnState.mistakes < cnState.maxMistakes;
+
+    document.getElementById('cn-result-title').textContent =
+        won ? (cnState.mistakes === 0 ? 'Perfect! 🎯' : 'Well Done!') : 'Better Luck Next Time!';
+    document.getElementById('cn-result-msg').textContent =
+        `Connections · ${cnState.maxMistakes - cnState.mistakes}/${cnState.maxMistakes} mistakes remaining`;
+
+    const groupsEl = document.getElementById('cn-result-groups');
+    groupsEl.innerHTML = cnState.groups.map(g =>
+        `<div class="cn-result-group cn-color-${g.color}">
+            <strong>${g.label}</strong>
+            <span>${g.playerIds.map(pid => TRIVIA_DATA.players[pid]).join(', ')}</span>
+        </div>`
+    ).join('');
 }
 
 // =============================================================================

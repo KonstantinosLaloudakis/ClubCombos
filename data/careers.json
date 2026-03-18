@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "scraped_at": "2026-03-17T20:58:05.173231",
+    "scraped_at": "2026-03-18T14:20:28.253774",
     "total_players": 407,
-    "with_career": 342
+    "with_career": 362
   },
   "02bb0e65": [
     {
@@ -42,6 +42,13 @@
     }
   ],
   "4047c976": [
+    {
+      "club": "Monaco",
+      "start_year": 2014,
+      "end_year": 2015,
+      "apps": 2,
+      "goals": 0
+    },
     {
       "club": "Kortrijk",
       "start_year": 2015,
@@ -83,6 +90,13 @@
       "end_year": 2023,
       "apps": 46,
       "goals": 12
+    },
+    {
+      "club": "Olympiacos",
+      "start_year": 2022,
+      "end_year": 2023,
+      "apps": 1,
+      "goals": 0
     },
     {
       "club": "Sepahan",
@@ -197,6 +211,13 @@
     }
   ],
   "21a260a8": [
+    {
+      "club": "Villarreal",
+      "start_year": 2016,
+      "end_year": 2017,
+      "apps": 1,
+      "goals": 0
+    },
     {
       "club": "Sevilla B",
       "start_year": 2017,
@@ -367,6 +388,13 @@
   ],
   "7f6bff1f": [
     {
+      "club": "Barcelona",
+      "start_year": 2008,
+      "end_year": 2009,
+      "apps": 1,
+      "goals": 0
+    },
+    {
       "club": "Sporting Gijón",
       "start_year": 2009,
       "end_year": 2012,
@@ -425,10 +453,24 @@
       "goals": 0
     },
     {
+      "club": "Sampdoria",
+      "start_year": 2015,
+      "end_year": 2016,
+      "apps": 1,
+      "goals": 0
+    },
+    {
       "club": "Perugia",
       "start_year": 2016,
       "end_year": 2017,
       "apps": 18,
+      "goals": 0
+    },
+    {
+      "club": "Leganés",
+      "start_year": 2016,
+      "end_year": 2017,
+      "apps": 1,
       "goals": 0
     },
     {
@@ -629,6 +671,13 @@
   ],
   "b63345a0": [
     {
+      "club": "Panathinaikos",
+      "start_year": 2006,
+      "end_year": 2007,
+      "apps": 1,
+      "goals": 0
+    },
+    {
       "club": "OFI Crete",
       "start_year": 2007,
       "end_year": 2008,
@@ -636,17 +685,17 @@
       "goals": 0
     },
     {
-      "club": "Panathinaikos",
-      "start_year": 2008,
-      "end_year": 2011,
-      "apps": 59,
-      "goals": 0
-    },
-    {
       "club": "Palermo",
       "start_year": 2011,
       "end_year": 2012,
       "apps": 11,
+      "goals": 0
+    },
+    {
+      "club": "Genoa",
+      "start_year": 2012,
+      "end_year": 2013,
+      "apps": 1,
       "goals": 0
     },
     {
@@ -670,6 +719,13 @@
       "start_year": 2021,
       "end_year": 2022,
       "apps": 23,
+      "goals": 0
+    },
+    {
+      "club": "Panathinaikos",
+      "start_year": 2022,
+      "end_year": 2023,
+      "apps": 1,
       "goals": 0
     },
     {
@@ -1417,6 +1473,13 @@
       "end_year": 2026,
       "apps": 3,
       "goals": 0
+    },
+    {
+      "club": "Lens",
+      "start_year": 2025,
+      "end_year": 2026,
+      "apps": 1,
+      "goals": 0
     }
   ],
   "83299cc0": [
@@ -1476,6 +1539,13 @@
       "start_year": 2018,
       "end_year": 2020,
       "apps": 45,
+      "goals": 0
+    },
+    {
+      "club": "Göztepe",
+      "start_year": 2020,
+      "end_year": 2022,
+      "apps": 2,
       "goals": 0
     },
     {
@@ -1609,6 +1679,13 @@
       "end_year": 2017,
       "apps": 28,
       "goals": 9
+    },
+    {
+      "club": "Olympiacos",
+      "start_year": 2017,
+      "end_year": 2018,
+      "apps": 2,
+      "goals": 0
     },
     {
       "club": "Red Star",
@@ -1854,6 +1931,13 @@
       "goals": 7
     },
     {
+      "club": "Fenerbahçe",
+      "start_year": 2022,
+      "end_year": 2023,
+      "apps": 1,
+      "goals": 0
+    },
+    {
       "club": "Braga",
       "start_year": 2022,
       "end_year": 2025,
@@ -1965,6 +2049,13 @@
       "goals": 3
     },
     {
+      "club": "Atalanta",
+      "start_year": 2016,
+      "end_year": 2017,
+      "apps": 1,
+      "goals": 0
+    },
+    {
       "club": "Avellino",
       "start_year": 2017,
       "end_year": 2018,
@@ -2007,7 +2098,64 @@
       "goals": 0
     }
   ],
-  "85322440": null,
+  "85322440": [
+    {
+      "club": "Vitória Guimarães",
+      "start_year": 2014,
+      "end_year": 2016,
+      "apps": 61,
+      "goals": 3
+    },
+    {
+      "club": "Lorient",
+      "start_year": 2016,
+      "end_year": 2017,
+      "apps": 18,
+      "goals": 0
+    },
+    {
+      "club": "Metz",
+      "start_year": 2017,
+      "end_year": 2018,
+      "apps": 10,
+      "goals": 0
+    },
+    {
+      "club": "Legia Warsaw",
+      "start_year": 2017,
+      "end_year": 2020,
+      "apps": 44,
+      "goals": 6
+    },
+    {
+      "club": "Olympiacos",
+      "start_year": 2019,
+      "end_year": 2021,
+      "apps": 9,
+      "goals": 2
+    },
+    {
+      "club": "Nottingham Forest",
+      "start_year": 2020,
+      "end_year": 2023,
+      "apps": 47,
+      "goals": 1
+    },
+    {
+      "club": "Rotherham United",
+      "start_year": 2023,
+      "end_year": 2024,
+      "apps": 32,
+      "goals": 2
+    },
+    {
+      "club": "Kasımpaşa",
+      "start_year": 2024,
+      "end_year": 2026,
+      "apps": 52,
+      "goals": 1
+    }
+  ],
   "70c2f41a": [
     {
       "club": "Metz",
@@ -2207,6 +2355,13 @@
       "goals": 0
     },
     {
+      "club": "Hibernian",
+      "start_year": 2018,
+      "end_year": 2019,
+      "apps": 2,
+      "goals": 0
+    },
+    {
       "club": "Panetolikos",
       "start_year": 2023,
       "end_year": 2026,
@@ -2253,17 +2408,17 @@
   ],
   "ff20acfe": [
     {
+      "club": "Lille",
+      "start_year": 2018,
+      "end_year": 2020,
+      "apps": 1,
+      "goals": 0
+    },
+    {
       "club": "Panathinaikos",
       "start_year": 2020,
       "end_year": 2021,
       "apps": 13,
-      "goals": 0
-    },
-    {
-      "club": "Lille",
-      "start_year": 2020,
-      "end_year": 2022,
-      "apps": 4,
       "goals": 0
     },
     {
@@ -2399,6 +2554,13 @@
       "goals": 6
     },
     {
+      "club": "Panathinaikos",
+      "start_year": 2016,
+      "end_year": 2017,
+      "apps": 2,
+      "goals": 0
+    },
+    {
       "club": "Aston Villa",
       "start_year": 2017,
       "end_year": 2018,
@@ -2413,6 +2575,13 @@
       "end_year": 2015,
       "apps": 29,
       "goals": 1
+    },
+    {
+      "club": "Lugano",
+      "start_year": 2015,
+      "end_year": 2016,
+      "apps": 1,
+      "goals": 0
     },
     {
       "club": "PAS Giannina",
@@ -2594,6 +2763,13 @@
       "goals": 9
     },
     {
+      "club": "Athletic Club",
+      "start_year": 2018,
+      "end_year": 2019,
+      "apps": 1,
+      "goals": 0
+    },
+    {
       "club": "Numancia",
       "start_year": 2018,
       "end_year": 2019,
@@ -2704,6 +2880,13 @@
     }
   ],
   "dcb38abe": [
+    {
+      "club": "OH Leuven",
+      "start_year": 2013,
+      "end_year": 2014,
+      "apps": 1,
+      "goals": 0
+    },
     {
       "club": "Lokeren",
       "start_year": 2014,
@@ -2990,18 +3173,18 @@
   ],
   "68411ed5": [
     {
+      "club": "Real Madrid",
+      "start_year": 1993,
+      "end_year": 1995,
+      "apps": 2,
+      "goals": 0
+    },
+    {
       "club": "Zaragoza",
       "start_year": 1995,
       "end_year": 1997,
       "apps": 71,
       "goals": 8
-    },
-    {
-      "club": "Real Madrid",
-      "start_year": 1997,
-      "end_year": 1998,
-      "apps": 8,
-      "goals": 0
     },
     {
       "club": "Mallorca",
@@ -4245,6 +4428,13 @@
       "goals": 0
     },
     {
+      "club": "Olympiacos",
+      "start_year": 2017,
+      "end_year": 2018,
+      "apps": 1,
+      "goals": 0
+    },
+    {
       "club": "Aris",
       "start_year": 2018,
       "end_year": 2019,
@@ -4333,6 +4523,13 @@
       "goals": 24
     },
     {
+      "club": "Portsmouth",
+      "start_year": 2005,
+      "end_year": 2006,
+      "apps": 2,
+      "goals": 0
+    },
+    {
       "club": "Skoda Xanthi",
       "start_year": 2006,
       "end_year": 2007,
@@ -4393,18 +4590,18 @@
   ],
   "1a899d99": [
     {
+      "club": "Juventus",
+      "start_year": 1999,
+      "end_year": 2000,
+      "apps": 1,
+      "goals": 0
+    },
+    {
       "club": "Bologna",
       "start_year": 2000,
       "end_year": 2001,
       "apps": 23,
       "goals": 0
-    },
-    {
-      "club": "Juventus",
-      "start_year": 2001,
-      "end_year": 2002,
-      "apps": 16,
-      "goals": 1
     },
     {
       "club": "Piacenza",
@@ -5079,6 +5276,13 @@
       "goals": 0
     },
     {
+      "club": "Brest",
+      "start_year": 2010,
+      "end_year": 2011,
+      "apps": 2,
+      "goals": 0
+    },
+    {
       "club": "Ergotelis",
       "start_year": 2011,
       "end_year": 2012,
@@ -5481,18 +5685,18 @@
   ],
   "ac4a4508": [
     {
+      "club": "SPAL",
+      "start_year": 2016,
+      "end_year": 2017,
+      "apps": 1,
+      "goals": 0
+    },
+    {
       "club": "Cremonese",
       "start_year": 2018,
       "end_year": 2019,
       "apps": 23,
       "goals": 1
-    },
-    {
-      "club": "SPAL",
-      "start_year": 2019,
-      "end_year": 2021,
-      "apps": 61,
-      "goals": 5
     },
     {
       "club": "Lecce",
@@ -5949,6 +6153,13 @@
       "goals": 2
     },
     {
+      "club": "Monaco",
+      "start_year": 2017,
+      "end_year": 2018,
+      "apps": 1,
+      "goals": 0
+    },
+    {
       "club": "Olympiacos",
       "start_year": 2018,
       "end_year": 2019,
@@ -5967,13 +6178,6 @@
       "start_year": 2019,
       "end_year": 2020,
       "apps": 12,
-      "goals": 0
-    },
-    {
-      "club": "Monaco",
-      "start_year": 2019,
-      "end_year": 2020,
-      "apps": 14,
       "goals": 0
     },
     {
@@ -6182,6 +6386,13 @@
   ],
   "de40e38c": [
     {
+      "club": "Monaco",
+      "start_year": 2018,
+      "end_year": 2019,
+      "apps": 1,
+      "goals": 0
+    },
+    {
       "club": "Cercle Brugge",
       "start_year": 2019,
       "end_year": 2021,
@@ -6212,11 +6423,25 @@
   ],
   "962e54cb": [
     {
+      "club": "Porto",
+      "start_year": 2014,
+      "end_year": 2015,
+      "apps": 1,
+      "goals": 0
+    },
+    {
       "club": "Académica",
       "start_year": 2015,
       "end_year": 2016,
       "apps": 27,
       "goals": 3
+    },
+    {
+      "club": "Olympiacos",
+      "start_year": 2016,
+      "end_year": 2017,
+      "apps": 1,
+      "goals": 0
     },
     {
       "club": "Rio Ave",
@@ -6231,13 +6456,6 @@
       "end_year": 2018,
       "apps": 18,
       "goals": 5
-    },
-    {
-      "club": "Porto",
-      "start_year": 2017,
-      "end_year": 2018,
-      "apps": 9,
-      "goals": 0
     },
     {
       "club": "Eintracht Frankfurt",
@@ -6613,6 +6831,13 @@
       "goals": 1
     },
     {
+      "club": "Mainz 05",
+      "start_year": 2010,
+      "end_year": 2011,
+      "apps": 1,
+      "goals": 0
+    },
+    {
       "club": "Kapfenberger",
       "start_year": 2011,
       "end_year": 2012,
@@ -6621,6 +6846,13 @@
     }
   ],
   "9dd45fd5": [
+    {
+      "club": "Stuttgart",
+      "start_year": 1994,
+      "end_year": 1996,
+      "apps": 2,
+      "goals": 0
+    },
     {
       "club": "Panathinaikos",
       "start_year": 2000,
@@ -6742,6 +6974,13 @@
       "start_year": 2017,
       "end_year": 2018,
       "apps": 10,
+      "goals": 0
+    },
+    {
+      "club": "Coritiba",
+      "start_year": 2022,
+      "end_year": 2023,
+      "apps": 2,
       "goals": 0
     },
     {
@@ -6905,6 +7144,13 @@
       "goals": 0
     },
     {
+      "club": "Olympiacos",
+      "start_year": 2017,
+      "end_year": 2018,
+      "apps": 2,
+      "goals": 0
+    },
+    {
       "club": "Crotone",
       "start_year": 2018,
       "end_year": 2019,
@@ -6920,6 +7166,13 @@
     }
   ],
   "9f417f8c": [
+    {
+      "club": "Standard Liège",
+      "start_year": 2015,
+      "end_year": 2016,
+      "apps": 1,
+      "goals": 0
+    },
     {
       "club": "Ajaccio",
       "start_year": 2019,
@@ -7072,18 +7325,18 @@
       "goals": 1
     },
     {
+      "club": "ATK",
+      "start_year": 2015,
+      "end_year": 2016,
+      "apps": 1,
+      "goals": 2
+    },
+    {
       "club": "Rio Ave",
       "start_year": 2015,
       "end_year": 2016,
       "apps": 10,
       "goals": 5
-    },
-    {
-      "club": "ATK",
-      "start_year": 2016,
-      "end_year": 2017,
-      "apps": 9,
-      "goals": 2
     }
   ],
   "526541e5": [
@@ -7264,6 +7517,13 @@
       "goals": 1
     },
     {
+      "club": "Olympiacos",
+      "start_year": 2017,
+      "end_year": 2018,
+      "apps": 2,
+      "goals": 0
+    },
+    {
       "club": "Osijek",
       "start_year": 2019,
       "end_year": 2021,
@@ -7361,8 +7621,108 @@
       "goals": 6
     }
   ],
-  "b344f1d9": null,
-  "7a20d90a": null,
+  "b344f1d9": [
+    {
+      "club": "Olympiacos",
+      "start_year": 2010,
+      "end_year": 2012,
+      "apps": 12,
+      "goals": 0
+    },
+    {
+      "club": "Platanias",
+      "start_year": 2012,
+      "end_year": 2013,
+      "apps": 21,
+      "goals": 0
+    },
+    {
+      "club": "Novara",
+      "start_year": 2013,
+      "end_year": 2014,
+      "apps": 16,
+      "goals": 0
+    },
+    {
+      "club": "Panthrakikos",
+      "start_year": 2014,
+      "end_year": 2016,
+      "apps": 57,
+      "goals": 0
+    },
+    {
+      "club": "Larissa",
+      "start_year": 2016,
+      "end_year": 2017,
+      "apps": 6,
+      "goals": 0
+    },
+    {
+      "club": "OFI Crete",
+      "start_year": 2018,
+      "end_year": 2019,
+      "apps": 23,
+      "goals": 1
+    },
+    {
+      "club": "Cape Town City",
+      "start_year": 2019,
+      "end_year": 2021,
+      "apps": 22,
+      "goals": 0
+    }
+  ],
+  "7a20d90a": [
+    {
+      "club": "Racing Sant",
+      "start_year": 2007,
+      "end_year": 2009,
+      "apps": 37,
+      "goals": 2
+    },
+    {
+      "club": "Villarreal",
+      "start_year": 2009,
+      "end_year": 2010,
+      "apps": 16,
+      "goals": 1
+    },
+    {
+      "club": "Getafe",
+      "start_year": 2010,
+      "end_year": 2011,
+      "apps": 29,
+      "goals": 1
+    },
+    {
+      "club": "Olympiacos",
+      "start_year": 2011,
+      "end_year": 2012,
+      "apps": 28,
+      "goals": 4
+    },
+    {
+      "club": "Rubin Kazan",
+      "start_year": 2012,
+      "end_year": 2014,
+      "apps": 38,
+      "goals": 1
+    },
+    {
+      "club": "Porto",
+      "start_year": 2014,
+      "end_year": 2018,
+      "apps": 104,
+      "goals": 11
+    },
+    {
+      "club": "Roma",
+      "start_year": 2018,
+      "end_year": 2019,
+      "apps": 10,
+      "goals": 0
+    }
+  ],
   "7d704e92": [
     {
       "club": "Boavista",
@@ -7528,6 +7888,13 @@
       "end_year": 2026,
       "apps": 30,
       "goals": 5
+    },
+    {
+      "club": "Minnesota Utd",
+      "start_year": 2026,
+      "end_year": 2027,
+      "apps": 1,
+      "goals": 0
     }
   ],
   "f5a61b4a": [
@@ -8114,9 +8481,23 @@
       "end_year": 2007,
       "apps": 16,
       "goals": 0
+    },
+    {
+      "club": "Panathinaikos",
+      "start_year": 2007,
+      "end_year": 2008,
+      "apps": 2,
+      "goals": 0
     }
   ],
   "ea39a081": [
+    {
+      "club": "QPR",
+      "start_year": 2016,
+      "end_year": 2017,
+      "apps": 1,
+      "goals": 0
+    },
     {
       "club": "Everton",
       "start_year": 2017,
@@ -8165,6 +8546,13 @@
       "end_year": 2025,
       "apps": 8,
       "goals": 0
+    },
+    {
+      "club": "Nottingham Forest",
+      "start_year": 2025,
+      "end_year": 2026,
+      "apps": 1,
+      "goals": 2
     }
   ],
   "cca08d01": [
@@ -8524,6 +8912,13 @@
     }
   ],
   "e9a12436": [
+    {
+      "club": "Real Madrid",
+      "start_year": 2010,
+      "end_year": 2011,
+      "apps": 1,
+      "goals": 0
+    },
     {
       "club": "Zaragoza",
       "start_year": 2011,
@@ -8970,6 +9365,13 @@
       "goals": 0
     },
     {
+      "club": "Real Murcia",
+      "start_year": 2005,
+      "end_year": 2006,
+      "apps": 2,
+      "goals": 0
+    },
+    {
       "club": "Aris",
       "start_year": 2006,
       "end_year": 2008,
@@ -9016,6 +9418,13 @@
   ],
   "2bddd706": [
     {
+      "club": "Panathinaikos",
+      "start_year": 2000,
+      "end_year": 2001,
+      "apps": 1,
+      "goals": 0
+    },
+    {
       "club": "OFI Crete",
       "start_year": 2000,
       "end_year": 2003,
@@ -9049,6 +9458,13 @@
       "end_year": 2009,
       "apps": 24,
       "goals": 2
+    },
+    {
+      "club": "Welling United",
+      "start_year": 2014,
+      "end_year": 2015,
+      "apps": 1,
+      "goals": 0
     }
   ],
   "e28ce024": [
@@ -9243,6 +9659,13 @@
       "goals": 14
     },
     {
+      "club": "Blackpool",
+      "start_year": 2008,
+      "end_year": 2009,
+      "apps": 1,
+      "goals": 0
+    },
+    {
       "club": "AEK Athens",
       "start_year": 2009,
       "end_year": 2010,
@@ -9329,6 +9752,13 @@
       "goals": 2
     },
     {
+      "club": "RB Leipzig",
+      "start_year": 2016,
+      "end_year": 2017,
+      "apps": 1,
+      "goals": 0
+    },
+    {
       "club": "Hamburger SV",
       "start_year": 2016,
       "end_year": 2020,
@@ -9341,6 +9771,13 @@
       "end_year": 2021,
       "apps": 24,
       "goals": 2
+    },
+    {
+      "club": "Al-Fayha",
+      "start_year": 2021,
+      "end_year": 2022,
+      "apps": 1,
+      "goals": 0
     },
     {
       "club": "Atromitos",
@@ -9387,6 +9824,13 @@
       "goals": 15
     },
     {
+      "club": "Atalanta",
+      "start_year": 2004,
+      "end_year": 2005,
+      "apps": 1,
+      "goals": 0
+    },
+    {
       "club": "Mallorca",
       "start_year": 2005,
       "end_year": 2006,
@@ -9398,6 +9842,13 @@
       "start_year": 2005,
       "end_year": 2006,
       "apps": 9,
+      "goals": 0
+    },
+    {
+      "club": "Inter",
+      "start_year": 2006,
+      "end_year": 2007,
+      "apps": 1,
       "goals": 0
     },
     {
@@ -9577,6 +10028,13 @@
   ],
   "0d9b99a4": [
     {
+      "club": "Roma",
+      "start_year": 2004,
+      "end_year": 2006,
+      "apps": 2,
+      "goals": 0
+    },
+    {
       "club": "Hellas Verona",
       "start_year": 2006,
       "end_year": 2007,
@@ -9595,13 +10053,6 @@
       "start_year": 2009,
       "end_year": 2010,
       "apps": 22,
-      "goals": 0
-    },
-    {
-      "club": "Roma",
-      "start_year": 2010,
-      "end_year": 2012,
-      "apps": 33,
       "goals": 0
     },
     {
@@ -9682,6 +10133,13 @@
       "end_year": 2020,
       "apps": 43,
       "goals": 1
+    },
+    {
+      "club": "Mallorca",
+      "start_year": 2019,
+      "end_year": 2020,
+      "apps": 2,
+      "goals": 0
     },
     {
       "club": "Düsseldorf",
@@ -9787,6 +10245,13 @@
     }
   ],
   "caec77da": [
+    {
+      "club": "Inter",
+      "start_year": 2019,
+      "end_year": 2021,
+      "apps": 1,
+      "goals": 0
+    },
     {
       "club": "Monza",
       "start_year": 2020,
@@ -9935,6 +10400,13 @@
     }
   ],
   "c4e3421a": [
+    {
+      "club": "Birmingham City",
+      "start_year": 2003,
+      "end_year": 2004,
+      "apps": 1,
+      "goals": 0
+    },
     {
       "club": "Cruz Azul",
       "start_year": 2003,
@@ -10105,6 +10577,13 @@
       "goals": 0
     },
     {
+      "club": "West Brom",
+      "start_year": 2007,
+      "end_year": 2008,
+      "apps": 2,
+      "goals": 0
+    },
+    {
       "club": "Barnsley",
       "start_year": 2007,
       "end_year": 2014,
@@ -10123,6 +10602,13 @@
       "start_year": 2017,
       "end_year": 2018,
       "apps": 5,
+      "goals": 0
+    },
+    {
+      "club": "Nottingham Forest",
+      "start_year": 2018,
+      "end_year": 2019,
+      "apps": 2,
       "goals": 0
     },
     {
@@ -10207,6 +10693,13 @@
   ],
   "18fe6d90": [
     {
+      "club": "Olympiacos",
+      "start_year": 2013,
+      "end_year": 2016,
+      "apps": 1,
+      "goals": 0
+    },
+    {
       "club": "PAS Lamia",
       "start_year": 2019,
       "end_year": 2020,
@@ -10235,6 +10728,13 @@
       "end_year": 2008,
       "apps": 4,
       "goals": 1
+    },
+    {
+      "club": "Manchester Utd",
+      "start_year": 2008,
+      "end_year": 2009,
+      "apps": 1,
+      "goals": 0
     },
     {
       "club": "Hull City",
@@ -10286,6 +10786,20 @@
       "end_year": 2008,
       "apps": 16,
       "goals": 1
+    },
+    {
+      "club": "Fiorentina",
+      "start_year": 2008,
+      "end_year": 2009,
+      "apps": 1,
+      "goals": 0
+    },
+    {
+      "club": "Sampdoria",
+      "start_year": 2008,
+      "end_year": 2009,
+      "apps": 2,
+      "goals": 0
     },
     {
       "club": "West Ham United",
@@ -10418,6 +10932,13 @@
       "end_year": 1999,
       "apps": 24,
       "goals": 4
+    },
+    {
+      "club": "Panathinaikos",
+      "start_year": 2000,
+      "end_year": 2001,
+      "apps": 1,
+      "goals": 0
     },
     {
       "club": "Nürnberg",
@@ -10649,6 +11170,13 @@
       "goals": 6
     },
     {
+      "club": "Terek Grozny",
+      "start_year": 2014,
+      "end_year": 2015,
+      "apps": 1,
+      "goals": 0
+    },
+    {
       "club": "RE Mouscron",
       "start_year": 2015,
       "end_year": 2016,
@@ -10832,6 +11360,13 @@
   ],
   "193ed0c0": [
     {
+      "club": "Blackburn Rovers",
+      "start_year": 2004,
+      "end_year": 2005,
+      "apps": 1,
+      "goals": 0
+    },
+    {
       "club": "Plymouth Argyle",
       "start_year": 2005,
       "end_year": 2006,
@@ -10843,13 +11378,6 @@
       "start_year": 2005,
       "end_year": 2006,
       "apps": 16,
-      "goals": 10
-    },
-    {
-      "club": "Blackburn Rovers",
-      "start_year": 2006,
-      "end_year": 2009,
-      "apps": 62,
       "goals": 10
     },
     {
@@ -10977,7 +11505,7 @@
       "club": "Jagiellonia",
       "start_year": 2025,
       "end_year": 2026,
-      "apps": 6,
+      "apps": 7,
       "goals": 0
     }
   ],
@@ -11189,6 +11717,13 @@
       "goals": 0
     },
     {
+      "club": "Brighton",
+      "start_year": 2020,
+      "end_year": 2022,
+      "apps": 2,
+      "goals": 0
+    },
+    {
       "club": "Olympiacos",
       "start_year": 2021,
       "end_year": 2022,
@@ -11255,6 +11790,13 @@
     }
   ],
   "b35db3f6": [
+    {
+      "club": "Albacete",
+      "start_year": 2009,
+      "end_year": 2010,
+      "apps": 2,
+      "goals": 0
+    },
     {
       "club": "Sporting Gijón",
       "start_year": 2012,
@@ -11552,6 +12094,13 @@
   ],
   "8954fddc": [
     {
+      "club": "Freiburg",
+      "start_year": 2017,
+      "end_year": 2018,
+      "apps": 2,
+      "goals": 0
+    },
+    {
       "club": "Paderborn 07",
       "start_year": 2018,
       "end_year": 2020,
@@ -11563,6 +12112,13 @@
       "start_year": 2020,
       "end_year": 2021,
       "apps": 8,
+      "goals": 0
+    },
+    {
+      "club": "Nottingham Forest",
+      "start_year": 2021,
+      "end_year": 2022,
+      "apps": 2,
       "goals": 0
     },
     {
@@ -11589,18 +12145,18 @@
   ],
   "1ea7254b": [
     {
+      "club": "Espanyol",
+      "start_year": 2001,
+      "end_year": 2002,
+      "apps": 1,
+      "goals": 0
+    },
+    {
       "club": "Eibar",
       "start_year": 2004,
       "end_year": 2005,
       "apps": 33,
       "goals": 1
-    },
-    {
-      "club": "Espanyol",
-      "start_year": 2005,
-      "end_year": 2010,
-      "apps": 146,
-      "goals": 3
     },
     {
       "club": "Olympiacos",
@@ -12162,6 +12718,13 @@
       "goals": 1
     },
     {
+      "club": "Chievo",
+      "start_year": 2012,
+      "end_year": 2013,
+      "apps": 2,
+      "goals": 0
+    },
+    {
       "club": "PAOK",
       "start_year": 2013,
       "end_year": 2015,
@@ -12619,6 +13182,13 @@
       "end_year": 2026,
       "apps": 35,
       "goals": 0
+    },
+    {
+      "club": "Nottingham Forest",
+      "start_year": 2025,
+      "end_year": 2026,
+      "apps": 1,
+      "goals": 0
     }
   ],
   "85b011bb": [
@@ -12744,6 +13314,20 @@
       "end_year": 2017,
       "apps": 39,
       "goals": 4
+    },
+    {
+      "club": "Palermo",
+      "start_year": 2016,
+      "end_year": 2017,
+      "apps": 2,
+      "goals": 0
+    },
+    {
+      "club": "Cultural Leonesa",
+      "start_year": 2017,
+      "end_year": 2018,
+      "apps": 2,
+      "goals": 0
     }
   ],
   "4661fcbc": [
@@ -13091,6 +13675,13 @@
       "goals": 2
     },
     {
+      "club": "Augsburg",
+      "start_year": 2013,
+      "end_year": 2014,
+      "apps": 1,
+      "goals": 0
+    },
+    {
       "club": "Platanias",
       "start_year": 2013,
       "end_year": 2014,
@@ -13215,6 +13806,13 @@
     }
   ],
   "f65e259f": [
+    {
+      "club": "Sochaux",
+      "start_year": 2005,
+      "end_year": 2006,
+      "apps": 1,
+      "goals": 0
+    },
     {
       "club": "Académica",
       "start_year": 2010,
@@ -13464,6 +14062,13 @@
       "goals": 0
     },
     {
+      "club": "Porto",
+      "start_year": 2008,
+      "end_year": 2009,
+      "apps": 2,
+      "goals": 0
+    },
+    {
       "club": "Valladolid",
       "start_year": 2009,
       "end_year": 2010,
@@ -13575,6 +14180,13 @@
       "goals": 1
     },
     {
+      "club": "Olympiacos",
+      "start_year": 2021,
+      "end_year": 2022,
+      "apps": 2,
+      "goals": 0
+    },
+    {
       "club": "PAS Giannina",
       "start_year": 2022,
       "end_year": 2023,
@@ -13642,6 +14254,13 @@
       "goals": 6
     },
     {
+      "club": "Olympiacos",
+      "start_year": 2022,
+      "end_year": 2023,
+      "apps": 1,
+      "goals": 0
+    },
+    {
       "club": "Standard Liège",
       "start_year": 2022,
       "end_year": 2023,
@@ -13664,6 +14283,13 @@
     }
   ],
   "826e8b63": [
+    {
+      "club": "Schalke 04",
+      "start_year": 2013,
+      "end_year": 2014,
+      "apps": 2,
+      "goals": 0
+    },
     {
       "club": "Karlsruher",
       "start_year": 2014,
@@ -13713,6 +14339,13 @@
       "start_year": 2006,
       "end_year": 2007,
       "apps": 22,
+      "goals": 0
+    },
+    {
+      "club": "Metz",
+      "start_year": 2007,
+      "end_year": 2008,
+      "apps": 1,
       "goals": 0
     },
     {
@@ -13801,6 +14434,13 @@
       "start_year": 2023,
       "end_year": 2024,
       "apps": 13,
+      "goals": 0
+    },
+    {
+      "club": "West Bromwich Albion",
+      "start_year": 2023,
+      "end_year": 2024,
+      "apps": 2,
       "goals": 0
     },
     {
@@ -14334,6 +14974,13 @@
   ],
   "ba3ca78f": [
     {
+      "club": "Atlético Madrid",
+      "start_year": 2005,
+      "end_year": 2006,
+      "apps": 1,
+      "goals": 0
+    },
+    {
       "club": "Gimnàstic",
       "start_year": 2007,
       "end_year": 2008,
@@ -14345,13 +14992,6 @@
       "start_year": 2009,
       "end_year": 2010,
       "apps": 15,
-      "goals": 0
-    },
-    {
-      "club": "Atlético Madrid",
-      "start_year": 2009,
-      "end_year": 2010,
-      "apps": 3,
       "goals": 0
     },
     {
@@ -14406,18 +15046,18 @@
   ],
   "33c69aa0": [
     {
+      "club": "HJK Helsinki",
+      "start_year": 2011,
+      "end_year": 2012,
+      "apps": 2,
+      "goals": 1
+    },
+    {
       "club": "VPS",
       "start_year": 2012,
       "end_year": 2013,
       "apps": 11,
       "goals": 2
-    },
-    {
-      "club": "HJK Helsinki",
-      "start_year": 2012,
-      "end_year": 2016,
-      "apps": 73,
-      "goals": 14
     },
     {
       "club": "Panathinaikos",
@@ -14581,10 +15221,10 @@
     },
     {
       "club": "Monaco",
-      "start_year": 2017,
-      "end_year": 2020,
-      "apps": 63,
-      "goals": 17
+      "start_year": 2015,
+      "end_year": 2016,
+      "apps": 2,
+      "goals": 0
     },
     {
       "club": "Sevilla",
@@ -14695,6 +15335,13 @@
     }
   ],
   "3c7bc9bd": [
+    {
+      "club": "Atlético Madrid",
+      "start_year": 2009,
+      "end_year": 2010,
+      "apps": 1,
+      "goals": 0
+    },
     {
       "club": "Dep La Coruña",
       "start_year": 2010,
@@ -14815,6 +15462,13 @@
       "end_year": 2013,
       "apps": 14,
       "goals": 1
+    },
+    {
+      "club": "Mladá Boleslav",
+      "start_year": 2015,
+      "end_year": 2016,
+      "apps": 2,
+      "goals": 0
     },
     {
       "club": "Raith Rovers",
@@ -14940,6 +15594,13 @@
       "goals": 2
     },
     {
+      "club": "Porto",
+      "start_year": 2021,
+      "end_year": 2022,
+      "apps": 1,
+      "goals": 0
+    },
+    {
       "club": "AVS Futebol",
       "start_year": 2025,
       "end_year": 2026,
@@ -15007,10 +15668,24 @@
       "goals": 0
     },
     {
+      "club": "Olympiacos",
+      "start_year": 2020,
+      "end_year": 2021,
+      "apps": 2,
+      "goals": 0
+    },
+    {
       "club": "Sporting CP",
       "start_year": 2021,
       "end_year": 2022,
       "apps": 12,
+      "goals": 0
+    },
+    {
+      "club": "Everton",
+      "start_year": 2022,
+      "end_year": 2023,
+      "apps": 2,
       "goals": 0
     },
     {
@@ -15112,6 +15787,13 @@
       "end_year": 2022,
       "apps": 26,
       "goals": 3
+    },
+    {
+      "club": "Sochaux",
+      "start_year": 2022,
+      "end_year": 2023,
+      "apps": 2,
+      "goals": 0
     }
   ],
   "bbddc31f": [
@@ -15234,6 +15916,13 @@
   ],
   "1137759d": [
     {
+      "club": "Liverpool",
+      "start_year": 2015,
+      "end_year": 2016,
+      "apps": 1,
+      "goals": 0
+    },
+    {
       "club": "Brentford",
       "start_year": 2015,
       "end_year": 2016,
@@ -15325,6 +16014,13 @@
       "end_year": 2020,
       "apps": 23,
       "goals": 1
+    },
+    {
+      "club": "Albacete",
+      "start_year": 2019,
+      "end_year": 2020,
+      "apps": 1,
+      "goals": 0
     }
   ],
   "05428bc9": [
@@ -15407,6 +16103,13 @@
       "start_year": 2017,
       "end_year": 2018,
       "apps": 22,
+      "goals": 0
+    },
+    {
+      "club": "Lazio",
+      "start_year": 2018,
+      "end_year": 2020,
+      "apps": 2,
       "goals": 0
     }
   ],
@@ -15616,6 +16319,13 @@
       "goals": 4
     },
     {
+      "club": "Mechelen",
+      "start_year": 2016,
+      "end_year": 2018,
+      "apps": 2,
+      "goals": 0
+    },
+    {
       "club": "Volos N.F.C.",
       "start_year": 2020,
       "end_year": 2022,
@@ -15643,6 +16353,13 @@
       "start_year": 2000,
       "end_year": 2001,
       "apps": 27,
+      "goals": 0
+    },
+    {
+      "club": "Arsenal",
+      "start_year": 2002,
+      "end_year": 2003,
+      "apps": 1,
       "goals": 0
     },
     {
@@ -15704,6 +16421,13 @@
       "goals": 0
     },
     {
+      "club": "Mainz 05",
+      "start_year": 2014,
+      "end_year": 2015,
+      "apps": 2,
+      "goals": 0
+    },
+    {
       "club": "Olympiacos",
       "start_year": 2015,
       "end_year": 2018,
@@ -15715,6 +16439,13 @@
       "start_year": 2017,
       "end_year": 2018,
       "apps": 4,
+      "goals": 0
+    },
+    {
+      "club": "Werder Bremen",
+      "start_year": 2018,
+      "end_year": 2021,
+      "apps": 2,
       "goals": 0
     },
     {
@@ -15767,6 +16498,13 @@
       "end_year": 2008,
       "apps": 137,
       "goals": 20
+    },
+    {
+      "club": "Hull City",
+      "start_year": 2008,
+      "end_year": 2009,
+      "apps": 2,
+      "goals": 0
     },
     {
       "club": "Larissa",
@@ -15878,16 +16616,565 @@
       "goals": 1
     }
   ],
-  "53307464": null,
-  "947e036f": null,
-  "50d30c87": null,
-  "85b0c4c6": null,
-  "47b9d279": null,
-  "7120a04d": null,
-  "244bc211": null,
-  "44d0de01": null,
-  "f820504e": null,
-  "64e35e11": null,
+  "53307464": [
+    {
+      "club": "Crystal Palace",
+      "start_year": 2004,
+      "end_year": 2005,
+      "apps": 12,
+      "goals": 0
+    },
+    {
+      "club": "Panathinaikos",
+      "start_year": 2005,
+      "end_year": 2006,
+      "apps": 11,
+      "goals": 0
+    },
+    {
+      "club": "PAOK",
+      "start_year": 2006,
+      "end_year": 2007,
+      "apps": 24,
+      "goals": 1
+    },
+    {
+      "club": "Carl Zeiss Jena",
+      "start_year": 2007,
+      "end_year": 2008,
+      "apps": 27,
+      "goals": 8
+    },
+    {
+      "club": "Augsburg",
+      "start_year": 2008,
+      "end_year": 2010,
+      "apps": 48,
+      "goals": 14
+    },
+    {
+      "club": "Düsseldorf",
+      "start_year": 2010,
+      "end_year": 2011,
+      "apps": 16,
+      "goals": 1
+    },
+    {
+      "club": "Honvéd",
+      "start_year": 2011,
+      "end_year": 2012,
+      "apps": 6,
+      "goals": 3
+    },
+    {
+      "club": "Videoton",
+      "start_year": 2011,
+      "end_year": 2014,
+      "apps": 35,
+      "goals": 7
+    },
+    {
+      "club": "MTK Budapest",
+      "start_year": 2013,
+      "end_year": 2019,
+      "apps": 113,
+      "goals": 40
+    }
+  ],
+  "947e036f": [
+    {
+      "club": "Beira-Mar",
+      "start_year": 2010,
+      "end_year": 2011,
+      "apps": 6,
+      "goals": 0
+    },
+    {
+      "club": "Mechelen",
+      "start_year": 2011,
+      "end_year": 2012,
+      "apps": 6,
+      "goals": 1
+    },
+    {
+      "club": "Paços de Ferreira",
+      "start_year": 2013,
+      "end_year": 2015,
+      "apps": 54,
+      "goals": 4
+    },
+    {
+      "club": "Porto",
+      "start_year": 2015,
+      "end_year": 2016,
+      "apps": 9,
+      "goals": 2
+    },
+    {
+      "club": "Nantes",
+      "start_year": 2016,
+      "end_year": 2017,
+      "apps": 6,
+      "goals": 0
+    },
+    {
+      "club": "PAOK",
+      "start_year": 2018,
+      "end_year": 2019,
+      "apps": 11,
+      "goals": 3
+    },
+    {
+      "club": "Roma",
+      "start_year": 2021,
+      "end_year": 2022,
+      "apps": 14,
+      "goals": 2
+    },
+    {
+      "club": "Galatasaray",
+      "start_year": 2022,
+      "end_year": 2024,
+      "apps": 44,
+      "goals": 5
+    },
+    {
+      "club": "Olympiacos",
+      "start_year": 2024,
+      "end_year": 2025,
+      "apps": 9,
+      "goals": 0
+    },
+    {
+      "club": "Sport Recife",
+      "start_year": 2025,
+      "end_year": 2026,
+      "apps": 19,
+      "goals": 1
+    }
+  ],
+  "50d30c87": [
+    {
+      "club": "Panionios",
+      "start_year": 2000,
+      "end_year": 2002,
+      "apps": 42,
+      "goals": 7
+    },
+    {
+      "club": "Iraklis",
+      "start_year": 2002,
+      "end_year": 2003,
+      "apps": 29,
+      "goals": 6
+    },
+    {
+      "club": "Olympiacos",
+      "start_year": 2003,
+      "end_year": 2004,
+      "apps": 16,
+      "goals": 1
+    },
+    {
+      "club": "Messina",
+      "start_year": 2004,
+      "end_year": 2005,
+      "apps": 3,
+      "goals": 0
+    }
+  ],
+  "85b0c4c6": [
+    {
+      "club": "Fredrikstad",
+      "start_year": 2005,
+      "end_year": 2009,
+      "apps": 69,
+      "goals": 19
+    },
+    {
+      "club": "Heerenveen",
+      "start_year": 2008,
+      "end_year": 2010,
+      "apps": 29,
+      "goals": 2
+    },
+    {
+      "club": "Lillestrøm",
+      "start_year": 2010,
+      "end_year": 2011,
+      "apps": 14,
+      "goals": 4
+    },
+    {
+      "club": "Rosenborg",
+      "start_year": 2012,
+      "end_year": 2014,
+      "apps": 24,
+      "goals": 6
+    },
+    {
+      "club": "Hoffenheim",
+      "start_year": 2013,
+      "end_year": 2016,
+      "apps": 52,
+      "goals": 4
+    },
+    {
+      "club": "Olympiacos",
+      "start_year": 2016,
+      "end_year": 2017,
+      "apps": 23,
+      "goals": 4
+    },
+    {
+      "club": "AIK Stockholm",
+      "start_year": 2018,
+      "end_year": 2020,
+      "apps": 53,
+      "goals": 19
+    },
+    {
+      "club": "Shonan Bellmare",
+      "start_year": 2020,
+      "end_year": 2024,
+      "apps": 93,
+      "goals": 5
+    }
+  ],
+  "47b9d279": [
+    {
+      "club": "Panionios",
+      "start_year": 2011,
+      "end_year": 2014,
+      "apps": 59,
+      "goals": 0
+    },
+    {
+      "club": "Olympiacos",
+      "start_year": 2014,
+      "end_year": 2016,
+      "apps": 18,
+      "goals": 2
+    },
+    {
+      "club": "Sturm Graz",
+      "start_year": 2015,
+      "end_year": 2016,
+      "apps": 16,
+      "goals": 0
+    },
+    {
+      "club": "Hearts",
+      "start_year": 2016,
+      "end_year": 2017,
+      "apps": 9,
+      "goals": 0
+    },
+    {
+      "club": "Panathinaikos",
+      "start_year": 2017,
+      "end_year": 2018,
+      "apps": 6,
+      "goals": 0
+    },
+    {
+      "club": "Ascoli",
+      "start_year": 2020,
+      "end_year": 2022,
+      "apps": 30,
+      "goals": 0
+    },
+    {
+      "club": "Panserraikos",
+      "start_year": 2023,
+      "end_year": 2024,
+      "apps": 15,
+      "goals": 1
+    }
+  ],
+  "7120a04d": [
+    {
+      "club": "Shakhtar Donetsk",
+      "start_year": 2018,
+      "end_year": 2022,
+      "apps": 75,
+      "goals": 25
+    },
+    {
+      "club": "Lyon",
+      "start_year": 2021,
+      "end_year": 2023,
+      "apps": 26,
+      "goals": 8
+    },
+    {
+      "club": "Leicester City",
+      "start_year": 2022,
+      "end_year": 2023,
+      "apps": 13,
+      "goals": 1
+    },
+    {
+      "club": "Galatasaray",
+      "start_year": 2023,
+      "end_year": 2024,
+      "apps": 33,
+      "goals": 0
+    },
+    {
+      "club": "Panathinaikos",
+      "start_year": 2024,
+      "end_year": 2026,
+      "apps": 44,
+      "goals": 7
+    },
+    {
+      "club": "Grêmio",
+      "start_year": 2026,
+      "end_year": 2027,
+      "apps": 4,
+      "goals": 1
+    }
+  ],
+  "244bc211": [
+    {
+      "club": "Kallithea",
+      "start_year": 2002,
+      "end_year": 2005,
+      "apps": 73,
+      "goals": 32
+    },
+    {
+      "club": "Panathinaikos",
+      "start_year": 2004,
+      "end_year": 2006,
+      "apps": 41,
+      "goals": 23
+    },
+    {
+      "club": "Bochum",
+      "start_year": 2006,
+      "end_year": 2007,
+      "apps": 32,
+      "goals": 20
+    },
+    {
+      "club": "Leverkusen",
+      "start_year": 2007,
+      "end_year": 2008,
+      "apps": 29,
+      "goals": 11
+    },
+    {
+      "club": "Portsmouth",
+      "start_year": 2008,
+      "end_year": 2009,
+      "apps": 1,
+      "goals": 0
+    },
+    {
+      "club": "Hertha BSC",
+      "start_year": 2009,
+      "end_year": 2010,
+      "apps": 17,
+      "goals": 6
+    },
+    {
+      "club": "Eintracht Frankfurt",
+      "start_year": 2010,
+      "end_year": 2012,
+      "apps": 48,
+      "goals": 23
+    },
+    {
+      "club": "Samsunspor",
+      "start_year": 2011,
+      "end_year": 2012,
+      "apps": 11,
+      "goals": 8
+    },
+    {
+      "club": "Akhisarspor",
+      "start_year": 2012,
+      "end_year": 2013,
+      "apps": 15,
+      "goals": 12
+    },
+    {
+      "club": "Levante",
+      "start_year": 2012,
+      "end_year": 2013,
+      "apps": 4,
+      "goals": 0
+    },
+    {
+      "club": "Konyaspor",
+      "start_year": 2013,
+      "end_year": 2014,
+      "apps": 24,
+      "goals": 13
+    },
+    {
+      "club": "Eskişehirspor",
+      "start_year": 2015,
+      "end_year": 2016,
+      "apps": 10,
+      "goals": 5
+    },
+    {
+      "club": "Sion",
+      "start_year": 2015,
+      "end_year": 2017,
+      "apps": 30,
+      "goals": 13
+    }
+  ],
+  "44d0de01": [
+    {
+      "club": "Belenenses",
+      "start_year": 2013,
+      "end_year": 2016,
+      "apps": 61,
+      "goals": 4
+    },
+    {
+      "club": "Feirense",
+      "start_year": 2016,
+      "end_year": 2019,
+      "apps": 85,
+      "goals": 12
+    },
+    {
+      "club": "Nottingham Forest",
+      "start_year": 2019,
+      "end_year": 2020,
+      "apps": 44,
+      "goals": 3
+    },
+    {
+      "club": "Olympiacos",
+      "start_year": 2020,
+      "end_year": 2021,
+      "apps": 16,
+      "goals": 0
+    },
+    {
+      "club": "Vitória Guimarães",
+      "start_year": 2021,
+      "end_year": 2026,
+      "apps": 120,
+      "goals": 19
+    }
+  ],
+  "f820504e": [
+    {
+      "club": "Dinamo Zagreb",
+      "start_year": 2012,
+      "end_year": 2013,
+      "apps": 13,
+      "goals": 1
+    },
+    {
+      "club": "Roma",
+      "start_year": 2013,
+      "end_year": 2014,
+      "apps": 2,
+      "goals": 0
+    },
+    {
+      "club": "Leverkusen",
+      "start_year": 2014,
+      "end_year": 2019,
+      "apps": 81,
+      "goals": 3
+    },
+    {
+      "club": "Augsburg",
+      "start_year": 2019,
+      "end_year": 2020,
+      "apps": 31,
+      "goals": 2
+    },
+    {
+      "club": "Loko Moscow",
+      "start_year": 2021,
+      "end_year": 2023,
+      "apps": 34,
+      "goals": 2
+    },
+    {
+      "club": "Panathinaikos",
+      "start_year": 2023,
+      "end_year": 2026,
+      "apps": 60,
+      "goals": 7
+    }
+  ],
+  "64e35e11": [
+    {
+      "club": "Atlético Madrid",
+      "start_year": 2003,
+      "end_year": 2004,
+      "apps": 1,
+      "goals": 0
+    },
+    {
+      "club": "Numancia",
+      "start_year": 2004,
+      "end_year": 2005,
+      "apps": 5,
+      "goals": 0
+    },
+    {
+      "club": "Hércules",
+      "start_year": 2005,
+      "end_year": 2006,
+      "apps": 25,
+      "goals": 3
+    },
+    {
+      "club": "Valladolid",
+      "start_year": 2006,
+      "end_year": 2007,
+      "apps": 15,
+      "goals": 4
+    },
+    {
+      "club": "Albacete",
+      "start_year": 2008,
+      "end_year": 2009,
+      "apps": 22,
+      "goals": 5
+    },
+    {
+      "club": "Cartagena",
+      "start_year": 2009,
+      "end_year": 2011,
+      "apps": 74,
+      "goals": 35
+    },
+    {
+      "club": "Panathinaikos",
+      "start_year": 2011,
+      "end_year": 2013,
+      "apps": 40,
+      "goals": 17
+    },
+    {
+      "club": "Dep La Coruña",
+      "start_year": 2013,
+      "end_year": 2015,
+      "apps": 37,
+      "goals": 8
+    },
+    {
+      "club": "Oviedo",
+      "start_year": 2015,
+      "end_year": 2019,
+      "apps": 136,
+      "goals": 42
+    }
+  ],
   "7b456af7": [
     {
       "club": "Viktoria Žižkov",
@@ -15993,16 +17280,30 @@
   "c68b1b13": [
     {
       "club": "Lech Poznań",
-      "start_year": 2019,
-      "end_year": 2021,
-      "apps": 62,
-      "goals": 4
+      "start_year": 2016,
+      "end_year": 2017,
+      "apps": 1,
+      "goals": 0
+    },
+    {
+      "club": "Zag Sosnowiec",
+      "start_year": 2018,
+      "end_year": 2019,
+      "apps": 2,
+      "goals": 0
     },
     {
       "club": "Trabzonspor",
       "start_year": 2021,
       "end_year": 2022,
       "apps": 9,
+      "goals": 0
+    },
+    {
+      "club": "Union Berlin",
+      "start_year": 2021,
+      "end_year": 2023,
+      "apps": 1,
       "goals": 0
     },
     {
@@ -16055,6 +17356,13 @@
       "end_year": 2017,
       "apps": 18,
       "goals": 2
+    },
+    {
+      "club": "Greuther Fürth",
+      "start_year": 2017,
+      "end_year": 2018,
+      "apps": 2,
+      "goals": 0
     },
     {
       "club": "Brøndby",
@@ -16130,6 +17438,13 @@
     }
   ],
   "518918ad": [
+    {
+      "club": "Hamburger SV",
+      "start_year": 2007,
+      "end_year": 2008,
+      "apps": 2,
+      "goals": 0
+    },
     {
       "club": "Anderlecht",
       "start_year": 2007,
@@ -16208,6 +17523,13 @@
       "end_year": 2008,
       "apps": 10,
       "goals": 1
+    },
+    {
+      "club": "Marítimo",
+      "start_year": 2010,
+      "end_year": 2011,
+      "apps": 1,
+      "goals": 0
     },
     {
       "club": "OFI Crete",
@@ -16489,6 +17811,13 @@
     }
   ],
   "1e17dfc7": [
+    {
+      "club": "Manchester City",
+      "start_year": 2008,
+      "end_year": 2009,
+      "apps": 1,
+      "goals": 0
+    },
     {
       "club": "Bolton Wanderers",
       "start_year": 2009,

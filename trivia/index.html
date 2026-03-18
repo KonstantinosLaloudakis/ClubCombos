@@ -79,6 +79,14 @@
                         </span>
                     </button>
 
+                    <button id="btn-connections" class="btn-game-mode btn-game-mode--orange">
+                        <span class="game-mode-icon">🔗</span>
+                        <span class="game-mode-info">
+                            <strong class="orange-text">Connections</strong>
+                            <small>Group 16 players into 4 categories</small>
+                        </span>
+                    </button>
+
                     <button id="btn-mystery-player" class="btn-game-mode btn-game-mode--purple">
                         <span class="game-mode-icon">🕵️</span>
                         <span class="game-mode-info">
@@ -192,6 +200,44 @@
                     <div class="cp-result-actions">
                         <button id="cp-play-again-btn" class="btn btn-primary">Play Again</button>
                         <button id="cp-menu-btn" class="btn btn-outline">Back to Menu</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Connections Screen -->
+            <div id="connections-screen" class="view-panel">
+
+                <!-- Game view -->
+                <div id="cn-game" class="cn-container">
+                    <div class="cn-meta">
+                        <span class="cn-label">Connections</span>
+                        <div class="cn-mistakes">
+                            Mistakes: <span id="cn-mistakes-display">
+                                <span class="cn-dot"></span><span class="cn-dot"></span><span class="cn-dot"></span><span class="cn-dot"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <p class="cn-prompt">Find 4 groups of 4 players that share something in common.</p>
+                    <div id="cn-solved-groups"></div>
+                    <div id="cn-grid" class="cn-grid"></div>
+                    <div id="cn-hint-banner" class="cn-hint-banner hidden"></div>
+                    <div class="cn-actions">
+                        <button id="cn-submit-btn" class="btn btn-primary cn-action-btn" disabled>Submit</button>
+                        <button id="cn-hint-btn" class="btn btn-outline cn-action-btn">💡 Hint</button>
+                        <button id="cn-deselect-btn" class="btn btn-outline cn-action-btn" disabled>Deselect All</button>
+                    </div>
+                    <button id="cn-quit-btn" class="btn btn-outline cn-action-btn">Back to Menu</button>
+                </div>
+
+                <!-- Results view -->
+                <div id="cn-results-panel" class="cn-container hidden">
+                    <h2 id="cn-result-title" class="cn-result-title"></h2>
+                    <p id="cn-result-msg" class="cn-result-msg"></p>
+                    <div id="cn-result-groups" class="cn-result-groups"></div>
+                    <div class="cn-result-actions">
+                        <button id="cn-play-again-btn" class="btn btn-primary">Play Again</button>
+                        <button id="cn-menu-btn" class="btn btn-outline">Back to Menu</button>
                     </div>
                 </div>
 
