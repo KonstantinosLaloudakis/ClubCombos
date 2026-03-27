@@ -1,5 +1,5 @@
 /**
- * Club Combos Trivia Game Engine
+ * Greek Football Puzzles – Game Engine
  * Loads TRIVIA_DATA from data.js
  */
 
@@ -145,7 +145,7 @@ async function handleShare() {
     if (!stored) return;
 
     const result = JSON.parse(stored);
-    const shareText = `Club Combos – ${formatDailyDate()}\n${result.emojiGrid}\nScore: ${result.score}/${result.total}\nhttps://konstantinoslaloudakis.github.io/ClubCombos/`;
+    const shareText = `Greek Football Puzzles – ${formatDailyDate()}\n${result.emojiGrid}\nScore: ${result.score}/${result.total}\nhttps://konstantinoslaloudakis.github.io/ClubCombos/`;
 
     if (navigator.share) {
         try {
@@ -214,12 +214,30 @@ function init() {
 
     // Mystery Player buttons
     document.getElementById('btn-mystery-player').addEventListener('click', startMysteryPlayer);
-    document.getElementById('mp-give-up-btn').addEventListener('click', handleMPGiveUp);
+    document.getElementById('mp-reveal-btn').addEventListener('click', handleMPReveal);
+    document.getElementById('mp-skip-btn').addEventListener('click', handleMPSkip);
     document.getElementById('mp-quit-btn').addEventListener('click', resetToStart);
     document.getElementById('mp-play-again-btn').addEventListener('click', startMysteryPlayer);
     document.getElementById('mp-menu-btn').addEventListener('click', resetToStart);
     document.getElementById('mp-share-btn').addEventListener('click', handleMPShare);
     document.getElementById('mp-search-input').addEventListener('input', handleMPSearch);
+
+    // Connections share button
+    document.getElementById('cn-share-btn').addEventListener('click', handleCNShare);
+
+    // Enter key to submit top dropdown result in search-based modes
+    document.getElementById('mp-search-input').addEventListener('keydown', e => {
+        if (e.key === 'Enter') {
+            const first = document.querySelector('#mp-dropdown .result-item');
+            if (first) first.click();
+        }
+    });
+    document.getElementById('cc-search-input').addEventListener('keydown', e => {
+        if (e.key === 'Enter') {
+            const first = document.querySelector('#cc-dropdown .result-item');
+            if (first) first.click();
+        }
+    });
 
     // Close MP dropdown when clicking outside
     document.addEventListener('click', e => {
@@ -916,7 +934,7 @@ async function handleCCShare() {
     const score = ccState.score;
     const total = ccState.totalRounds;
     const emojiGrid = document.getElementById('cc-emoji-grid').textContent;
-    const text = `Club Combos – Common Club\n${emojiGrid}\nScore: ${score}/${total}\nhttps://konstantinoslaloudakis.github.io/ClubCombos/`;
+    const text = `Greek Football Puzzles – Common Club\n${emojiGrid}\nScore: ${score}/${total}\nhttps://konstantinoslaloudakis.github.io/ClubCombos/`;
 
     if (navigator.share) {
         try { await navigator.share({ text }); return; } catch(e) {}
@@ -1199,7 +1217,7 @@ async function handleCPShare() {
     const score = cpState.score;
     const max = cpState.maxScore;
     const emojis = document.getElementById('cp-emoji-grid').textContent;
-    const text = `Club Combos – Career Path\n${emojis}\nScore: ${score}/${max} clubs correct\nhttps://konstantinoslaloudakis.github.io/ClubCombos/`;
+    const text = `Greek Football Puzzles – Career Path\n${emojis}\nScore: ${score}/${max} clubs correct\nhttps://konstantinoslaloudakis.github.io/ClubCombos/`;
 
     if (navigator.share) {
         try { await navigator.share({ text }); return; } catch(e) {}
@@ -1226,6 +1244,7 @@ let cnState = {
     mistakes: 0,
     maxMistakes: 4,
     hintedLabel: null,  // label of the currently shown hint (null = none)
+    solveOrder: [],     // colors in order they were solved (for emoji grid)
     gameOver: false
 };
 
@@ -1352,10 +1371,11 @@ function startConnections() {
     const groups = generateCNPuzzle();
     if (!groups) { showToast('Could not generate puzzle. Try again.', 'error'); return; }
 
-    cnState.groups     = groups;
+    cnState.groups      = groups;
     cnState.selected    = [];
     cnState.mistakes    = 0;
     cnState.hintedLabel = null;
+    cnState.solveOrder  = [];
     cnState.gameOver    = false;
 
     // Flatten + shuffle the 16 players
@@ -1428,6 +1448,7 @@ function submitCNGuess() {
 
     if (matchGroup) {
         matchGroup.solved = true;
+        cnState.solveOrder.push(matchGroup.color);
         cnState.selected  = [];
 
         // If this was the hinted group, hide the hint banner
@@ -1498,13 +1519,25 @@ function showCNResults() {
     document.getElementById('cn-game').classList.add('hidden');
     document.getElementById('cn-results-panel').classList.remove('hidden');
 
-    const solved  = cnState.groups.filter(g => g.solved && cnState.mistakes < cnState.maxMistakes || g.solved).length;
-    const won     = cnState.mistakes < cnState.maxMistakes;
+    const won = cnState.mistakes < cnState.maxMistakes;
 
     document.getElementById('cn-result-title').textContent =
         won ? (cnState.mistakes === 0 ? 'Perfect! 🎯' : 'Well Done!') : 'Better Luck Next Time!';
     document.getElementById('cn-result-msg').textContent =
         `Connections · ${cnState.maxMistakes - cnState.mistakes}/${cnState.maxMistakes} mistakes remaining`;
+
+    // Emoji grid: one row per group solved in order, colour-coded
+    const colorEmoji = { yellow: '🟨', green: '🟩', blue: '🟦', purple: '🟪' };
+    const emojiRows = cnState.solveOrder.map(color => {
+        const emoji = colorEmoji[color] || '⬜';
+        return `${emoji}${emoji}${emoji}${emoji}`;
+    });
+    // Fill remaining rows for unsolved groups (game over)
+    const unsolvedColors = cnState.groups.filter(g => !cnState.solveOrder.includes(g.color)).map(g => g.color);
+    unsolvedColors.forEach(color => {
+        emojiRows.push('⬛⬛⬛⬛');
+    });
+    document.getElementById('cn-emoji-grid').textContent = emojiRows.join('\n');
 
     const groupsEl = document.getElementById('cn-result-groups');
     groupsEl.innerHTML = cnState.groups.map(g =>
@@ -1513,6 +1546,21 @@ function showCNResults() {
             <span>${g.playerIds.map(pid => TRIVIA_DATA.players[pid]).join(', ')}</span>
         </div>`
     ).join('');
+}
+
+async function handleCNShare() {
+    const emojis = document.getElementById('cn-emoji-grid').textContent;
+    const remaining = cnState.maxMistakes - cnState.mistakes;
+    const text = `Greek Football Puzzles – Connections\n${emojis}\n${remaining}/${cnState.maxMistakes} mistakes remaining\nhttps://konstantinoslaloudakis.github.io/ClubCombos/`;
+    if (navigator.share) {
+        try { await navigator.share({ text }); return; } catch(e) {}
+    }
+    try {
+        await navigator.clipboard.writeText(text);
+        showToast('Result copied to clipboard!', 'success');
+    } catch(e) {
+        showToast('Could not copy to clipboard.', 'error');
+    }
 }
 
 // =============================================================================
@@ -1576,7 +1624,8 @@ function renderMPRound() {
     document.getElementById('mp-dropdown').innerHTML = '';
     document.getElementById('mp-dropdown').classList.add('hidden');
     document.getElementById('mp-feedback').innerHTML = '';
-    document.getElementById('mp-give-up-btn').style.display = '';
+    document.getElementById('mp-reveal-btn').style.display = '';
+    document.getElementById('mp-skip-btn').style.display = '';
 
     const nextBtn = document.getElementById('mp-next-btn');
     nextBtn.classList.add('hidden');
@@ -1589,12 +1638,16 @@ function renderMPClubs() {
     const puzzle  = mpState.puzzles[mpState.currentRound];
     const revealed = puzzle.clubs.slice(0, mpState.revealedCount);
 
-    const giveUpBtn = document.getElementById('mp-give-up-btn');
-    if (mpState.revealedCount >= puzzle.clubs.length) {
-        giveUpBtn.textContent = '🏳️ Give Up';
-    } else {
-        giveUpBtn.textContent = '💡 Reveal Next Club';
-    }
+    // Show/hide the two separate buttons
+    const revealBtn = document.getElementById('mp-reveal-btn');
+    const skipBtn   = document.getElementById('mp-skip-btn');
+    const allRevealed = mpState.revealedCount >= puzzle.clubs.length;
+    revealBtn.style.display = allRevealed ? 'none' : '';
+    skipBtn.style.display   = '';
+
+    // Club X of Y counter
+    document.getElementById('mp-club-counter').textContent =
+        `(${mpState.revealedCount}/${puzzle.clubs.length})`;
 
     document.getElementById('mp-clubs').innerHTML = revealed.map(stint => {
         const badge = getClubBadge(stint.club);
@@ -1660,7 +1713,8 @@ function handleMPGuess(playerId, playerName) {
         document.getElementById('mp-feedback').innerHTML =
             `<div class="mp-feedback-correct">✓ Correct! +${points} point${points !== 1 ? 's' : ''}</div>`;
         input.disabled = true;
-        document.getElementById('mp-give-up-btn').style.display = 'none';
+        document.getElementById('mp-reveal-btn').style.display = 'none';
+        document.getElementById('mp-skip-btn').style.display = 'none';
 
         advanceMPRound();
     } else {
@@ -1677,7 +1731,8 @@ function handleMPGuess(playerId, playerName) {
             mpState.results.push(0);
             mpState.roundOver = true;
             input.disabled = true;
-            document.getElementById('mp-give-up-btn').style.display = 'none';
+            document.getElementById('mp-reveal-btn').style.display = 'none';
+            document.getElementById('mp-skip-btn').style.display = 'none';
             document.getElementById('mp-feedback').innerHTML =
                 `<div class="mp-feedback-wrong">The answer was <strong>${puzzle.playerName}</strong>.</div>`;
             advanceMPRound();
@@ -1685,31 +1740,36 @@ function handleMPGuess(playerId, playerName) {
     }
 }
 
-function handleMPGiveUp() {
+function handleMPReveal() {
     if (mpState.roundOver) return;
+    const puzzle = mpState.puzzles[mpState.currentRound];
+    if (mpState.revealedCount >= puzzle.clubs.length) return;
 
+    mpState.revealedCount++;
+    renderMPClubs();
+    document.getElementById('mp-feedback').innerHTML =
+        `<div class="mp-feedback-wrong">Here's another club — keep guessing!</div>`;
+    const input = document.getElementById('mp-search-input');
+    input.value = '';
+    setTimeout(() => input.focus(), 100);
+}
+
+function handleMPSkip() {
+    if (mpState.roundOver) return;
     const puzzle = mpState.puzzles[mpState.currentRound];
 
-    if (mpState.revealedCount < puzzle.clubs.length) {
-        // Reveal the next club
-        mpState.revealedCount++;
-        renderMPClubs();
-        document.getElementById('mp-feedback').innerHTML =
-            `<div class="mp-feedback-wrong">Here's another clue — keep guessing!</div>`;
-        const input = document.getElementById('mp-search-input');
-        input.value = '';
-        setTimeout(() => input.focus(), 100);
-    } else {
-        // All clubs revealed — end round with 0 points
-        mpState.results.push(0);
-        mpState.roundOver = true;
-        document.getElementById('mp-search-input').disabled = true;
-        document.getElementById('mp-dropdown').classList.add('hidden');
-        document.getElementById('mp-give-up-btn').style.display = 'none';
-        document.getElementById('mp-feedback').innerHTML =
-            `<div class="mp-feedback-wrong">The answer was <strong>${puzzle.playerName}</strong>.</div>`;
-        advanceMPRound();
-    }
+    mpState.results.push(0);
+    mpState.roundOver = true;
+    mpState.revealedCount = puzzle.clubs.length;
+    renderMPClubs();
+
+    document.getElementById('mp-search-input').disabled = true;
+    document.getElementById('mp-dropdown').classList.add('hidden');
+    document.getElementById('mp-reveal-btn').style.display = 'none';
+    document.getElementById('mp-skip-btn').style.display = 'none';
+    document.getElementById('mp-feedback').innerHTML =
+        `<div class="mp-feedback-wrong">The answer was <strong>${puzzle.playerName}</strong>.</div>`;
+    advanceMPRound();
 }
 
 function advanceMPRound() {
@@ -1746,7 +1806,7 @@ async function handleMPShare() {
     const score    = mpState.score;
     const max      = mpState.maxScore;
     const emojis   = document.getElementById('mp-emoji-grid').textContent;
-    const text     = `Club Combos – Mystery Player\n${emojis}\nScore: ${score}/${max}\nhttps://konstantinoslaloudakis.github.io/ClubCombos/`;
+    const text     = `Greek Football Puzzles – Mystery Player\n${emojis}\nScore: ${score}/${max}\nhttps://konstantinoslaloudakis.github.io/ClubCombos/`;
     if (navigator.share) {
         try { await navigator.share({ text }); return; } catch(e) {}
     }

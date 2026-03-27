@@ -234,7 +234,9 @@
                 <div id="cn-results-panel" class="cn-container hidden">
                     <h2 id="cn-result-title" class="cn-result-title"></h2>
                     <p id="cn-result-msg" class="cn-result-msg"></p>
+                    <pre id="cn-emoji-grid" class="emoji-grid"></pre>
                     <div id="cn-result-groups" class="cn-result-groups"></div>
+                    <button id="cn-share-btn" class="btn btn-outline">📋 Copy Result</button>
                     <div class="cn-result-actions">
                         <button id="cn-play-again-btn" class="btn btn-primary">Play Again</button>
                         <button id="cn-menu-btn" class="btn btn-outline">Back to Menu</button>
@@ -259,7 +261,8 @@
                             <input type="text" id="mp-search-input" placeholder="Type a player name..." autocomplete="off">
                             <div id="mp-dropdown" class="mp-dropdown hidden"></div>
                         </div>
-                        <button id="mp-give-up-btn" class="btn-surrender">💡 Reveal Next Club</button>
+                        <button id="mp-reveal-btn" class="btn-surrender">💡 Reveal Next Club <span id="mp-club-counter" class="mp-club-counter"></span></button>
+                        <button id="mp-skip-btn" class="btn-surrender">🏳️ Skip Round</button>
                     </div>
                     <div id="mp-feedback" class="mp-feedback"></div>
                     <button id="mp-next-btn" class="btn btn-primary mp-action-btn hidden">Next Round →</button>

@@ -11,8 +11,11 @@
     --accent-pao: #16a34a; /* Panathinaikos Green */
     
     --correct-color: #22c55e;
+    --success-color: #22c55e;
     --error-color: #ef4444;
     --hover-color: #334155;
+    --cell-bg: rgba(30, 41, 59, 0.5);
+    --border: rgba(255, 255, 255, 0.12);
     
     --font-heading: 'Outfit', sans-serif;
     --font-body: 'Inter', sans-serif;
@@ -1384,7 +1387,7 @@ input:checked + .slider:before {
     box-sizing: border-box;
 }
 .mp-search-wrap input:focus { outline: none; border-color: #a855f7; }
-.mp-search-wrap input:disabled { opacity: 0.5; }
+.mp-search-wrap input:disabled { opacity: 0.5; cursor: not-allowed; }
 
 .mp-dropdown {
     position: absolute;
@@ -1408,6 +1411,12 @@ input:checked + .slider:before {
 .mp-feedback-wrong {
     color: var(--error-color, #f87171);
     font-size: 0.95rem;
+}
+
+.mp-club-counter {
+    font-size: 0.8rem;
+    color: var(--text-muted, #94a3b8);
+    margin-left: 4px;
 }
 
 .mp-action-btn { width: 100%; max-width: 340px; }
@@ -1599,9 +1608,34 @@ input:checked + .slider:before {
 
 .cn-result-actions { display: flex; gap: 1rem; width: 100%; }
 
-/* Responsive: 2-col grid on narrow screens */
+/* Responsive: narrow screens */
 @media (max-width: 480px) {
+    /* Connections: 2-col grid */
     .cn-grid { grid-template-columns: repeat(2, 1fr); }
     .cn-actions { grid-template-columns: 1fr 1fr; }
     .cn-action-btn:last-child { grid-column: span 2; }
+
+    /* Stack result action buttons vertically */
+    .cc-result-actions,
+    .cp-result-actions,
+    .cn-result-actions,
+    .mp-result-actions {
+        flex-direction: column;
+    }
+
+    /* Shrink containers padding */
+    .cc-container,
+    .cp-container,
+    .mp-container,
+    .cn-container {
+        padding: 0 0.5rem;
+    }
+
+    /* Mystery Player: smaller cards on mobile */
+    .mp-club-card { gap: 0.6rem; padding: 0.5rem 0.75rem; }
+    .mp-badge-wrap { width: 32px; height: 32px; }
+    .mp-club-name { font-size: 0.9rem; }
+
+    /* Career Path: smaller drag cards on mobile */
+    .cp-card { padding: 0.6rem 0.75rem; font-size: 0.9rem; }
 }
