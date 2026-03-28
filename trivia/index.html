@@ -46,6 +46,12 @@
                     <div class="daily-divider">or free play</div>
 
                     <div class="config-options">
+                        <h3>Pick Your Teams</h3>
+                        <div id="team-picker" class="team-picker">
+                            <!-- Populated dynamically from TRIVIA_DATA.focus_teams -->
+                        </div>
+                        <p id="team-picker-hint" class="picker-hint">Select exactly 2 teams</p>
+
                         <h3>Select Grid Size</h3>
                         <div class="size-buttons">
                             <button class="btn btn-primary" data-size="3">2 x 3 Grid</button>
@@ -57,7 +63,7 @@
                                 <input type="checkbox" id="easy-mode-toggle">
                                 <span class="slider round"></span>
                             </label>
-                            <span class="mode-label">Easy Mode <span class="mode-desc">(Min. 2 valid players per cell)</span></span>
+                            <span class="mode-label">Easy Mode <span class="mode-desc">(Min. 3 valid players per cell)</span></span>
                         </div>
                     </div>
 
@@ -213,9 +219,7 @@
                     <div class="cn-meta">
                         <span class="cn-label">Connections</span>
                         <div class="cn-mistakes">
-                            Mistakes: <span id="cn-mistakes-display">
-                                <span class="cn-dot"></span><span class="cn-dot"></span><span class="cn-dot"></span><span class="cn-dot"></span>
-                            </span>
+                            <span id="cn-mistakes-display">4</span> wrong guesses remaining
                         </div>
                     </div>
                     <p class="cn-prompt">Find 4 groups of 4 players that share something in common.</p>

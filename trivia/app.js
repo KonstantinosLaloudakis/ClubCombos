@@ -69,6 +69,24 @@ function formatDailyDate() {
     return `${now.getDate()} ${months[now.getMonth()]} ${now.getFullYear()}`;
 }
 
+// --- Minimum appearances threshold ---
+// Filter out obscure loan/trialist stints so puzzles feature recognisable players.
+const MIN_APPS = 5;
+
+/** Return only career stints with apps >= MIN_APPS */
+function getSignificantStints(pid) {
+    const stints = TRIVIA_DATA.careers[pid];
+    if (!stints) return [];
+    return stints.filter(s => s.apps >= MIN_APPS);
+}
+
+/** True if the player had at least one meaningful stint */
+function isKnownPlayer(pid) {
+    const stints = TRIVIA_DATA.careers[pid];
+    if (!stints) return true; // no career data — keep in pool
+    return stints.some(s => s.apps >= MIN_APPS);
+}
+
 function startDailyChallenge() {
     const key = getDailyKey();
     const stored = localStorage.getItem(`clubcombos_daily_${key}`);
@@ -179,8 +197,49 @@ function updateDailyButtonState() {
 // Timeout handle so we can cancel the end-screen transition if user navigates away early
 let gameOverTimeoutId = null;
 
+function initTeamPicker() {
+    const container = document.getElementById('team-picker');
+    const hint      = document.getElementById('team-picker-hint');
+    const sizeButtons = document.querySelectorAll('[data-size]');
+
+    TRIVIA_DATA.focus_teams.forEach(ft => {
+        const chip = document.createElement('button');
+        chip.className = 'team-chip';
+        chip.dataset.teamId = ft.id;
+        chip.textContent = ft.name;
+        chip.addEventListener('click', () => {
+            chip.classList.toggle('selected');
+            updatePickerState();
+        });
+        container.appendChild(chip);
+    });
+
+    // Pre-select first 2
+    container.querySelectorAll('.team-chip').forEach((chip, i) => {
+        if (i < 2) chip.classList.add('selected');
+    });
+
+    function updatePickerState() {
+        const selected = container.querySelectorAll('.team-chip.selected');
+        const valid = selected.length === 2;
+        sizeButtons.forEach(btn => btn.disabled = !valid);
+        hint.textContent = valid ? '' : 'Select exactly 2 teams';
+        hint.style.display = valid ? 'none' : '';
+    }
+    updatePickerState();
+}
+
+function getPickedFocusTeams() {
+    const chips = document.querySelectorAll('#team-picker .team-chip.selected');
+    const ids = new Set([...chips].map(c => c.dataset.teamId));
+    return TRIVIA_DATA.focus_teams.filter(ft => ids.has(ft.id));
+}
+
 function init() {
     state.focusTeams = TRIVIA_DATA.focus_teams;
+
+    // Team picker for free play
+    initTeamPicker();
 
     // Bind buttons
     document.querySelectorAll('[data-size]').forEach(btn => {
@@ -305,8 +364,9 @@ function pickFocusTeams(rng) {
 function validColumnsForPair(focusPair, minPlayers = 1) {
     return TRIVIA_DATA.valid_target_teams.filter(target =>
         focusPair.every(ft => {
-            const players = TRIVIA_DATA.matrix[ft.id]?.[target.id];
-            return players && players.length >= minPlayers;
+            const players = (TRIVIA_DATA.matrix[ft.id]?.[target.id] || [])
+                .filter(pid => isKnownPlayer(pid));
+            return players.length >= minPlayers;
         })
     );
 }
@@ -314,8 +374,10 @@ function validColumnsForPair(focusPair, minPlayers = 1) {
 function startGame(columns) {
     state.gridSize = columns;
 
-    // Pick 2 focus teams randomly for this game
-    state.focusTeams = pickFocusTeams();
+    // Use user-picked teams for free play, random for daily
+    if (!state.isDailyChallenge) {
+        state.focusTeams = getPickedFocusTeams();
+    }
 
     const totalCells = state.focusTeams.length * columns;
     state.lives = totalCells;
@@ -329,7 +391,7 @@ function startGame(columns) {
 
     // Filter target teams based on Easy Mode toggle
     const isEasyMode = document.getElementById('easy-mode-toggle').checked;
-    const minPlayers  = isEasyMode ? 2 : 1;
+    const minPlayers  = isEasyMode ? 3 : 1;
     let availableTargets = validColumnsForPair(state.focusTeams, minPlayers);
 
     if (availableTargets.length < columns) {
@@ -521,8 +583,8 @@ function makeGuess(playerId, playerName) {
         state.score++;
         dom.score.textContent = state.score;
         
-        // Find other valid players for tooltip
-        const otherValid = validPlayers.filter(id => id !== playerId);
+        // Find other valid players for tooltip (only show known players)
+        const otherValid = validPlayers.filter(id => id !== playerId && isKnownPlayer(id));
         const otherNames = otherValid.map(id => TRIVIA_DATA.players[id]);
         
         let tooltipHTML = '';
@@ -753,7 +815,9 @@ function buildCommonClubPuzzles() {
     for (const team of TRIVIA_DATA.valid_target_teams) {
         const playerIdSet = new Set();
         for (const ft of TRIVIA_DATA.focus_teams) {
-            (TRIVIA_DATA.matrix[ft.id]?.[team.id] || []).forEach(id => playerIdSet.add(id));
+            (TRIVIA_DATA.matrix[ft.id]?.[team.id] || [])
+                .filter(pid => isKnownPlayer(pid))
+                .forEach(id => playerIdSet.add(id));
         }
         if (playerIdSet.size >= 4) {
             puzzles.push({
@@ -962,9 +1026,12 @@ const cpState = {
 function buildCareerPuzzles() {
     const puzzles = [];
     for (const [pid, stints] of Object.entries(TRIVIA_DATA.careers)) {
-        if (!stints || stints.length < 4) continue;
+        if (!stints) continue;
 
-        let selected = [...stints];
+        // Filter out obscure stints
+        let selected = stints.filter(s => s.apps >= MIN_APPS);
+        if (selected.length < 4) continue;
+
         if (selected.length > 5) {
             // Keep the 5 most-played clubs, then restore chronological order
             selected.sort((a, b) => b.apps - a.apps);
@@ -1270,11 +1337,12 @@ function buildCNGroups() {
         candidates.push({ label: `All are ${nat}`, pool: pids, diff });
     }
 
-    // 2. Shared club groups
+    // 2. Shared club groups (only count significant stints)
     const clubBuckets = {};
     for (const [pid, stints] of Object.entries(careers)) {
         if (!players[pid] || !stints) continue;
         for (const stint of stints) {
+            if (stint.apps < MIN_APPS) continue;
             if (!clubBuckets[stint.club]) clubBuckets[stint.club] = new Set();
             clubBuckets[stint.club].add(pid);
         }
@@ -1294,7 +1362,7 @@ function buildCNGroups() {
             const qualifiers = [];
             for (const [pid, stints] of Object.entries(careers)) {
                 if (!players[pid] || !stints) continue;
-                if (stints.some(s => s.club === club && s.goals >= minG)) qualifiers.push(pid);
+                if (stints.some(s => s.club === club && s.apps >= MIN_APPS && s.goals >= minG)) qualifiers.push(pid);
             }
             if (qualifiers.length < 4) continue;
             const diff = minG >= 10 ? 3 : minG >= 5 ? 2 : 1;
@@ -1309,7 +1377,7 @@ function buildCNGroups() {
             const qualifiers = [];
             for (const [pid, stints] of Object.entries(careers)) {
                 if (!players[pid] || !stints) continue;
-                if (stints.some(s => s.club === club && s.apps >= minA)) qualifiers.push(pid);
+                if (stints.some(s => s.club === club && s.apps >= Math.max(minA, MIN_APPS))) qualifiers.push(pid);
             }
             if (qualifiers.length < 4) continue;
             const diff = minA >= 75 ? 3 : minA >= 50 ? 2 : 1;
@@ -1418,10 +1486,8 @@ function renderCNGrid() {
 }
 
 function renderCNMistakes() {
-    const dots = document.querySelectorAll('.cn-dot');
-    dots.forEach((dot, i) => {
-        dot.classList.toggle('cn-dot--used', i < cnState.mistakes);
-    });
+    const remaining = cnState.maxMistakes - cnState.mistakes;
+    document.getElementById('cn-mistakes-display').textContent = remaining;
 }
 
 function handleCNCardClick(pid) {
@@ -1581,10 +1647,12 @@ let mpState = {
 function buildMPPuzzles() {
     const pool = [];
     for (const [pid, stints] of Object.entries(TRIVIA_DATA.careers)) {
-        if (!stints || stints.length < 4 || stints.length > 6) continue;
-        if (!TRIVIA_DATA.players[pid]) continue;
+        if (!stints || !TRIVIA_DATA.players[pid]) continue;
+        // Filter out obscure stints
+        const significant = stints.filter(s => s.apps >= MIN_APPS);
+        if (significant.length < 4 || significant.length > 6) continue;
         // Sort clubs chronologically: earliest → latest
-        const sorted = [...stints].sort((a, b) => a.start_year - b.start_year);
+        const sorted = [...significant].sort((a, b) => a.start_year - b.start_year);
         pool.push({ playerId: pid, playerName: TRIVIA_DATA.players[pid], clubs: sorted });
     }
     return pool;
