@@ -192,6 +192,11 @@ header {
     font-size: 1.5rem;
     cursor: pointer;
     line-height: 1;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .btn-icon:hover { color: var(--error-color); }
 
@@ -547,10 +552,11 @@ input:checked + .slider:before {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    padding-top: 10vh;
+    padding: 10vh 1rem 1rem;
     z-index: 1000;
     opacity: 1;
     transition: opacity 0.2s;
+    overflow-y: auto;
 }
 .modal-overlay.hidden {
     opacity: 0;
@@ -567,6 +573,7 @@ input:checked + .slider:before {
     display: flex;
     flex-direction: column;
     max-height: 80vh;
+    max-height: 80dvh;
 }
 
 .modal-header {
@@ -656,6 +663,7 @@ input:checked + .slider:before {
     font-size: 0.8rem;
     white-space: normal;
     min-width: 180px;
+    max-width: min(280px, calc(100vw - 2rem));
     max-height: 200px;
     overflow-y: auto;
     opacity: 0;
@@ -711,6 +719,8 @@ input:checked + .slider:before {
     opacity: 0;
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     z-index: 2000;
+    max-width: 90vw;
+    text-align: center;
 }
 
 .toast.show {
@@ -1650,22 +1660,71 @@ input:checked + .slider:before {
 
 .cn-result-actions { display: flex; gap: 1rem; width: 100%; }
 
-/* Responsive: narrow screens */
-@media (max-width: 480px) {
-    /* Connections: 2-col grid */
-    .cn-grid { grid-template-columns: repeat(2, 1fr); }
-    .cn-actions { grid-template-columns: 1fr 1fr; }
-    .cn-action-btn:last-child { grid-column: span 2; }
+/* ── Responsive: tablets ─────────────────────────────────────── */
+@media (max-width: 768px) {
+    .hero-box { padding: 2rem; }
+    .hero-box h1 { font-size: 2rem; }
+    .hero-box p { font-size: 1rem; margin-bottom: 1.25rem; }
 
-    /* Stack result action buttons vertically */
-    .cc-result-actions,
-    .cp-result-actions,
-    .cn-result-actions,
-    .mp-result-actions {
+    .grid-header, .grid-row { gap: 0.5rem; }
+}
+
+/* ── Responsive: phones ─────────────────────────────────────── */
+@media (max-width: 480px) {
+    /* ── Start screen ── */
+    .hero-box { padding: 1.25rem; }
+    .hero-box h1 { font-size: 1.6rem; margin-bottom: 0.5rem; }
+    .hero-box p { font-size: 0.9rem; margin-bottom: 1rem; }
+    .config-options { padding: 1rem; }
+    .config-options h3 { font-size: 0.95rem; margin-bottom: 0.6rem; }
+
+    .daily-section { margin-bottom: 0.75rem; }
+    .daily-section p { font-size: 0.75rem; }
+
+    .team-chip { font-size: 0.8rem; padding: 0.4rem 0.75rem; }
+    .size-buttons { flex-direction: column; width: 100%; }
+    .size-buttons .btn { width: 100%; }
+
+    /* ── Grid game ── */
+    .grid-header, .grid-row { gap: 0.4rem; }
+    .team-col-header {
+        padding: 0.5rem 0.25rem;
+        font-size: 0.8rem;
+    }
+    .team-col-header span { font-size: 0.6rem; }
+    .team-row-header {
+        padding: 0.5rem 0.25rem;
+        font-size: 0.8rem;
+    }
+    .grid-cell { min-height: 80px; }
+    .cell-icon { font-size: 1.4rem; }
+    .player-name { font-size: 0.7rem; }
+
+    .game-controls {
         flex-direction: column;
+        gap: 0.5rem;
+    }
+    .game-controls .btn { width: 100%; }
+
+    /* ── Modal (search) ── */
+    .modal-overlay { padding: 2vh 0.5rem 0.5rem; }
+    .modal-content { max-height: 96vh; max-height: 96dvh; border-radius: 10px; }
+    .modal-header { padding: 0.75rem 1rem; }
+    .modal-header h3 { font-size: 0.95rem; }
+
+    /* ── Tooltip ── */
+    .cell-tooltip {
+        font-size: 0.75rem;
+        min-width: 140px;
     }
 
-    /* Shrink containers padding */
+    /* ── Toast ── */
+    .toast { bottom: 1rem; padding: 0.75rem 1rem; font-size: 0.9rem; }
+
+    /* ── Emoji grids (results) ── */
+    .emoji-grid { font-size: 1.4rem; letter-spacing: 1px; }
+
+    /* ── Game mode containers ── */
     .cc-container,
     .cp-container,
     .mp-container,
@@ -1673,11 +1732,31 @@ input:checked + .slider:before {
         padding: 0 0.5rem;
     }
 
-    /* Mystery Player: smaller cards on mobile */
+    /* ── Result action buttons: stack vertically ── */
+    .cc-result-actions,
+    .cp-result-actions,
+    .cn-result-actions,
+    .mp-result-actions {
+        flex-direction: column;
+    }
+
+    /* ── Common Club ── */
+    .cc-players { grid-template-columns: 1fr; gap: 0.5rem; }
+    .cc-player-card { min-height: 48px; padding: 0.75rem; }
+
+    /* ── Career Path ── */
+    .cp-card { padding: 0.6rem 0.75rem; font-size: 0.9rem; }
+    .cp-badge-wrap { width: 28px; height: 28px; padding: 2px; }
+
+    /* ── Connections ── */
+    .cn-grid { grid-template-columns: repeat(2, 1fr); }
+    .cn-card { min-height: 56px; font-size: 0.8rem; }
+    .cn-actions { grid-template-columns: 1fr 1fr; }
+    .cn-action-btn:last-child { grid-column: span 2; }
+
+    /* ── Mystery Player ── */
     .mp-club-card { gap: 0.6rem; padding: 0.5rem 0.75rem; }
     .mp-badge-wrap { width: 32px; height: 32px; }
     .mp-club-name { font-size: 0.9rem; }
-
-    /* Career Path: smaller drag cards on mobile */
-    .cp-card { padding: 0.6rem 0.75rem; font-size: 0.9rem; }
+    .mp-club-years { font-size: 0.75rem; }
 }
